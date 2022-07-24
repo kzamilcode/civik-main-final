@@ -1042,6 +1042,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(186 186 186 / var(--tw-border-opacity));
 }
 
+.border-\[\#4DDA64\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(77 218 100 / var(--tw-border-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1502,6 +1507,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-light-gray {
   --tw-text-opacity: 1;
   color: rgb(195 195 195 / var(--tw-text-opacity));
+}
+
+.text-\[\#D4D4D4\] {
+  --tw-text-opacity: 1;
+  color: rgb(212 212 212 / var(--tw-text-opacity));
 }
 
 .placeholder-\[\#696969\]::-moz-placeholder {
@@ -2112,6 +2122,11 @@ img.full {
 .hover\:text-nUnderLine:hover {
   --tw-text-opacity: 1;
   color: rgb(169 87 251 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#4DDA64\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(77 218 100 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
