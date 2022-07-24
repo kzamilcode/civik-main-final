@@ -1494,6 +1494,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(186 186 186 / var(--tw-text-opacity));
 }
 
+.text-\[\#9B9B9B\] {
+  --tw-text-opacity: 1;
+  color: rgb(155 155 155 / var(--tw-text-opacity));
+}
+
+.text-light-gray {
+  --tw-text-opacity: 1;
+  color: rgb(195 195 195 / var(--tw-text-opacity));
+}
+
 .placeholder-\[\#696969\]::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(105 105 105 / var(--tw-placeholder-opacity));
@@ -1519,6 +1529,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .shadow-\[1px_2px_1px_rgba\(251\2c 185\2c 87\2c 1\)\] {
   --tw-shadow: 1px 2px 1px rgba(251,185,87,1);
+  --tw-shadow-colored: 1px 2px 1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-\[1px_2px_1px_rgba\(89\2c 86\2c 240\2c 1\)\] {
+  --tw-shadow: 1px 2px 1px rgba(89,86,240,1);
   --tw-shadow-colored: 1px 2px 1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
@@ -2091,6 +2107,11 @@ img.full {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-nUnderLine:hover {
+  --tw-text-opacity: 1;
+  color: rgb(169 87 251 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
