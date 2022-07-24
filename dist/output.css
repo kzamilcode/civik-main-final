@@ -1087,6 +1087,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(169 87 251 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#FCFCFC\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 252 252 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1447,6 +1452,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-nwSoftGray {
   --tw-text-opacity: 1;
   color: rgb(138 138 138 / var(--tw-text-opacity));
+}
+
+.text-\[\#5956F0\] {
+  --tw-text-opacity: 1;
+  color: rgb(89 86 240 / var(--tw-text-opacity));
+}
+
+.text-\[\#4DDA64\] {
+  --tw-text-opacity: 1;
+  color: rgb(77 218 100 / var(--tw-text-opacity));
+}
+
+.text-\[\#FB8857\] {
+  --tw-text-opacity: 1;
+  color: rgb(251 136 87 / var(--tw-text-opacity));
 }
 
 .placeholder-\[\#696969\]::-moz-placeholder {
@@ -1993,6 +2013,11 @@ img.full {
 .hover\:bg-nblack:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(37 37 37 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#FCFCFC\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 252 252 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gradient-to-r:hover {
