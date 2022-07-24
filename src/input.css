@@ -123,11 +123,17 @@ transition-delay: .2s;
       right: 0;
       top: -2.5rem;
       font-size: 20px;
-      color:#FBB957;
+      /* color:#FBB957; */
       text-align: center;
       border-radius: 0.1rem;
      
       font-weight: 400;
+    }
+    .barN::after
+     {
+     
+      color:#333333;
+      
     }
     .bar.two::after
     {
