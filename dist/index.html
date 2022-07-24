@@ -1,0 +1,986 @@
+<!doctype html>
+<html class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+      <!-- Alpine Js -->
+      <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
+  <!--slick-slider-->
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+				
+    <!------
+   FONT-AWASOME-LINK
+    ----->
+  <script src="https://kit.fontawesome.com/afa777e6cd.js" crossorigin="anonymous"></script>
+ <!------
+   GOOGLE-FONT-LINK
+    ----->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&family=Work+Sans:wght@500;600;700&display=swap" rel="stylesheet"> 
+    
+
+  <link href="output.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-white font-work font-medium">
+
+
+     <div class="lg:px-36  2xl:px-60 md:px-12 px-10 mx-auto">
+
+  <!------
+    Home-section
+    ----->
+    
+    <nav class="relative mx-auto 2xl:pt-28 lg:pt-12 md:pt-10 pt-8 z-50">
+      <!--flex container-->
+      <div class="flex items-center justify-between">
+        <!--logo-->
+        <div class=" w-36 h-12 bg-contain bg-center bg-no-repeat">
+          <svg width="121" height="38" viewBox="0 0 121 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M41.1393 35C40.8926 35 40.683 34.9137 40.5103 34.741C40.3376 34.5683 40.2513 34.3587 40.2513 34.112V9.988C40.2513 9.74133 40.3376 9.53167 40.5103 9.359C40.683 9.18633 40.8926 9.1 41.1393 9.1H44.6173C44.8886 9.1 45.0983 9.18633 45.2463 9.359C45.419 9.53167 45.5053 9.74133 45.5053 9.988V34.112C45.5053 34.3587 45.419 34.5683 45.2463 34.741C45.0983 34.9137 44.8886 35 44.6173 35H41.1393ZM58.8559 35C58.4613 35 58.1529 34.9013 57.9309 34.704C57.7089 34.5067 57.5486 34.26 57.4499 33.964L49.5319 10.21C49.4826 10.0867 49.4579 9.97567 49.4579 9.877C49.4579 9.655 49.5319 9.47 49.6799 9.322C49.8279 9.174 50.0129 9.1 50.2349 9.1H53.4909C53.8363 9.1 54.0953 9.19867 54.2679 9.396C54.4653 9.56866 54.5886 9.74133 54.6379 9.914L60.8909 28.969L67.1439 9.914C67.1933 9.74133 67.3043 9.56866 67.4769 9.396C67.6743 9.19867 67.9456 9.1 68.2909 9.1H71.5469C71.7443 9.1 71.9169 9.174 72.0649 9.322C72.2376 9.47 72.3239 9.655 72.3239 9.877C72.3239 9.97567 72.2993 10.0867 72.2499 10.21L64.3319 33.964C64.2333 34.26 64.0729 34.5067 63.8509 34.704C63.6289 34.9013 63.3206 35 62.9259 35H58.8559ZM77.1276 35C76.8809 35 76.6712 34.9137 76.4986 34.741C76.3259 34.5683 76.2396 34.3587 76.2396 34.112V9.988C76.2396 9.74133 76.3259 9.53167 76.4986 9.359C76.6712 9.18633 76.8809 9.1 77.1276 9.1H80.6056C80.8769 9.1 81.0866 9.18633 81.2346 9.359C81.4072 9.53167 81.4936 9.74133 81.4936 9.988V34.112C81.4936 34.3587 81.4072 34.5683 81.2346 34.741C81.0866 34.9137 80.8769 35 80.6056 35H77.1276ZM88.1842 35C87.9376 35 87.7279 34.9137 87.5552 34.741C87.3826 34.5683 87.2962 34.3587 87.2962 34.112V10.025C87.2962 9.75367 87.3826 9.53167 87.5552 9.359C87.7279 9.18633 87.9376 9.1 88.1842 9.1H91.4402C91.7116 9.1 91.9336 9.18633 92.1062 9.359C92.2789 9.53167 92.3652 9.75367 92.3652 10.025V18.683L100.727 9.766C100.826 9.64267 100.986 9.507 101.208 9.359C101.455 9.18633 101.776 9.1 102.17 9.1H105.833C106.031 9.1 106.203 9.174 106.351 9.322C106.524 9.47 106.61 9.655 106.61 9.877C106.61 10.0497 106.561 10.1977 106.462 10.321L96.2872 21.495L107.165 33.742C107.289 33.89 107.35 34.0503 107.35 34.223C107.35 34.445 107.264 34.63 107.091 34.778C106.943 34.926 106.771 35 106.573 35H102.762C102.343 35 102.01 34.9137 101.763 34.741C101.541 34.5437 101.393 34.408 101.319 34.334L92.3652 24.529V34.112C92.3652 34.3587 92.2789 34.5683 92.1062 34.741C91.9336 34.9137 91.7116 35 91.4402 35H88.1842Z" fill="#333333"/>
+            <circle cx="117" cy="31" r="4" fill="#4DDA64"/>
+            <path d="M1.097 24.5211C1.09589 24.5559 1.08289 24.5893 1.06019 24.6155C1.03749 24.6418 1.00649 24.6593 0.97244 24.6651C0.938388 24.671 0.903375 24.6648 0.873327 24.6476C0.84328 24.6305 0.820042 24.6033 0.807551 24.5709C-0.765667 20.3658 -0.334905 13.1778 4.76103 7.97893C7.28615 5.38459 10.5855 3.69643 14.1534 3.17314C17.7213 2.64985 21.361 3.32029 24.5148 5.08173C31.4223 8.96754 33.4961 16.3547 32.7078 21.5123C32.7011 21.5514 32.6796 21.5863 32.6478 21.6097C32.616 21.6331 32.5765 21.6431 32.5375 21.6376C32.3417 21.6102 32.1459 21.5861 31.9535 21.5415C26.4353 20.2749 21.7702 21.8848 17.7809 25.7946C15.5454 27.9847 12.9063 29.2188 9.7548 29.1329C7.32517 29.0677 5.328 27.0424 5.60893 24.6447C6.26444 19.0408 8.68896 14.3998 13.5261 11.2932C14.2314 10.8743 15.026 10.6318 15.8434 10.5861C17.1067 10.4951 17.9887 11.6777 17.7571 12.9409C17.5017 14.3277 17.6737 14.8787 18.4637 15.2099C19.3746 15.5944 20.5766 15.1533 21.1743 14.1629C22.2554 12.3676 22.5364 10.4882 21.3343 8.67062C20.0352 6.71226 18.0857 6.05147 15.8314 6.36899C11.2344 7.0315 7.74231 9.52021 5.09304 13.2636C3.16057 15.9943 1.77634 18.9927 1.23831 22.3293C1.14129 23.0558 1.09407 23.7881 1.097 24.5211Z" fill="#A957FB"/>
+            <path d="M7.11069 33.1439C7.09029 33.1278 7.07617 33.1049 7.07081 33.0793C7.06545 33.0537 7.06918 33.027 7.08134 33.0039C7.09351 32.9808 7.11335 32.9628 7.13739 32.9529C7.16142 32.9431 7.18813 32.942 7.21284 32.95C8.89333 33.5284 10.6334 33.5593 12.4109 33.3757C14.9444 33.1131 16.9433 31.8172 18.7464 30.1472C19.7049 29.2581 20.6039 28.3004 21.4825 27.329C24.5268 23.9563 28.2827 22.5506 32.7317 23.3556C33.9473 23.5753 35.0813 24.2395 36.2493 24.7287C36.2878 24.745 36.3184 24.7759 36.3346 24.8147C36.3508 24.8535 36.3514 24.8972 36.3361 24.9364C36.3266 24.9607 36.309 24.9808 36.2863 24.9934C36.2636 25.0059 36.2372 25.01 36.2118 25.005L33.2833 24.4335C32.5546 24.2927 32.1936 24.5776 31.911 25.3071C29.6057 31.2783 25.3219 34.9667 19.0443 35.9948C14.7112 36.7054 10.6658 35.7974 7.11069 33.1439Z" fill="#4DDA64"/>
+            </svg>
+            
+          </a>
+       
+        </div>
+        <!--menu-itmes--->
+        <div class="">
+          <nav class="hidden xl:flex" x-data="navV">
+       
+            <ul class="flex 2xl:space-x-20 xl:space-x-16 md:space-x-8 font-medium text-sm md:text-base  lg:text-[18px] ">
+              <li class="">
+                <a href="index.html" @click="active = 'home'">
+                  <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                      :class="active == 'home'?'border-b-2 border-nUnderLine':''">Home</h1>
+              </a>
+              </li>
+              
+              <li>
+                <a href="services.html" @click="active = 'service'">
+                  <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                      :class="active == 'service'?'border-b-2 border-nUnderLine':''">Service</h1>
+              </a>
+              </li>
+
+                <li>
+                  <a href="#" @click="active = 'portfolio'">
+                    <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                        :class="active == 'portfolio'?'border-b-2 border-nUnderLine  ':''">Portfolio</h1>
+                </a>
+                </li>
+
+              <li>
+                <a href="#" @click="active = 'resume'">
+                  <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                      :class="active == 'resume'?'border-b-2 border-nUnderLine':''">Resume</h1>
+              </a>
+              </li>
+
+              <li>
+                <a href="#" @click="active = 'blog '">
+                  <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                      :class="active == 'blog '?'border-b-2 border-nUnderLine':''">Blog</h1>
+              </a>
+              </li> 
+
+              <li>
+                <a href="#" @click="active = 'contact'">
+                  <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                      :class="active == 'contact'?'border-b-2 bborder-nUnderLine':''">Contact</h1>
+              </a>
+              </li>
+            </ul>
+        </nav>
+         
+        </div>
+       
+         <!--hire-me-button--->
+    
+         <div class="hidden xl:flex">
+        <a class="text-wvNblack font-medium text-sm md:text-base  lg:text-[18px] py-3 px-8 border border-solid border-nUnderLine rounded-full flex justify-center items-center" href="">Hire Me <svg class="ml-3" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.16667 14C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333C14 14 12.8333 14 12.8333 14H1.16667ZM7 7C7.92826 7 8.8185 6.63125 9.47487 5.97487C10.1313 5.3185 10.5 4.42826 10.5 3.5C10.5 2.57174 10.1313 1.6815 9.47487 1.02513C8.8185 0.368749 7.92826 0 7 0C6.07174 0 5.1815 0.368749 4.52513 1.02513C3.86875 1.6815 3.5 2.57174 3.5 3.5C3.5 4.42826 3.86875 5.3185 4.52513 5.97487C5.1815 6.63125 6.07174 7 7 7Z" fill="#333333"/>
+          </svg></a>
+
+         </div>
+       
+        
+         <!--humburger icon--->
+         <button id="menu-btn" class="transition-all duration-500 block humburger relative cursor-pointer w-6 h-6 xl:hidden focus:outline-none">
+           <span class="humburger-top bg-wvNblack absolute w-6 top-1 h-0.5 left-0 rotate-0 transition-all duration-500 "></span>
+           <span class="humburger-middle bg-wvNblack absolute w-6 left-0 h-0.5 top-1 rotate-0 transition-all duration-500 "></span>
+           <span class="humburger-bottom bg-wvNblack absolute w-6 left-0 h-0.5 top-1 rotate-0 transition-all duration-500 "></span>
+         </button>
+      </div>
+      <!--mobile menu-->
+      <div class="xl:hidden">
+       <div id="menu" class="absolute rounded-xl z-50 hidden flex-col items-center self-end justify-center py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+         
+        <!--menu-itmes--->
+      
+        <ul class="flex flex-col justify-center items-center font-medium text-sm md:text-base  lg:text-[18px]">
+          <li class="">
+            <a href="index.html" @click="active = 'home'">
+              <h1 class="pb-5 font-medium transition duration-200"
+                  :class="active == 'home'?'border-b-2 border-[#7AF9AD] ':''">Home</h1>
+          </a>
+          </li>
+          
+          <li>
+            <a href="services.html" @click="active = 'service'">
+              <h1 class="pb-5 font-medium transition duration-200"
+                  :class="active == 'service'?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Service</h1>
+          </a>
+          </li>
+            <li>
+              <a href="#" @click="active = 'portfolio'">
+                <h1 class="pb-5 font-medium transition duration-200"
+                    :class="active == 'portfolio'?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Portfolio</h1>
+            </a>
+            </li>
+          <li>
+            <a href="#" @click="active = 'resume'">
+              <h1 class="pb-5 font-medium  transition duration-200"
+                  :class="active == 'resume'?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Resume</h1>
+          </a>
+          </li>
+          <li>
+            <a href="#" @click="active = 'blog '">
+              <h1 class="pb-5 font-medium transition duration-200"
+                  :class="active == 'blog '?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Blog</h1>
+          </a>
+          </li>
+           
+          <li>
+            <a href="#" @click="active = 'contact'">
+              <h1 class="pb-5 font-medium transition duration-200"
+                  :class="active == 'contact'?'border-b-2 border-[#7AF9AD]':''">Contact</h1>
+          </a>
+          </li>
+        </ul>
+      
+      <!--mobile-dark-mude--->
+      <div class=" block xl:hidden">
+        <div class="flex">
+                   
+            <div class="">
+                <a class="text-[#333333] font-medium text-sm md:text-base  lg:text-[18px] py-3 px-8 border border-solid border-gold rounded-full flex justify-center items-center" href="">Hire Me <svg class="ml-3" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.16667 14C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333C14 14 12.8333 14 12.8333 14H1.16667ZM7 7C7.92826 7 8.8185 6.63125 9.47487 5.97487C10.1313 5.3185 10.5 4.42826 10.5 3.5C10.5 2.57174 10.1313 1.6815 9.47487 1.02513C8.8185 0.368749 7.92826 0 7 0C6.07174 0 5.1815 0.368749 4.52513 1.02513C3.86875 1.6815 3.5 2.57174 3.5 3.5C3.5 4.42826 3.86875 5.3185 4.52513 5.97487C5.1815 6.63125 6.07174 7 7 7Z" fill="#333333"/>
+                  </svg></a>
+        
+                 </div>
+        </div>
+     </div>
+       </div>
+      </div>
+    </nav>
+
+     <!------
+  header-section
+    ----->
+
+    <header class="w-full after:border after:border-solid after:border-[#EAEAEA] 2xl:after:top-[305px] lg:after:w-[80%] after:w-[85%] 2xl:after:h-[66%] after:h-[55%] bg-header xl:after:h-[61%] lg:after:top-[190px] sm:after:top-48 after:top-28 after:absolute after:m-auto after:left-0 after:right-0 after:rounded-[100%] after:-z-10 relative bg-no-repeat bg-center object-contain bg-contain  before:absolute before:m-auto before:left-0 before:right-0 before:h-[40%] lg:before:h-[40%] 2xl:before:h-[50%] before:hidden before:w-[60%] 2xl:before:top-[450px] xl:before:top-[314px] before:top-[260px] md:before:block before:rounded-[100%] before:border before:border-solid before:border-[#EAEAEA] before:-z-30 lg:pb-28 xl:pb-40 md:pb-16 pb-10" style="background-image:url('./img/homepage/bg.png')">
+  
+      <div class="bg-no-repeat bg-[length:90%] bg-bottom" style="background-image:url('./img/homepage/dots.png')">
+    
+    <div class="text-center w-full">
+      <div class="text-center max-w-full -z-10">
+      <div>
+        <h1 class="titleText 2xl:text-8xl xl:text-[88px] md:text-6xl text-3xl sm:text-4xl  text-wvNblack 2xl:pt-36 sm:pt-20 pt-10 font-semibold leading-tight tracking-wide"> HI I’M <span class="text-nUnderLine">TAWSIF</span> <br>
+          UI/UX DESIGNER</h1>
+      </div>
+      <!--main-image-->
+          <div class=" dark:bg-image-two lg:h-screen sm:h-[55vh] h-[35vh] lg:w-full w-[80%] m-auto bg-contain bg-center relative -top-[40px] bg-no-repeat" style="background-image:url('./img/homepage/main image.png')">
+          </div> 
+      </div>
+    </div>
+    
+      <!--aniamated-img-->
+      <div class=" ">
+
+    <img class="elementsOne absolute hidden md:block 2xl:top-96 2xl:w-16 lg:w-12 w-8 left-48 top-[19rem] animate-bounce" src="./img/homepage/figma.png" alt="figmaimg">
+
+    <img class="elementsTwo absolute hidden md:block top-1/4 2xl:w-16 lg:w-12 w-8 right-48 animate-bounce" src="./img/homepage/adobe-experience-design-1.svg.png" alt="xdimg">
+
+    <img class="elementsThree absolute bottom-[25rem]   2xl:bottom-[30rem] 2xl:w-16 lg:w-12 w-8 hidden md:block left-0 animate-bounce " src="./img/homepage/aeicon.png" alt="aeiimg">
+
+    <img class="elementsFour hidden md:block absolute 2xl:bottom-[30rem] bottom-[26rem] 2xl:w-16 lg:w-12 w-8 right-0 animate-bounce " src="./img/homepage/photoshop.png" alt="photoshopimg">
+      </div>
+     
+    </div>
+     
+   <div class="relative -top-[50px]">
+<!---video-play-btn-->
+<div class="vpop cursor-pointer w-[60px] mx-auto after:rounded-full play flex justify-center items-center after:absolute lg:after:w-10 xl:after:w-12 xl:after:h-12 after:w-6 after:h-6 md:after:w-8 md:after:h-8 lg:after:h-10 after:border after:border-solid  after:border-nUnderLine" data-type="youtube" data-id="6xcG6ttMDVY" data-autoplay='true'>
+  
+  <svg class="ml-[3px]  w-2 md:w-5" width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M14.0738 10.33L2.36064 17.3774C1.3666 17.9748 0.09091 17.2514 0.09091 16.0469V1.95217C0.09091 0.749615 1.36476 0.0242615 2.36064 0.623632L14.0738 7.67101C14.2999 7.80486 14.4879 7.99834 14.6186 8.23183C14.7493 8.46532 14.8182 8.73051 14.8182 9.0005C14.8182 9.27049 14.7493 9.53568 14.6186 9.76917C14.4879 10.0027 14.2999 10.1961 14.0738 10.33Z" fill="#A957FB"/>
+    </svg>
+</div>
+
+<p class="text-white dark:text-wvNblack lg:text-xl 2xl:text-3xl text-xs font-normal font-rubik cursor-pointer md:mt-16 mt-8 rounded-full flex items-center justify-center" >Learn About Me</p>
+<!--bownload -button-->
+<div class="text-center xl:mt-20 lg:mt-16 md:mt-12 mt-8">
+
+  <div class="links cursor-pointer inline text-center py-3 px-3 md:text-lg md:py-4 md:px-4 2xl:px-12 2xl:py-7 xl:text-2xl lg:px-10 lg:py-6 rounded-full only:text-black font-rubik font-normal text-xs bg-wvNblack">
+
+  <a class="inline-block text-white" href="./img/homepage/kazi-Rahman (2).pdf" download><img class="inline xl:w-4 w-[10px] mr-1 xl:mr-3 2xl:mb-2 mb-1" src="./img/homepage/basicDownload.png" alt="">Download CV </a>
+    </div>
+
+<!---end-video-play-btn-->
+
+<!-- copy this stuff and down -->
+<div id="video-popup-overlay" class="hidden fixed z-[995] top-0 bg-black opacity-[0.8] w-full h-full"></div>
+
+<div id="video-popup-container" class="hidden fixed z-[999] w-[60%] left-1/2 -ml-[30%] top-[20%] bg-white">
+  <div id="video-popup-close" class="fade cursor-pointer absolute -right-[10px] -top-[10px] z-[999] w-6 h-6 rounded-[25px] text-center text-xs bg-black leading-6 text-white">&#10006;</div>
+  <div id="video-popup-iframe-container" class="absolute z-[997] w-full pb-[56.25%] border border-solid border-black rounded-sm bg-black">
+    <iframe id="video-popup-iframe" class="z-[999] absolute w-full h-full left-0 top-0 bg-black" src="" width="100%" height="100%" frameborder="0"></iframe>
+  </div>
+</div>    
+
+
+   </div>
+    </header>
+    
+     <!------
+      END-Home-section
+        ----->
+
+        <!------
+  progress-bar-section
+    ----->
+<div class="grid bg-no-repeat bg-[right_top_10%] xl:grid-cols-[auto_minmax(500px,_1fr)] 2xl:grid-cols-[auto_minmax(580px,_auto)] lg:pb-28 pb-16" style="background-image:url('./img/homepage/Ellipse\ 31.png')">
+
+  <div>
+    <div class="font-rubik">
+      <h3 class="lg:text-3xl md:text-xl text-xs font-normal text-gold">Design is Life</h3>
+      
+      <h1 class="lg:text-5xl md:text-3xl text-xs leading-loose font-work font-semibold text-white 2xl:w-[65%] lg:pt-4 pt-2 dark:text-wvNblack">I Develop Skills Regularly to Keep Me  Update</h1>
+      <p class="text-gray-200 2xl:w-[70%] lg:w-[3/4]  font-work font-medium lg:text-xl leading-6 xl:leading-8 xl:left-8 text-xs xl:pt-5 lg:pt-4 pt-2 dark:text-nwSoftGray">Most common methods for designing websites that work
+         well on desktop is responsive.</p>
+      <!----progress-bar---->
+      <div class="progress_container lg:pt-16 md:pt-10 pt-8">
+        <div class="progress">
+            <div class="progress_item lg:pb-8 xl:pb-9 pb-6">
+                <h3 class="progress_title font-normal lg:text-3xl md:text-xl text-xs pb-4 xl:pb-6 text-white dark:text-wvNblack">Illustrator</h3>
+                <div class="progress_bar relative w-full lg:h-3 h-2 xl:h-[.9rem] rounded-xl dark:bg-[#EFEFEF] bg-nblack">
+                    <div class="bar  absolute w-[10%] h-full left-0 rounded-xl transition-all duration-2000 bg-gold" data-value="80" data-text="80"></div>
+                </div>
+            </div>
+            <div class="progress_item lg:pb-8 xl:pb-9 pb-6">
+                <h3 class="progress_title font-normal lg:text-3xl md:text-xl xl:pb-6 text-xs pb-4  text-white dark:text-wvNblack">Photoshop</h3>
+                <div class="progress_bar relative w-full lg:h-3 h-2 xl:h-[.9rem] rounded-xl dark:bg-[#EFEFEF] bg-nblack">
+                    <div class="bar bartwo absolute w-[10%] h-full left-0 rounded-xl transition-all duration-2000 bg-line dark:bg-[#73CEF5]" data-value="95" data-text="95"></div>
+                </div>
+            </div>
+            <div class="progress_item lg:pb-8 xl:pb-9 pb-6">
+                <h3 class="progress_title font-normal lg:text-3xl md:text-xl xl:pb-6 text-xs pb-4  text-white dark:text-wvNblack">Figma</h3>
+                <div class="progress_bar relative w-full lg:h-3 h-2 xl:h-[.9rem] rounded-xl  dark:bg-[#EFEFEF] bg-nblack">
+                    <div class="bar transition-all duration-2000 absolute w-[10%] h-full left-0 rounded-xl bg-gold" data-value="90" data-text="90"></div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    </div>
+  </div>
+  <div>
+    <div class=" flex justify-end">
+      <img class=" xl:m-0 m-auto rounded-lg lg:mt-0 mt-8 object-cover" src="./img/homepage/laplopimg.jpg" alt="">
+    </div>
+  </div>
+</div>
+
+<!------
+  End-progress-bar-section
+    ----->
+
+      <!------
+  Services-section
+    ----->
+    <div class=" mx-auto  bg-no-repeat bg-center object-contain bg-contain lg:pb-28 pb-16 relative font-rubik font-semibold" style="background-image:url('./img/homepage/services-bots.png')">
+  
+      <div class="lg:mb-24 md:mb-10 mb-8">
+        <h2 class="font-normal mb-4 text-3xl text-gold">Services</h2>
+        <h1 class="font-semibold lg:text-5xl md:text-3xl text-xl text-white dark:text-wvNblack font-work">My Services</h1>
+  
+      </div>
+      <div class="box-container grid xl:grid-cols-2 grid-cols-1 gap-4 w-full" >
+   <!----->
+        <div class="box lg:pb-14 2xl:pt-28 2xl:pb-20 md:pb-10 pb-8 lg:pt-20 md:pt-10 pt-8 md:pl-10 pl-6 flex flex-wrap  md:flex-nowrap space-x-4 xl:space-x-8 bg-nblackTwo dark:bg-[#FCFCFC] rounded-xl transition-all delay-200 hover:bg-nblackSoft cursor-pointer">
+          <div>
+            <img class="lg:w-80 2xl:w-[28rem] md:w-32 w-20" src="./img/homepage/Group 112.png" alt="">
+          </div>
+          <div class="lg:pt-6">
+            <h3 class="text-white dark:text-[#333333] md:text-2xl text-xl font-medium lg:text-3xl 2xl:text-[2.5rem]">Web Design</h3>
+            <h4 class="text-line dark:text-nwRoyelBlue md:text-xl font-medium text-xs lg:text-2xl 2xl:text-[2rem] 2xl:py-6 mb-2 md:mb-0">Starts from $400</h4>
+            <p class="text-nsoftgray dark:text-[#8A8A8A] font-normal 2xl:w-[90%] md:w-[88%] text-[18px] 2xl:text-2xl md:leading-8 leading-6 2xl:leading-10">Making this the first true generator on the internet It uses ato dictionary of over lorem words combined with me althoi handful</p>
+          </div>
+        </div>
+        <!------>
+        <div class="box lg:pb-14 2xl:pt-28 2xl:pb-20 md:pb-10 pb-8 lg:pt-20 md:pt-10 pt-8 md:pl-10 pl-6 flex flex-wrap  md:flex-nowrap space-x-4 xl:space-x-8 bg-nblackTwo dark:bg-[#FCFCFC] rounded-xl transition-all delay-200 hover:bg-nblackSoft cursor-pointer">
+          <div>
+            <img class="lg:w-80 2xl:w-[28rem] md:w-32 w-20" src="./img/homepage/Group 113.png" alt="">
+          </div>
+          <div class="lg:pt-6">
+            <h3 class="text-white dark:text-[#333333]  md:text-2xl text-xl font-medium lg:text-3xl 2xl:text-[2.5rem]">UI/UX Design</h3>
+            <h4 class="text-line dark:text-nwRoyelBlue  md:text-xl font-medium text-xs lg:text-2xl 2xl:text-[2rem] 2xl:py-6 mb-2 md:mb-0">Starts from $700</h4>
+            <p class="text-nsoftgray dark:text-[#8A8A8A]  font-normal 2xl:w-[90%]   md:w-[88%] text-[18px] 2xl:text-2xl md:leading-8 leading-6  2xl:leading-10">Making this the first true generator on the internet It uses ato dictionary of over lorem words combined with me althoi handful</p>
+          </div>
+        </div>
+        <!------>
+        <div class="box dark:bg-[#FCFCFC] lg:pb-14 2xl:pt-28 2xl:pb-20 md:pb-10 pb-8 lg:pt-20 md:pt-10 pt-8 md:pl-10 pl-6 flex flex-wrap  md:flex-nowrap space-x-4 xl:space-x-8 bg-nblackTwo rounded-xl transition-all delay-200 hover:bg-nblackSoft cursor-pointer">
+          <div>
+            <img class="lg:w-80 2xl:w-[28rem] md:w-32 w-20" src="./img/homepage/Group 114.png" alt="">
+          </div>
+          <div class="lg:pt-6">
+            <h3 class="text-white dark:text-[#333333]  md:text-2xl text-xl font-medium lg:text-3xl 2xl:text-[2.5rem]">Advertisement</h3>
+            <h4 class="text-line dark:text-nwRoyelBlue  md:text-xl font-medium text-xs lg:text-2xl 2xl:text-[2rem] 2xl:py-6 mb-2 md:mb-0">Starts from $30</h4>
+            <p class="text-nsoftgray dark:text-[#8A8A8A]  font-normal 2xl:w-[90%]   md:w-[88%] text-[18px] 2xl:text-2xl md:leading-8 leading-6  2xl:leading-10">Making this the first true generator on the internet It uses ato dictionary of over lorem words combined with me althoi handful</p>
+          </div>
+        </div>
+        <!------->
+        <div class="box dark:bg-[#FCFCFC] lg:pb-14 2xl:pt-28 2xl:pb-20 md:pb-10 pb-8 lg:pt-20 md:pt-10 pt-8 md:pl-10 pl-6 flex flex-wrap md:flex-nowrap space-x-4 xl:space-x-8 bg-nblackTwo rounded-xl transition-all delay-200 hover:bg-nblackSoft cursor-pointer">
+          <div>
+            <img class="lg:w-80 2xl:w-[28rem] md:w-32 w-20" src="./img/homepage/Group 115.png" alt="">
+          </div>
+          <div class="lg:pt-6">
+            <h3 class="text-white dark:text-[#333333]  md:text-2xl text-xl font-medium lg:text-3xl 2xl:text-[2.5rem]">Game Design</h3>
+            <h4 class="text-line dark:text-nwRoyelBlue  md:text-xl font-medium text-xs lg:text-2xl 2xl:text-[2rem] 2xl:py-6 mb-2 md:mb-0">Starts from $600</h4>
+            <p class="text-nsoftgray dark:text-[#8A8A8A]  font-normal 2xl:w-[90%] md:w-[88%] text-[18px] 2xl:text-2xl md:leading-8 leading-6  2xl:leading-10">Making this the first true generator on the internet It uses ato dictionary of over lorem words combined with me althoi handful</p>
+          </div>
+        </div>
+      </div>
+     
+     </div>
+  
+      <!------
+    end-Services-section
+      ----->
+
+          <!------
+  comedown-section
+    ----->
+    <div id="section_counter" class=" 2xl:pt-20 mx-auto counter-grid grid lg:grid-cols-4 md:grid-cols-2  grid-cols-1 gap-3 lg:pb-28 pb-16 lg:pt-16 bg-no-repeat bg-[center_bottom_10%] object-fill " style="background-image:url('./img/homepage/success-counter.png')">
+      <!------->
+       <div class="bg-nblackTwo dark:bg-[#FCFCFC]  text-center xl:py-20 lg:py-12 py-10">
+         <div class="counter-item w-full flex justify-center items-center lg:pb-4 pb-3">
+       
+           <h1 class="counter text-3xl lg:text-[40px] font-bold dark:text-[#73CEF5] text-line" data-target="576">0</h1>
+           
+        
+         </div>
+         <div class="block"><h2 class="text-nsoftgray dark:text-wvNblack font-normal md:text-2xl text-xl lg:text-3xl">Project Done</h2></div>
+       </div>
+       <!------->
+       <div class="bg-nblackTwo dark:bg-[#FCFCFC] text-center xl:py-20 lg:py-12 py-10 ">
+         <div class="counter-item w-full flex justify-center items-center lg:pb-4 pb-3">
+       
+           <h1 class="counter text-3xl lg:text-[40px] font-bold dark:text-[#73CEF5] text-line" data-target="326">0</h1>
+           
+        
+         </div>
+         <div class="block"><h2 class="text-nsoftgray dark:text-wvNblack font-normal md:text-2xl text-xl lg:text-3xl">Happy Clients</h2></div>
+       </div>
+       <!------->
+       <div class="bg-nblackTwo dark:bg-[#FCFCFC] text-center xl:py-20 lg:py-12 py-10 ">
+         <div class="counter-item w-full flex justify-center items-center lg:pb-4 pb-3">
+       
+           <h1 class="counter text-3xl lg:text-[40px] font-bold dark:text-[#73CEF5] text-line" data-target="400">0 </h1>
+           <span class=" text-3xl font-bold dark:text-nwRoyelBlue text-line">+</span>
+        
+         </div>
+         <div class="block"><h2 class="text-nsoftgray dark:text-wvNblack font-normal md:text-2xl text-xl lg:text-3xl">Positive Review</h2></div>
+       </div>
+       <!-------->
+       <div class="bg-nblackTwo dark:bg-[#FCFCFC] text-center xl:py-20 lg:py-12 py-10 ">
+         <div class="counter-item w-full flex justify-center items-center lg:pb-4 pb-3">
+       
+           <h1 class="counter text-3xl lg:text-[40px] font-bold dark:text-[#73CEF5] text-line" data-target="40">0</h1>
+           <span class=" text-3xl font-bold dark:text-nwRoyelBlue text-line">+</span>
+        
+         </div>
+         <div class="block"><h2 class="text-nsoftgray dark:text-wvNblack font-normal md:text-2xl text-xl lg:text-3xl">Design Awards</h2></div>
+       </div>
+      
+      
+     </div>
+   
+ <!------
+end-comedown-section
+ ----->
+
+    <!------
+ portfolio-section
+    ----->
+    <div class="2xl:pt-20 mx-auto bg-no-repeat lg:pb-28 pb-16 bg-[bottom_right] bg-contain object-fill" style="background-image:url('./img/homepage/portfolio-dots.png')">
+      
+      <div class=" flex justify-between items-end lg:pb-24 md:pb-10 pb-8">
+        <div class="">
+          <h2 class="text-gold mb-4 text-3xl  font-normal">Creative works</h2>
+          <h1 class="font-work font-semibold lg:text-5xl md:text-3xl text-xl text-white dark:text-wvNblack">My Portfolio</h1>
+        </div>
+        <div class="flex items-center">
+          <span class="text-nsoftgray dark:text-wvNblack lg:text-xl md:text-lg text-xs mr-4">View All</span>
+          <a href="" class="inline-block"><img class="lg:w-4 w-2" src="./img/homepage/right-arrow.png" alt="right-arrow"></a>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 grid-cols-1 gap-3"  >
+        <div class="hovereffets rounded-lg w-full h-full overflow-hidden relative text-center cursor-default">
+      <img class="w-full h-full block rounded-lg relative" src="./img/homepage/portfolio-5.png" alt="">
+
+      <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
+        <h2 class="relative top-1/2 text-4xl text-white left-1/2 -translate-x-1/2 -translate-y-1/2">Landing Page</h2>
+      </div>
+        </div>
+        <!----->
+        <div class="hovereffets rounded-lg w-full h-full overflow-hidden relative text-center cursor-default">
+          <img class="w-full block h-full rounded-lg relative" src="./img/homepage/portfolio-4.png" alt="">
+          <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
+            <h2  class="relative text-4xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Landing Page</h2>
+          </div>
+        </div>
+        <!----->
+        <div class="hovereffets rounded-lg w-full h-full overflow-hidden relative text-center cursor-default">
+          <img class="w-full h-full block rounded-lg relative" src="./img/homepage/portfolio-3.png" alt="">
+          <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
+            <h2 class="relative text-4xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Landing Page</h2>
+          </div>
+        </div>
+        <!----->
+        <div class="hovereffets rounded-lg w-full h-full overflow-hidden relative text-center cursor-default">
+          <img class="w-full block h-full rounded-lg relative" src="./img/homepage/portfolio-2.png" alt="">
+          <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
+            <h2  class="relative text-4xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Landing Page</h2>
+          </div>
+        </div>
+       
+      </div>
+      <div class="w-full mt-2 rounded-lg hovereffets h-full bg-no-repeat bg-cover object-fill overflow-hidden relative text-center cursor-default">
+        <img class="w-full block rounded-lg relative" src="./img/homepage/portfolio-1.png" alt="">
+        <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
+          <h2 class="relative text-4xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Landing Page</h2>
+        </div>
+      </div>
+    </div>
+
+        <!------
+ end-portfolio-section
+    ----->
+  </div>
+      <!------
+ resent-work-slider-section
+    ----->
+<div class="2xl:pt-20 mx-auto lg:pb-28 md:pb-16 pb-10">
+  
+  <div class="lg:px-36 xl:px-44 2xl:px-60 md:px-12 px-10 mx-auto flex justify-between items-end lg:pb-20  md:pb-10 pb-8">
+    <div class="">
+      <h2 class="text-gold mb-4 lg:text-3xl  font-normal">Works</h2>
+      <h1 class="font-work font-semibold lg:text-5xl md:text-3xl text-xl text-white dark:text-wvNblack">Recent Works</h1>
+    </div>
+    <div class="flex items-center">
+      <span class="text-nsoftgray dark:text-wvNblack lg:text-xl md:text-xs text-lg mr-4">View All</span>
+      <a href="" class="inline-block"><img class="lg:w-4 w-2" src="./img/homepage/right-arrow.png" alt="right-arrow"></a>
+    </div>
+  </div>
+
+  
+  <div class="imgContainer relative w-full md:w-[87%] h-[230px] md:h-[320px] overflow-x-auto cursor-grab ml-auto">
+    <div class="cards gap-x-2.5  absolute top-0 left-0 flex">
+      <div class="card h-full rounded-md overflow-hidden w-[300px] md:w-[470px] hovereffets relative">
+        <img class="w-[470px]" src="./img/homepage/resent-work-2.png" alt="" />
+        <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
+          <h2 class="relative text-center text-3xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Landing Page</h2>
+        </div>
+      </div>
+      <div class="card h-full rounded-md overflow-hidden w-[300px] md:w-[470px] hovereffets relative">
+        <img class="w-[470px]" src="./img/homepage/resent-work-1.png" alt="" />
+        <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden ">
+          <h2 class="relative text-center text-3xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Landing Page</h2>
+        </div>
+      </div>
+      <div class="card h-full rounded-md overflow-hidden w-[300px] md:w-[470px] hovereffets relative">
+        <img class="w-[470px]" src="./img/homepage/resent-work.png" alt="" />
+        <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
+          <h2 class="relative text-center text-3xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Landing Page</h2>
+        </div>
+      </div>
+      <div class="card h-full rounded-md overflow-hidden w-[300px] md:w-[470px] hovereffets relative">
+        <img class="w-[470px]" src="./img/homepage/resent-work-2.png" alt="" />
+        <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
+          <h2 class="relative text-center text-3xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Landing Page</h2>
+        </div>
+      </div>
+      <div class="card h-full rounded-md overflow-hidden w-[300px] md:w-[470px] hovereffets relative">
+        <img class="w-[470px]" src="./img/homepage/resent-work-1.png" alt="" />
+        <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden ">
+          <h2 class="relative text-center text-3xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Landing Page</h2>
+        </div>
+      </div>
+      <div class="card h-full rounded-md overflow-hidden w-[300px] md:w-[470px] hovereffets relative">
+        <img class="w-[470px]" src="./img/homepage/resent-work.png" alt="" />
+        <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
+          <h2 class="relative text-center text-3xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Landing Page</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+ <!------
+ End-resent-work-slider-section
+    ----->
+    <div class="lg:px-36 xl:px-44 2xl:px-60  md:px-12 px-10 mx-auto">
+  <!------
+ pricing-table-section
+    ----->
+      <div class=" lg:pb-28 md:pb-16 pb-10 bg-no-repeat bg-[left_10%] bg-[length:70%] object-fill" style="background-image:url('./img/homepage/pricing-dots.png')">
+        <div class="">
+          <div class=" lg:pb-20  md:pb-10 pb-8">
+            <h2 class="text-gold lg:text-3xl font-rubik font-normal mb-4">Price</h2>
+            <h1 class="font-work font-semibold lg:text-5xl text-white dark:text-wvNblack">Price Plan</h1>
+          </div>
+          
+        </div>
+    
+        <div class="wrapper grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 font-rubik  ">
+          <!--itmes-->
+          <div class="single-price dark:hover:shadow-2xl pt-12 pb-12  rounded-lg hover:bg-nblack transition-all duration-200 bg-nblackTwo dark:bg-[#FCFCFC] w-full h-full text-center">
+            
+            <h1 class=" xl:text-[2rem] text-mprogress pb-2 dark:text-nwRoyelBlue">Basic</h1>
+            <div class="price p-5 xl:p-8">
+              <h2 class="xl:text-[4rem] text-3xl flex justify-center items-end  text-gold font-medium"><span class="xl:text-3xl text-xl ">$</span> 49.99</h2>
+            </div>
+            <div class="bBorder w-[80%] dark:hidden m-auto md:my-8 my-4">
+            </div>
+            <div class="deals xl:dark:pt-7 dark:pt-4  font-work font-normal dark:text-nwSoftGray text-nsoftgray text-[1rem]">
+              <h4 class="md:py-4 py-2">1 home page design</h4>
+              <h4 class="md:py-4 py-2">3 inner page design</h4>
+              <h4 class="md:py-4 py-2">Responsive</h4>
+              <h4 class="md:py-4 py-2">Commercial use</h4>
+              <h4 class="md:py-4 py-2">Png, Xd, Jpg file</h4>
+              <h4 class="md:py-4 py-2">Source file</h4>
+              <h4 class="md:py-4 py-2">Unlimited rivition</h4>
+            </div>
+            <div class="button md:pt-10 pt-6">
+              <a href="" class=""> <button class="text-[1rem] text-gray-200 md:px-16 px-11 hover:bg-gradient-to-r hover:text-black dark:hover:text-black from-line to-nGradient-right md:py-4 py-3 rounded-full border border-solid dark:text-nwSoftGray dark:border-[#BABABA] dark:hover:border-inherit border-gray-200 dark:hover:bg-gradient-to-r dark:from-dgradient-left dark:to-dgradient-right">Purchase</button> </a>
+            </div>
+    
+    
+          </div>
+           <!--itmes-->
+           <div class="single-price dark:hover:shadow-2xl pt-12 pb-12  rounded-lg hover:bg-nblack transition-all duration-200 bg-nblackTwo dark:bg-[#FCFCFC] w-full h-full text-center relative">
+            <div class="absolute -left-[4rem] 2xl:-left-10 md:top-[82px] top-[75px] 2xl:top-[70px] -rotate-90 bg-line dark:bg-nwRoyelBlue  md:w-48 w-40 rounded-l-xl text-xs 2xl:text-xl 2xl:py-3 py-2"> <span class="font-normal">Recommended</span></div>
+            <h1 class=" xl:text-[2rem] text-mprogress pb-2 dark:text-nwRoyelBlue">Standard</h1>
+            <div class="price p-5 xl:p-8">
+              <h2 class="xl:text-[4rem] text-3xl flex justify-center items-end  text-gold font-medium"><span class="xl:text-3xl text-xl ">$</span> 59.80</h2>
+            </div>
+            <div class="bBorder w-[80%] dark:hidden m-auto md:my-8 my-4">
+            </div>
+            <div class="deals xl:dark:pt-7 dark:pt-4  font-normal font-work text-nsoftgray dark:text-nwSoftGray text-[1rem]">
+              <h4 class="py-4">1 home page design</h4>
+              <h4 class="py-4">3 inner page design</h4>
+              <h4 class="py-4">Responsive</h4>
+              <h4 class="py-4">Commercial use</h4>
+              <h4 class="py-4">Png, Xd, Jpg file</h4>
+              <h4 class="py-5">Source file</h4>
+              <h4 class="py-4">Unlimited rivition</h4>
+            </div>
+            <div class="button md:pt-10 pt-6">
+              <a href="" class=""> <button class="text-[1rem] text-gray-200 md:px-16 px-11 hover:bg-gradient-to-r hover:text-black dark:hover:text-black from-line to-nGradient-right md:py-4 py-3 rounded-full border border-solid dark:text-nwSoftGray dark:border-[#BABABA] dark:hover:border-inherit border-gray-200 dark:hover:bg-gradient-to-r dark:from-dgradient-left dark:to-dgradient-right">Purchase</button> </a>
+            </div>
+    
+    
+          </div>
+           <!--itmes-->
+           <div class="single-price dark:hover:shadow-2xl pt-12 pb-12  rounded-lg hover:bg-nblack transition-all duration-200 bg-nblackTwo dark:bg-[#FCFCFC] w-full h-full text-center">
+            <h1 class=" xl:text-[2rem] text-mprogress pb-2 dark:text-nwRoyelBlue">Premium</h1>
+            <div class="price p-5 xl:p-8">
+              <h2 class="xl:text-[4rem] text-3xl flex justify-center items-end  text-gold font-medium"><span class="xl:text-3xl text-xl ">$</span> 49.99</h2>
+            </div>
+            <div class="bBorder dark:hidden w-[80%] m-auto md:my-8 my-4">
+            </div>
+            <div class="deals xl:dark:pt-7 dark:pt-4  font-work font-normal dark:text-nwSoftGray text-nsoftgray text-[1rem]">
+              <h4 class="md:py-4 py-2">1 home page design</h4>
+              <h4 class="md:py-4 py-2">3 inner page design</h4>
+              <h4 class="md:py-4 py-2">Responsive</h4>
+              <h4 class="md:py-4 py-2">Commercial use</h4>
+              <h4 class="md:py-4 py-2">Png, Xd, Jpg file</h4>
+              <h4 class="md:py-4 py-2">Source file</h4>
+              <h4 class="md:py-4 py-2">Unlimited rivition</h4>
+            </div>
+            <div class="button md:pt-10 pt-6">
+              <a href="" class=""> <button class="text-[1rem] text-gray-200 md:px-16 px-11 hover:bg-gradient-to-r hover:text-black dark:hover:text-black from-line to-nGradient-right md:py-4 py-3 rounded-full border border-solid dark:text-nwSoftGray dark:border-[#BABABA] dark:hover:border-inherit border-gray-200 dark:hover:bg-gradient-to-r dark:from-dgradient-left dark:to-dgradient-right">Purchase</button> </a>
+            </div>
+    
+    
+          </div>
+    
+        </div>
+      </div>
+         <!------
+     End-pricing-table-section
+        ----->
+
+     <!------
+ client-reviews-section
+    ----->
+   
+     <div class="mx-auto lg:pb-28 pb-16 bg-[length:80%] bg-[top_right_32%] bg-no-repeat" style="background-image:url('./img/homepage/clients-dots.png')">
+      <div class=" flex justify-between items-end">
+        <div class="">
+          <div class="lg:pb-20 pb-10">
+           <h2 class="font-normal mb-4 text-3xl text-gold">Testmonial</h2>
+           <h1 class="font-semibold lg:text-5xl md:text-3xl text-xl text-white font-work dark:text-wvNblack">What Clients Say</h1>
+     
+         </div>
+           
+         </div>
+    
+      </div>
+      <div class="slider">
+        
+        <div class="slide font-work font-medium pt-8">
+          
+            <div class="rounded-full mx-auto flex justify-center">
+              <div class=" ring-two absolute w-[180px] h-[180px] rounded-[50%] top-[20px] shadow-[1px_2px_1px_rgba(251,185,87,1)] dark:shadow-[1px_2px_1px_rgba(115,206,245,1)]"></div>
+              <img class="rounded-full n_size" src="./img/homepage/client.png" alt="boy-img">
+            </div>
+                  
+          <div class="text-center md:w-[67%] w-full mx-auto">
+            <div>
+
+              <svg class="md:mb-8 mb-4 w-6 md:w-12 xl:ml-[75px]" width="39" height="29" viewBox="0 0 39 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.31602 28.8C7.51602 28.8 5.98268 28.3333 4.71602 27.4C3.44935 26.4667 2.48268 25.2 1.81602 23.6C1.14935 22 0.816016 20.2333 0.816016 18.3C0.816016 15.7667 1.28268 13.3667 2.21602 11.1C3.14935 8.83333 4.48268 6.76666 6.21602 4.9C8.01602 2.96667 10.1493 1.43333 12.616 0.299997L17.616 4.5C15.816 5.16666 14.216 6.03333 12.816 7.1C11.416 8.16666 10.216 9.36666 9.21602 10.7C8.28268 12.0333 7.61602 13.4 7.21602 14.8L7.61602 15.1C7.94935 14.8333 8.31602 14.6333 8.71602 14.5C9.18268 14.3667 9.81602 14.3 10.616 14.3C11.5493 14.3 12.4827 14.5667 13.416 15.1C14.416 15.5667 15.2493 16.3 15.916 17.3C16.5827 18.3 16.916 19.6 16.916 21.2C16.916 22.6667 16.5494 23.9667 15.816 25.1C15.1494 26.2333 14.2493 27.1333 13.116 27.8C11.9827 28.4667 10.716 28.8 9.31602 28.8ZM29.816 28.8C28.016 28.8 26.4827 28.3333 25.216 27.4C23.9494 26.4667 22.9827 25.2 22.316 23.6C21.6493 22 21.316 20.2333 21.316 18.3C21.316 15.7667 21.7827 13.3667 22.716 11.1C23.6493 8.83333 24.9827 6.76666 26.716 4.9C28.516 2.96667 30.6493 1.43333 33.116 0.299997L38.216 4.5C36.416 5.16666 34.7827 6.03333 33.316 7.1C31.916 8.16666 30.7494 9.36666 29.816 10.7C28.8827 12.0333 28.1827 13.4 27.716 14.8L28.116 15.1C28.4494 14.8333 28.816 14.6333 29.216 14.5C29.6827 14.3667 30.316 14.3 31.116 14.3C32.0494 14.3 32.9827 14.5667 33.916 15.1C34.916 15.5667 35.7494 16.3 36.416 17.3C37.0827 18.3 37.416 19.6 37.416 21.2C37.416 22.6667 37.0827 23.9667 36.416 25.1C35.7494 26.2333 34.816 27.1333 33.616 27.8C32.4827 28.4667 31.216 28.8 29.816 28.8Z" class="dark:fill-[#73CEF5]" fill="#7AF9AD"/>
+                </svg>
+
+            </div>
+
+            <h3 class="lg:text-3xl md:text-2xl text-sm text-nsoftgray dark:text-wvNblack xl:px-[75px] leading-loose">The very best. I would also like to say thank you to all your staff. We've seen amazing results already.Very easy to use..</h3>
+          </div>
+         <div class="mx-auto mt-8 mb-8  md:mt-14 md:mb-14 w-[30%] border-b border-solid dark:border-gray-400 border-[#2A2D2E] "></div>
+         <div class="text-center">
+          <div class="flex justify-center font-rubik items-center">
+            <div>
+              <h3 class="lg:text-3xl md:text-2xl text-sm font-medium text-nsoftgray dark:text-wvNblack">Jon Abraham</h3>
+            </div>
+            <div class="flex ml-5 space-x-3">
+              <span class=""><img class="w-10" src="./img/homepage/star.png" alt=""></span>
+              <span class=""><img class="w-20" src="./img/homepage/star.png" alt=""></span>
+              <span class=""><img class="w-20" src="./img/homepage/star.png" alt=""></span>
+              <span class=""><img class="w-20" src="./img/homepage/star.png" alt=""></span>
+              <span class=""><img class="w-20" src="./img/homepage/star.png" alt=""></span>
+            </div>
+           </div>
+           <div class="mt-5"><h4 class="font-rubik text-sm md:text-2xl lg:text-3xl font-normal text-gray-400">CEO of Millar Group</h4></div>
+         </div>
+         
+         
+        </div>
+        
+        <div class="slide font-work font-medium pt-8">
+          
+          <div class="rounded-full mx-auto flex justify-center">
+            <div class=" ring-two absolute w-[180px] h-[180px] rounded-[50%] top-[20px] shadow-[1px_2px_1px_rgba(251,185,87,1)] dark:shadow-[1px_2px_1px_rgba(115,206,245,1)]"></div>
+            <img class="rounded-full n_size" src="./img/homepage/client.png" alt="boy-img">
+          </div>
+                
+        <div class="text-center md:w-[67%] w-full mx-auto">
+          <div>
+
+            <svg class="md:mb-8 mb-4 w-6 md:w-12 xl:ml-[75px]" width="39" height="29" viewBox="0 0 39 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.31602 28.8C7.51602 28.8 5.98268 28.3333 4.71602 27.4C3.44935 26.4667 2.48268 25.2 1.81602 23.6C1.14935 22 0.816016 20.2333 0.816016 18.3C0.816016 15.7667 1.28268 13.3667 2.21602 11.1C3.14935 8.83333 4.48268 6.76666 6.21602 4.9C8.01602 2.96667 10.1493 1.43333 12.616 0.299997L17.616 4.5C15.816 5.16666 14.216 6.03333 12.816 7.1C11.416 8.16666 10.216 9.36666 9.21602 10.7C8.28268 12.0333 7.61602 13.4 7.21602 14.8L7.61602 15.1C7.94935 14.8333 8.31602 14.6333 8.71602 14.5C9.18268 14.3667 9.81602 14.3 10.616 14.3C11.5493 14.3 12.4827 14.5667 13.416 15.1C14.416 15.5667 15.2493 16.3 15.916 17.3C16.5827 18.3 16.916 19.6 16.916 21.2C16.916 22.6667 16.5494 23.9667 15.816 25.1C15.1494 26.2333 14.2493 27.1333 13.116 27.8C11.9827 28.4667 10.716 28.8 9.31602 28.8ZM29.816 28.8C28.016 28.8 26.4827 28.3333 25.216 27.4C23.9494 26.4667 22.9827 25.2 22.316 23.6C21.6493 22 21.316 20.2333 21.316 18.3C21.316 15.7667 21.7827 13.3667 22.716 11.1C23.6493 8.83333 24.9827 6.76666 26.716 4.9C28.516 2.96667 30.6493 1.43333 33.116 0.299997L38.216 4.5C36.416 5.16666 34.7827 6.03333 33.316 7.1C31.916 8.16666 30.7494 9.36666 29.816 10.7C28.8827 12.0333 28.1827 13.4 27.716 14.8L28.116 15.1C28.4494 14.8333 28.816 14.6333 29.216 14.5C29.6827 14.3667 30.316 14.3 31.116 14.3C32.0494 14.3 32.9827 14.5667 33.916 15.1C34.916 15.5667 35.7494 16.3 36.416 17.3C37.0827 18.3 37.416 19.6 37.416 21.2C37.416 22.6667 37.0827 23.9667 36.416 25.1C35.7494 26.2333 34.816 27.1333 33.616 27.8C32.4827 28.4667 31.216 28.8 29.816 28.8Z" class="dark:fill-[#73CEF5]" fill="#7AF9AD"/>
+              </svg>
+
+          </div>
+
+          <h3 class="lg:text-3xl md:text-2xl text-sm text-nsoftgray dark:text-wvNblack xl:px-[75px] leading-loose">The very best. I would also like to say thank you to all your staff. We've seen amazing results already.Very easy to use..</h3>
+        </div>
+       <div class="mx-auto mt-8 mb-8  md:mt-14 md:mb-14 w-[30%] border-b border-solid dark:border-gray-400 border-[#2A2D2E] "></div>
+       <div class="text-center">
+        <div class="flex justify-center font-rubik items-center">
+          <div>
+            <h3 class="lg:text-3xl md:text-2xl text-sm font-medium text-nsoftgray dark:text-wvNblack">Jon Abraham</h3>
+          </div>
+          <div class="flex ml-5 space-x-3">
+            <span class=""><img class="w-10" src="./img/homepage/star.png" alt=""></span>
+            <span class=""><img class="w-20" src="./img/homepage/star.png" alt=""></span>
+            <span class=""><img class="w-20" src="./img/homepage/star.png" alt=""></span>
+            <span class=""><img class="w-20" src="./img/homepage/star.png" alt=""></span>
+            <span class=""><img class="w-20" src="./img/homepage/star.png" alt=""></span>
+          </div>
+         </div>
+         <div class="mt-5"><h4 class="font-rubik text-sm md:text-2xl lg:text-3xl font-normal text-gray-400">CEO of Millar Group</h4></div>
+       </div>
+       
+       
+      </div>
+        
+      <div class="slide font-work font-medium pt-8">
+          
+        <div class="rounded-full mx-auto flex justify-center">
+          <div class=" ring-two absolute w-[180px] h-[180px] rounded-[50%] top-[20px] shadow-[1px_2px_1px_rgba(251,185,87,1)] dark:shadow-[1px_2px_1px_rgba(115,206,245,1)]"></div>
+          <img class="rounded-full n_size" src="./img/homepage/client.png" alt="boy-img">
+        </div>
+              
+      <div class="text-center md:w-[67%] w-full mx-auto">
+        <div>
+
+          <svg class="md:mb-8 mb-4 w-6 md:w-12 xl:ml-[75px]" width="39" height="29" viewBox="0 0 39 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.31602 28.8C7.51602 28.8 5.98268 28.3333 4.71602 27.4C3.44935 26.4667 2.48268 25.2 1.81602 23.6C1.14935 22 0.816016 20.2333 0.816016 18.3C0.816016 15.7667 1.28268 13.3667 2.21602 11.1C3.14935 8.83333 4.48268 6.76666 6.21602 4.9C8.01602 2.96667 10.1493 1.43333 12.616 0.299997L17.616 4.5C15.816 5.16666 14.216 6.03333 12.816 7.1C11.416 8.16666 10.216 9.36666 9.21602 10.7C8.28268 12.0333 7.61602 13.4 7.21602 14.8L7.61602 15.1C7.94935 14.8333 8.31602 14.6333 8.71602 14.5C9.18268 14.3667 9.81602 14.3 10.616 14.3C11.5493 14.3 12.4827 14.5667 13.416 15.1C14.416 15.5667 15.2493 16.3 15.916 17.3C16.5827 18.3 16.916 19.6 16.916 21.2C16.916 22.6667 16.5494 23.9667 15.816 25.1C15.1494 26.2333 14.2493 27.1333 13.116 27.8C11.9827 28.4667 10.716 28.8 9.31602 28.8ZM29.816 28.8C28.016 28.8 26.4827 28.3333 25.216 27.4C23.9494 26.4667 22.9827 25.2 22.316 23.6C21.6493 22 21.316 20.2333 21.316 18.3C21.316 15.7667 21.7827 13.3667 22.716 11.1C23.6493 8.83333 24.9827 6.76666 26.716 4.9C28.516 2.96667 30.6493 1.43333 33.116 0.299997L38.216 4.5C36.416 5.16666 34.7827 6.03333 33.316 7.1C31.916 8.16666 30.7494 9.36666 29.816 10.7C28.8827 12.0333 28.1827 13.4 27.716 14.8L28.116 15.1C28.4494 14.8333 28.816 14.6333 29.216 14.5C29.6827 14.3667 30.316 14.3 31.116 14.3C32.0494 14.3 32.9827 14.5667 33.916 15.1C34.916 15.5667 35.7494 16.3 36.416 17.3C37.0827 18.3 37.416 19.6 37.416 21.2C37.416 22.6667 37.0827 23.9667 36.416 25.1C35.7494 26.2333 34.816 27.1333 33.616 27.8C32.4827 28.4667 31.216 28.8 29.816 28.8Z" class="dark:fill-[#73CEF5]" fill="#7AF9AD"/>
+            </svg>
+
+        </div>
+
+        <h3 class="lg:text-3xl md:text-2xl text-sm text-nsoftgray dark:text-wvNblack xl:px-[75px] leading-loose">The very best. I would also like to say thank you to all your staff. We've seen amazing results already.Very easy to use..</h3>
+      </div>
+     <div class="mx-auto mt-8 mb-8  md:mt-14 md:mb-14 w-[30%] border-b border-solid dark:border-gray-400 border-[#2A2D2E] "></div>
+     <div class="text-center">
+      <div class="flex justify-center font-rubik items-center">
+        <div>
+          <h3 class="lg:text-3xl md:text-2xl text-sm font-medium text-nsoftgray dark:text-wvNblack">Jon Abraham</h3>
+        </div>
+        <div class="flex ml-5 space-x-3">
+          <span class=""><img class="w-10" src="./img/homepage/star.png" alt=""></span>
+          <span class=""><img class="w-20" src="./img/homepage/star.png" alt=""></span>
+          <span class=""><img class="w-20" src="./img/homepage/star.png" alt=""></span>
+          <span class=""><img class="w-20" src="./img/homepage/star.png" alt=""></span>
+          <span class=""><img class="w-20" src="./img/homepage/star.png" alt=""></span>
+        </div>
+       </div>
+       <div class="mt-5"><h4 class="font-rubik text-sm md:text-2xl lg:text-3xl font-normal text-gray-400">CEO of Millar Group</h4></div>
+     </div>
+     
+     
+    </div>
+      </div>
+    </div> 
+
+        <!------
+     end-client-reviews-section
+        ----->
+
+                <!----------
+          Blog-section
+        ------->
+<div class="xl:pb-32 pb-24">
+  <div class=" flex justify-between items-end lg:pb-20  md:pb-10 pb-8">
+    <div class="">
+      <h2 class="text-gold mb-4 lg:text-3xl  font-normal">From Blog</h2>
+      <h1 class="font-work font-semibold lg:text-5xl md:text-3xl text-xl text-white dark:text-wvNblack">Blog News</h1>
+    </div>
+    <div class="flex items-center">
+      <span class="text-nsoftgray dark:text-wvNblack  lg:text-xl md:text-xs text-lg mr-4">View All</span>
+      <a href="" class="inline-block"><img class="lg:w-4 w-2" src="./img/homepage/right-arrow.png" alt="right-arrow"></a>
+    </div>
+  </div>
+
+  <div class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-4">
+    <!------>
+      <div>
+        <img class="w-full" src="./img/homepage/blog-2.png" alt="">
+       <div class="font-rubik font-medium 2xl:pt-12 pt-8">
+        <h2 class="text-white dark:text-wvNblack text-3xl 2xl:text-4xl 2xl:leading-[50px] dark:hover:text-gold hover:text-gold leading-10">UI/UX design is a most
+          Usefull design.</h2>
+          <p class="font-work text-ngray md:text-xs 2xl:text-[1.4rem] dark:text-light-gray text-xl 2xl:py-6 py-4">03 June 2022 . Posted by Admin</p>
+          <p class="font-work leading-7 w-[90%] xl:leading-[35px] text-nsoftgray text-lg dark:text-nwSoftGray  md:text-xs xl:text-[1.4rem]">making this the first true ispat is generator on the internet</p>
+          
+          <div class="flex items-center 2xl:pt-7 pt-5">
+            <span class="text-nsoftgray lg:text-xl md:text-xs text-lg mr-4 dark:text-nwSoftGray hover:underline">Continue Reading</span>
+            <a href="" class="inline-block"><svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6C0 5.82321 0.0714875 5.65367 0.198736 5.52866C0.325985 5.40366 0.498571 5.33343 0.678528 5.33343H16.6823L12.4116 1.13935C12.2842 1.01418 12.2126 0.844425 12.2126 0.667415C12.2126 0.490406 12.2842 0.320646 12.4116 0.195481C12.539 0.0703166 12.7119 4.17049e-09 12.892 0C13.0722 -4.17049e-09 13.245 0.0703166 13.3724 0.195481L18.8007 5.52807C18.8638 5.58998 18.914 5.66354 18.9482 5.74452C18.9824 5.82551 19 5.91232 19 6C19 6.08768 18.9824 6.17449 18.9482 6.25548C18.914 6.33646 18.8638 6.41002 18.8007 6.47193L13.3724 11.8045C13.245 11.9297 13.0722 12 12.892 12C12.7119 12 12.539 11.9297 12.4116 11.8045C12.2842 11.6794 12.2126 11.5096 12.2126 11.3326C12.2126 11.1556 12.2842 10.9858 12.4116 10.8607L16.6823 6.66657H0.678528C0.498571 6.66657 0.325985 6.59635 0.198736 6.47134C0.0714875 6.34633 0 6.17679 0 6Z" fill="#FBB957"/>
+              </svg>
+              </a>
+          </div>
+       </div>
+      </div>
+      <!------>
+      <div>
+        <img class="w-full" src="./img/homepage/blog-1.png" alt="">
+       <div class="font-rubik font-medium 2xl:pt-12 pt-8">
+        <h2 class="text-white hover:text-gold dark:hover:text-gold dark:text-wvNblack text-3xl 2xl:text-4xl 2xl:leading-[50px] leading-10">Most common things
+          are done!</h2>
+          <p class="font-work text-ngray dark:text-light-gray md:text-xs 2xl:text-[1.4rem] text-xl 2xl:py-6 py-4">03 June 2022 . Posted by Admin</p>
+          <p class="font-work leading-7 xl:leading-[35px] text-nsoftgray xl:w-[90%] dark:text-nwSoftGray text-lg md:text-xs xl:text-[1.4rem]">making this the first true ispat is generator on the internet</p>
+          
+          <div class="flex items-center 2xl:pt-7 pt-5">
+            <span class="text-nsoftgray lg:text-xl md:text-xs text-lg mr-4 dark:text-nwSoftGray hover:underline">Continue Reading</span>
+            <a href="" class="inline-block">
+              <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6C0 5.82321 0.0714875 5.65367 0.198736 5.52866C0.325985 5.40366 0.498571 5.33343 0.678528 5.33343H16.6823L12.4116 1.13935C12.2842 1.01418 12.2126 0.844425 12.2126 0.667415C12.2126 0.490406 12.2842 0.320646 12.4116 0.195481C12.539 0.0703166 12.7119 4.17049e-09 12.892 0C13.0722 -4.17049e-09 13.245 0.0703166 13.3724 0.195481L18.8007 5.52807C18.8638 5.58998 18.914 5.66354 18.9482 5.74452C18.9824 5.82551 19 5.91232 19 6C19 6.08768 18.9824 6.17449 18.9482 6.25548C18.914 6.33646 18.8638 6.41002 18.8007 6.47193L13.3724 11.8045C13.245 11.9297 13.0722 12 12.892 12C12.7119 12 12.539 11.9297 12.4116 11.8045C12.2842 11.6794 12.2126 11.5096 12.2126 11.3326C12.2126 11.1556 12.2842 10.9858 12.4116 10.8607L16.6823 6.66657H0.678528C0.498571 6.66657 0.325985 6.59635 0.198736 6.47134C0.0714875 6.34633 0 6.17679 0 6Z" fill="#FBB957"/>
+              </svg>
+              </a>
+          </div>
+       </div>
+      </div>
+      <!------>
+      <div>
+        <img class="w-full" src="./img/homepage/blog.png" alt="">
+       <div class="font-rubik font-medium 2xl:pt-12 pt-8">
+        <h2 class="text-white hover:text-gold dark:hover:text-gold dark:text-wvNblack text-3xl 2xl:text-4xl 2xl:leading-[50px] leading-10">Application design is 
+          trending now.</h2>
+          <p class="font-work text-ngray dark:text-light-gray md:text-xs 2xl:text-[1.4rem] text-xl 2xl:py-6 py-4">03 June 2022 . Posted by Admin</p>
+          <p class="font-work xl:w-[90%] leading-7 xl:leading-[35px] text-nsoftgray dark:text-nwSoftGray text-lg md:text-xs xl:text-[1.4rem]">making this the first true ispat is generator on the internet</p>
+          
+          <div class="flex items-center 2xl:pt-7 pt-5">
+            <span class="text-nsoftgray lg:text-xl md:text-xs text-lg mr-4 dark:text-nwSoftGray hover:underline">Continue Reading</span>
+            <a href="" class="inline-block">
+              <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6C0 5.82321 0.0714875 5.65367 0.198736 5.52866C0.325985 5.40366 0.498571 5.33343 0.678528 5.33343H16.6823L12.4116 1.13935C12.2842 1.01418 12.2126 0.844425 12.2126 0.667415C12.2126 0.490406 12.2842 0.320646 12.4116 0.195481C12.539 0.0703166 12.7119 4.17049e-09 12.892 0C13.0722 -4.17049e-09 13.245 0.0703166 13.3724 0.195481L18.8007 5.52807C18.8638 5.58998 18.914 5.66354 18.9482 5.74452C18.9824 5.82551 19 5.91232 19 6C19 6.08768 18.9824 6.17449 18.9482 6.25548C18.914 6.33646 18.8638 6.41002 18.8007 6.47193L13.3724 11.8045C13.245 11.9297 13.0722 12 12.892 12C12.7119 12 12.539 11.9297 12.4116 11.8045C12.2842 11.6794 12.2126 11.5096 12.2126 11.3326C12.2126 11.1556 12.2842 10.9858 12.4116 10.8607L16.6823 6.66657H0.678528C0.498571 6.66657 0.325985 6.59635 0.198736 6.47134C0.0714875 6.34633 0 6.17679 0 6Z" fill="#FBB957"/>
+              </svg>
+              </a>
+          </div>
+       </div>
+      </div>
+  </div>
+</div>
+        
+ <!----------
+   end Blog-section
+    ------->
+
+    </div>
+
+
+      <!----------
+          footer-section
+        ------->
+
+<div class="xl:pb-20 pb-10 bg-no-repeat relative bg-cover" style="background-image:url('./img/homepage/footerbg.png')">
+ <div class="flex flex-col justify-center items-center text-center">
+<div class="lg:pt-16 pt-8">
+  
+<svg width="159" height="50" viewBox="0 0 159 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M53.2741 46C52.9474 46 52.6697 45.8857 52.4411 45.657C52.2124 45.4283 52.0981 45.1507 52.0981 44.824V12.876C52.0981 12.5493 52.2124 12.2717 52.4411 12.043C52.6697 11.8143 52.9474 11.7 53.2741 11.7H57.8801C58.2394 11.7 58.5171 11.8143 58.7131 12.043C58.9417 12.2717 59.0561 12.5493 59.0561 12.876V44.824C59.0561 45.1507 58.9417 45.4283 58.7131 45.657C58.5171 45.8857 58.2394 46 57.8801 46H53.2741ZM76.7366 46C76.214 46 75.8056 45.8693 75.5116 45.608C75.2176 45.3467 75.0053 45.02 74.8746 44.628L64.3886 13.17C64.3233 13.0067 64.2906 12.8597 64.2906 12.729C64.2906 12.435 64.3886 12.19 64.5846 11.994C64.7806 11.798 65.0256 11.7 65.3196 11.7H69.6316C70.089 11.7 70.432 11.8307 70.6606 12.092C70.922 12.3207 71.0853 12.5493 71.1506 12.778L79.4316 38.013L87.6636 12.778C87.7616 12.5493 87.925 12.3207 88.1536 12.092C88.415 11.8307 88.7743 11.7 89.2316 11.7H93.5436C93.805 11.7 94.0336 11.798 94.2296 11.994C94.4583 12.19 94.5726 12.435 94.5726 12.729C94.5726 12.8597 94.54 13.0067 94.4746 13.17L83.9886 44.628C83.858 45.02 83.6456 45.3467 83.3516 45.608C83.0576 45.8693 82.6493 46 82.1266 46H76.7366ZM100.934 46C100.608 46 100.33 45.8857 100.101 45.657C99.8726 45.4283 99.7582 45.1507 99.7582 44.824V12.876C99.7582 12.5493 99.8726 12.2717 100.101 12.043C100.33 11.8143 100.608 11.7 100.934 11.7H105.54C105.9 11.7 106.177 11.8143 106.373 12.043C106.602 12.2717 106.716 12.5493 106.716 12.876V44.824C106.716 45.1507 106.602 45.4283 106.373 45.657C106.177 45.8857 105.9 46 105.54 46H100.934ZM115.577 46C115.25 46 114.972 45.8857 114.744 45.657C114.515 45.4283 114.401 45.1507 114.401 44.824V12.925C114.401 12.5657 114.515 12.2717 114.744 12.043C114.972 11.8143 115.25 11.7 115.577 11.7H119.889C120.248 11.7 120.542 11.8143 120.771 12.043C120.999 12.2717 121.114 12.5657 121.114 12.925V24.391L132.188 12.582C132.318 12.4187 132.531 12.239 132.825 12.043C133.151 11.8143 133.576 11.7 134.099 11.7H138.95C139.211 11.7 139.44 11.798 139.636 11.994C139.864 12.19 139.979 12.435 139.979 12.729C139.979 12.9577 139.913 13.1537 139.783 13.317L126.308 28.115L140.714 44.334C140.877 44.53 140.959 44.7423 140.959 44.971C140.959 45.265 140.844 45.51 140.616 45.706C140.42 45.902 140.191 46 139.93 46H134.883C134.327 46 133.886 45.8857 133.56 45.657C133.266 45.3957 133.07 45.216 132.972 45.118L121.114 32.133V44.824C121.114 45.1507 120.999 45.4283 120.771 45.657C120.542 45.8857 120.248 46 119.889 46H115.577Z" fill="white"/>
+  <circle cx="152.842" cy="40.7895" r="5.26316" fill="#7AF9AD"/>
+  <path d="M2.33813 32.2645C2.33668 32.3103 2.31956 32.3542 2.2897 32.3887C2.25983 32.4233 2.21905 32.4463 2.17424 32.454C2.12944 32.4617 2.08337 32.4536 2.04383 32.431C2.00429 32.4084 1.97372 32.3727 1.95728 32.33C-0.112742 26.797 0.45405 17.339 7.15922 10.4985C10.4817 7.08488 14.8229 4.86363 19.5176 4.17508C24.2122 3.48654 29.0013 4.3687 33.151 6.68638C42.2399 11.7993 44.9685 21.5193 43.9313 28.3056C43.9225 28.357 43.8942 28.403 43.8524 28.4338C43.8105 28.4645 43.7585 28.4777 43.7072 28.4705C43.4496 28.4343 43.192 28.4027 42.9388 28.344C35.6781 26.6773 29.5397 28.7957 24.2907 33.9402C21.3492 36.8219 17.8768 38.4456 13.73 38.3327C10.5331 38.2469 7.90524 35.582 8.27489 32.4271C9.1374 25.0536 12.3276 18.947 18.6922 14.8594C19.6203 14.3082 20.6658 13.9891 21.7412 13.9289C23.4035 13.8092 24.564 15.3652 24.2593 17.0274C23.9233 18.8521 24.1495 19.5771 25.189 20.0129C26.3876 20.5188 27.9692 19.9384 28.7556 18.6353C30.1782 16.2731 30.5478 13.8002 28.9662 11.4086C27.2568 8.83182 24.6917 7.96235 21.7256 8.38015C15.6768 9.25187 11.082 12.5265 7.59608 17.452C5.05336 21.045 3.232 24.9903 2.52407 29.3806C2.39641 30.3364 2.33428 31.3 2.33813 32.2645Z" fill="#FBB957"/>
+  <path d="M10.2509 43.6108C10.224 43.5895 10.2054 43.5594 10.1984 43.5258C10.1913 43.4921 10.1962 43.457 10.2122 43.4266C10.2283 43.3962 10.2544 43.3724 10.286 43.3594C10.3176 43.3465 10.3528 43.3451 10.3853 43.3556C12.5964 44.1167 14.886 44.1573 17.2249 43.9157C20.5584 43.5702 23.1885 41.8651 25.561 39.6677C26.8222 38.4979 28.0051 37.2377 29.1611 35.9595C33.1667 31.5218 38.1088 29.6722 43.9627 30.7314C45.5622 31.0205 47.0543 31.8945 48.5911 32.5381C48.6418 32.5596 48.6821 32.6002 48.7034 32.6513C48.7248 32.7023 48.7255 32.7598 48.7054 32.8114C48.6929 32.8433 48.6697 32.8699 48.6398 32.8864C48.6099 32.9029 48.5753 32.9083 48.5418 32.9017L44.6885 32.1497C43.7297 31.9645 43.2547 32.3394 42.8829 33.2992C39.8495 41.156 34.2129 46.0092 25.953 47.3619C20.2515 48.2969 14.9286 47.1022 10.2509 43.6108Z" fill="#7AF9AD"/>
+  </svg>
+</div>
+<div class="lg:pt-12 pt-8">
+  <p class="text-nsoftgray font-light text-lg w-[80%] md:w-[65%] m-auto">Welcome and open yourself to your truest love this year with us With the Release Process</p>
+</div>
+<div class="lg:pt-12 pt-8 flex justify-center items-center md:space-x-6 space-x-4">
+  <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20.4764 11.2735C20.4764 5.21275 15.8928 0.299805 10.2395 0.299805C4.58359 0.301168 -6.21468e-09 5.21275 -1.3883e-08 11.2749C-2.08099e-08 16.7508 3.74416 21.2902 8.63741 22.1136L8.63741 14.4456L6.03979 14.4456L6.03979 11.2749L8.63997 11.2749L8.63997 8.85519C8.63997 6.10564 10.1691 4.58704 12.507 4.58704C13.6279 4.58704 14.7988 4.80106 14.7988 4.80106L14.7988 7.50018L13.5076 7.50018C12.237 7.50018 11.8403 8.34672 11.8403 9.21507L11.8403 11.2735L14.6785 11.2735L14.2255 14.4443L11.839 14.4443L11.839 22.1122C16.7323 21.2889 20.4764 16.7494 20.4764 11.2735Z" class="hover:fill-gold cursor-pointer " fill="#D4D4D4"/>
+    </svg>
+    <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6.83827 17.5653C14.832 17.5653 19.2049 10.8497 19.2049 5.03612C19.2049 4.84819 19.2049 4.65758 19.1969 4.46966C20.0483 3.84479 20.7831 3.07117 21.3668 2.18504C20.5716 2.54055 19.7288 2.77486 18.866 2.88036C19.7749 2.32952 20.4556 1.46283 20.7817 0.441371C19.9277 0.954302 18.9931 1.31438 18.0187 1.50583C17.3636 0.798458 16.4967 0.329848 15.5523 0.172582C14.608 0.0153163 13.6388 0.178172 12.795 0.635922C11.9511 1.09367 11.2797 1.82077 10.8847 2.70459C10.4897 3.58842 10.3932 4.57964 10.6101 5.52472C8.88204 5.43687 7.19151 4.98171 5.64813 4.18877C4.10476 3.39583 2.74301 2.28282 1.6512 0.92192C1.09693 1.89252 0.927782 3.04063 1.1781 4.13309C1.42841 5.22556 2.07942 6.18048 2.99894 6.80394C2.3099 6.78021 1.636 6.59261 1.03161 6.25628V6.31668C1.0328 7.33346 1.38021 8.31864 2.01511 9.10569C2.65001 9.89274 3.53346 10.4334 4.51614 10.6363C4.14314 10.7404 3.75784 10.7924 3.37095 10.7906C3.09821 10.7915 2.82601 10.7658 2.55808 10.7141C2.83581 11.5894 3.37661 12.3546 4.10473 12.9027C4.83284 13.4508 5.7118 13.7543 6.6185 13.7706C5.07821 14.9972 3.17555 15.6624 1.21696 15.6592C0.871843 15.6607 0.526968 15.6405 0.18431 15.5988C2.17218 16.8837 4.48078 17.566 6.83827 17.5653Z" class="hover:fill-gold cursor-pointer " fill="#D4D4D4"/>
+      </svg>
+      
+<svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0.279114 1.76285C0.279114 0.899844 0.975489 0.200439 1.8347 0.200439H19.906C20.7653 0.200439 21.4616 0.899844 21.4616 1.76285V20.4518C21.4616 21.3148 20.7653 22.0142 19.906 22.0142H1.8347C0.975489 22.0142 0.279114 21.3148 0.279114 20.4518V1.76285ZM6.82319 18.4613V8.61102H3.64449V18.4613H6.82319ZM5.2345 7.26538C6.34261 7.26538 7.03236 6.51008 7.03236 5.5639C7.01251 4.59728 6.34393 3.86243 5.25568 3.86243C4.16743 3.86243 3.45649 4.59864 3.45649 5.5639C3.45649 6.51008 4.14625 7.26538 5.21332 7.26538H5.2345ZM11.7322 18.4613V12.9601C11.7322 12.6657 11.7534 12.3712 11.8381 12.1612C12.0672 11.5736 12.5901 10.9642 13.4692 10.9642C14.6197 10.9642 15.0791 11.8667 15.0791 13.1919V18.4613H18.2578V12.8115C18.2578 9.78487 16.6903 8.37788 14.5985 8.37788C12.9118 8.37788 12.1559 9.33223 11.7322 10.0044V10.0385H11.7111C11.7181 10.0271 11.7251 10.0157 11.7322 10.0044V8.61102H8.55486C8.59458 9.53538 8.55486 18.4613 8.55486 18.4613H11.7322Z" class="hover:fill-gold cursor-pointer"  fill="#D4D4D4"/>
+  </svg>
+      
+</div>
+
+<div class=" lg:pt-12 pt-8">
+  <nav class="hidden xl:flex" x-data="navV">
+       
+    <ul class="flex xl:space-x-12 md:space-x-8 font-medium text-sm md:text-base  lg:text-[18px] text-white dark:text-[#333333]">
+      <li class="">
+        <a href="index.html" @click="active = 'home'">
+          <h1 class="py-4 font-medium hover:text-gold  text-white transition duration-200"
+              :class="active == 'home'?'border-b-2 border-gold ':''">Home</h1>
+      </a>
+      </li>
+      
+      <li>
+        <a href="services.html" @click="active = 'service'">
+          <h1 class="py-4 hover:text-gold font-medium text-white transition duration-200"
+              :class="active == 'service'?'border-b-2 border-gold ':''">Service</h1>
+      </a>
+      </li>
+        <li>
+          <a href="#" @click="active = 'portfolio'">
+            <h1 class="py-4 hover:text-gold  font-medium text-white transition duration-200"
+                :class="active == 'portfolio'?'border-b-2 border-gold ':''">Portfolio</h1>
+        </a>
+        </li>
+      <li>
+        <a href="#" @click="active = 'resume'">
+          <h1 class="py-4 hover:text-gold  font-medium text-white transition duration-200"
+              :class="active == 'resume'?'border-b-2 border-gold ':''">Resume</h1>
+      </a>
+      </li>
+      <li>
+        <a href="#" @click="active = 'blog '">
+          <h1 class="py-4 hover:text-gold  font-medium text-white transition duration-200"
+              :class="active == 'blog '?'border-b-2 border-gold ':''">Blog</h1>
+      </a>
+      </li>
+      <li>
+        <a href="#" @click="active = 'contact'">
+          <h1 class="py-4 hover:text-gold  font-medium text-white transition duration-200"
+              :class="active == 'contact'?'border-b-2 border-gold':''">Contact</h1>
+      </a>
+      </li>
+    </ul>
+
+
+</nav>
+  
+</div>
+
+<div class=" lg:pt-12 pt-4 md:w-[32%] w-[80%]">
+<form action="">
+  <div class="relative flex items-center">
+    <svg class="absolute right-0 mr-5" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19.9552 0.857247C20.0007 0.743668 20.0118 0.619245 19.9873 0.499401C19.9627 0.379557 19.9035 0.269563 19.8169 0.183056C19.7304 0.0965492 19.6205 0.037333 19.5006 0.012749C19.3808 -0.011835 19.2563 -0.000705733 19.1428 0.044757L0.959654 7.31842H0.958404L0.393424 7.54341C0.286415 7.5861 0.193287 7.65753 0.124327 7.74982C0.0553675 7.84211 0.0132592 7.95167 0.00265393 8.06639C-0.00795137 8.18111 0.013359 8.29653 0.0642312 8.3999C0.115103 8.50327 0.193557 8.59057 0.290927 8.65215L0.803409 8.97714L0.804659 8.97964L7.04819 12.9521L11.0206 19.1958L11.0231 19.1983L11.348 19.7108C11.4098 19.8078 11.4972 19.8858 11.6005 19.9364C11.7037 19.9869 11.819 20.008 11.9335 19.9973C12.048 19.9866 12.1573 19.9444 12.2494 19.8756C12.3415 19.8067 12.4128 19.7138 12.4555 19.607L19.9552 0.857247ZM17.6641 3.21972L8.2969 12.5871L8.02816 12.1646C7.97892 12.0871 7.91319 12.0213 7.83567 11.9721L7.41318 11.7034L16.7804 2.33598L18.2528 1.74724L17.6653 3.21972H17.6641Z" fill="#FBB957"/>
+      </svg>
+      
+    <input type="email" 
+    name="search"
+    autocomplete="off"
+    aria-label="Enter Your E-mail"
+    placeholder="Enter Your E-mail"
+    class="py-5 px-6 w-full text-w text-white placeholder-[#696969] text-lg rounded-md border border-solid border-[#343434] outline-none bg-black">
+  </div>
+
+</form>
+</div>
+
+ </div>
+
+  <div class="text-white text-center relative 2xl:after:-ml-[100px] pt-16 2xl:pt-20 flex flex-wrap justify-center after:absolute 2xl:after:w-[70%] after:w-[75%] left-0 after:top-11 after:border-t after:border-solid after:border-[#383838] after:pt-28">
+  
+
+<div>
+  <p class="md:text-xl text-sm text-nsoftgray 2xl:pb-0 pb-6 xl:pb-10 ">Copyright jompha 2022 all Rights Resarved</p>
+</div>
+  
+  </div>
+  <div>
+    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class=" w-full  2xl:bottom-20 2xl:w-[170px] flex items-center justify-center absolute right-0 2xl:right-80 " id="btn-back-to-top">
+      <span class="md:text-xl text-xs mr-5 text-nsoftgray">Back to top </span>
+      <span class="hover:text-[#FBB957]">
+        <img class="w-6 inline-block" src="./img/homepage/top-bottom.png" alt="">
+      </span>
+    
+      </button>
+  </div>
+  
+</div>
+    
+ <!----------
+        end-footer-section
+        ------->
+
+    <!---slick-slider-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!------
+   JAVASCRIPT-LINK
+    ----->
+ <script src="../js/script.js"></script>
+</body>
+</html> 
