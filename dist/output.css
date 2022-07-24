@@ -1067,6 +1067,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(20 20 20 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#EFEFEF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 239 239 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#5956F0\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(89 86 240 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#73CEF5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(115 206 245 / var(--tw-bg-opacity));
+}
+
+.bg-nUnderLine {
+  --tw-bg-opacity: 1;
+  background-color: rgb(169 87 251 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1422,6 +1442,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-ngray {
   --tw-text-opacity: 1;
   color: rgb(94 94 94 / var(--tw-text-opacity));
+}
+
+.text-nwSoftGray {
+  --tw-text-opacity: 1;
+  color: rgb(138 138 138 / var(--tw-text-opacity));
 }
 
 .placeholder-\[\#696969\]::-moz-placeholder {
