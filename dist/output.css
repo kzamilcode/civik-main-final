@@ -1032,6 +1032,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(52 52 52 / var(--tw-border-opacity));
 }
 
+.border-gray-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(243 244 246 / var(--tw-border-opacity));
+}
+
+.border-basic-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(186 186 186 / var(--tw-border-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1095,6 +1105,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-nWhite {
   --tw-bg-opacity: 1;
   background-color: rgb(252 252 252 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FB8857\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 136 87 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -1472,6 +1487,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#FB8857\] {
   --tw-text-opacity: 1;
   color: rgb(251 136 87 / var(--tw-text-opacity));
+}
+
+.text-basic-black {
+  --tw-text-opacity: 1;
+  color: rgb(186 186 186 / var(--tw-text-opacity));
 }
 
 .placeholder-\[\#696969\]::-moz-placeholder {
@@ -2010,6 +2030,11 @@ img.full {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.hover\:border-white:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .hover\:bg-nblackSoft:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 29 29 / var(--tw-bg-opacity));
@@ -2023,6 +2048,21 @@ img.full {
 .hover\:bg-\[\#FCFCFC\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(252 252 252 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#4DDA64\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(77 218 100 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#FB8857\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 136 87 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-nUnderLine:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(169 87 251 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gradient-to-r:hover {
@@ -2048,9 +2088,20 @@ img.full {
   color: rgb(251 185 87 / var(--tw-text-opacity));
 }
 
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .hover\:underline:hover {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+
+.hover\:shadow-2xl:hover {
+  --tw-shadow: 0px 0px 80px rgba(0, 0, 0, 0.1);
+  --tw-shadow-colored: 0px 0px 80px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .focus\:outline-none:focus {
