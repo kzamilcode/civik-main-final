@@ -240,4 +240,28 @@ $("#video-popup-close, #video-popup-overlay").on('click', function(e) {
 
 
 
- 
+ /***portfolio**/
+
+//  $(document).ready(function(){
+//   $('.list').click(function(){
+//       const value = $(this).attr('data-filter');
+//       if (value == 'all'){
+//           $('.contentBx').show('1000')
+//       } else{
+//           $('.contentBx').not('.'+value).hide('1000');
+//           $('.contentBx').filter('.'+value).show('1000')
+//       }
+//   })
+  
+
+  //Adding Active Class On The Selected Item
+//   $('.list').click(function(){
+//       $(this).addClass('active').siblings().removeClass('active')
+//   })
+// })
+
+
+
+
+
+

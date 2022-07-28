@@ -1475,6 +1475,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .transition {
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1796,6 +1800,65 @@ img.full {
   100%{
     transform: translateX(calc(-40%));
   }
+}
+
+/***portfolio***/
+
+section{
+  /* padding: 20px; */
+  /* width: 1280px; */
+  margin: 40px auto;
+}
+
+section ul{
+  /* display: flex; */
+  margin-bottom: 10px;
+  border: 1px solid #d3d3d3;
+  /* width: 64%; */
+  margin: auto;
+  border-radius: 50px;
+}
+
+section ul li{
+  list-style: none;
+  padding: 8px 52px;
+  /* margin: 5px; */
+  letter-spacing: 1px;
+  cursor: pointer;
+  color:#363636;
+}
+
+section ul li.active {
+  /* border-bottom: 7px solid #03a9fa; */
+  /* color: #000; */
+  display: inline-block;
+  background: #73cef5;
+  border-radius: 50px;
+  padding: 20px 65px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 100px;
+  grid-gap: 20px;
+}
+
+.content .contentBx {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  /* margin: 5px; */
+}
+
+.content .contentBx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .before\:absolute::before {
@@ -2317,6 +2380,10 @@ img.full {
     width: 1rem;
   }
 
+  .lg\:w-\[87\%\] {
+    width: 87%;
+  }
+
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -2669,6 +2736,10 @@ img.full {
     width: 170px;
   }
 
+  .\32xl\:w-\[64\%\] {
+    width: 64%;
+  }
+
   .\32xl\:grid-cols-\[auto_minmax\(580px\2c _auto\)\] {
     grid-template-columns: auto minmax(580px, auto);
   }
@@ -2807,6 +2878,3 @@ img.full {
     width: 70%;
   }
 }
-  
-
-
