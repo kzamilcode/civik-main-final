@@ -141,36 +141,7 @@ autoplay:true
 })
 
 
-//top to bottom
-let mybutton = document.getElementById("btn-back-to-top");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (
-    document.body.scrollTop > 20 ||
-    document.documentElement.scrollTop > 20
-  ) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-// When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener("click", backToTop);
-
-function backToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-
-
-
-/***** */
+/******/
 
 const container = document.querySelector(".imgContainer");
 const cards = document.querySelector(".cards");
@@ -236,32 +207,6 @@ $("#video-popup-close, #video-popup-overlay").on('click', function(e) {
   $("#video-popup-iframe-container,#video-popup-container,#video-popup-close,#video-popup-overlay").hide();
   $("#video-popup-iframe").attr('src', '');
 });
-
-
-
-
- /***portfolio**/
-
-//  $(document).ready(function(){
-//   $('.list').click(function(){
-//       const value = $(this).attr('data-filter');
-//       if (value == 'all'){
-//           $('.contentBx').show('1000')
-//       } else{
-//           $('.contentBx').not('.'+value).hide('1000');
-//           $('.contentBx').filter('.'+value).show('1000')
-//       }
-//   })
-  
-
-  //Adding Active Class On The Selected Item
-//   $('.list').click(function(){
-//       $(this).addClass('active').siblings().removeClass('active')
-//   })
-// })
-
-
-
 
 
 
