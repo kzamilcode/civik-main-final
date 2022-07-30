@@ -581,6 +581,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 30%;
 }
 
+.left-10 {
+  left: 2.5rem;
+}
+
+.top-\[10\%\] {
+  top: 10%;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -830,6 +838,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .min-w-\[229px\] {
   min-width: 229px;
+}
+
+.min-w-\[190px\] {
+  min-width: 190px;
 }
 
 .max-w-full {
@@ -1407,6 +1419,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -1449,6 +1466,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-\[70px\] {
   line-height: 70px;
+}
+
+.leading-\[35px\] {
+  line-height: 35px;
 }
 
 .tracking-wide {
@@ -2175,6 +2196,11 @@ section ul li.active {
     line-height: 2.5rem;
   }
 
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
   .sm\:after\:top-48::after {
     content: var(--tw-content);
     top: 12rem;
@@ -2184,6 +2210,14 @@ section ul li.active {
 @media (min-width: 768px) {
   .md\:top-\[82px\] {
     top: 82px;
+  }
+
+  .md\:left-48 {
+    left: 12rem;
+  }
+
+  .md\:top-\[30\%\] {
+    top: 30%;
   }
 
   .md\:my-8 {
@@ -2265,6 +2299,10 @@ section ul li.active {
 
   .md\:w-\[32\%\] {
     width: 32%;
+  }
+
+  .md\:min-w-\[229px\] {
+    min-width: 229px;
   }
 
   .md\:grid-cols-2 {
@@ -2360,6 +2398,10 @@ section ul li.active {
 
   .md\:leading-8 {
     line-height: 2rem;
+  }
+
+  .md\:leading-\[70px\] {
+    line-height: 70px;
   }
 
   .md\:before\:block::before {
@@ -2687,6 +2729,11 @@ section ul li.active {
 
   .xl\:text-\[1\.4rem\] {
     font-size: 1.4rem;
+  }
+
+  .xl\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .xl\:leading-8 {
