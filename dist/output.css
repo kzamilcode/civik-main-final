@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
+! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -577,16 +577,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 1.5rem;
 }
 
-.top-\[30\%\] {
-  top: 30%;
+.top-\[10\%\] {
+  top: 10%;
 }
 
 .left-10 {
   left: 2.5rem;
-}
-
-.top-\[10\%\] {
-  top: 10%;
 }
 
 .z-50 {
@@ -834,10 +830,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[65\%\] {
   width: 65%;
-}
-
-.min-w-\[229px\] {
-  min-width: 229px;
 }
 
 .min-w-\[190px\] {
@@ -1414,11 +1406,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1462,10 +1449,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-7 {
   line-height: 1.75rem;
-}
-
-.leading-\[70px\] {
-  line-height: 70px;
 }
 
 .leading-\[35px\] {
@@ -1926,6 +1909,10 @@ section ul li.active {
   grid-gap: 20px;
 }
 
+.content .contentBx.hide{
+  display:none;
+}
+
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
@@ -2212,12 +2199,12 @@ section ul li.active {
     top: 82px;
   }
 
-  .md\:left-48 {
-    left: 12rem;
-  }
-
   .md\:top-\[30\%\] {
     top: 30%;
+  }
+
+  .md\:left-48 {
+    left: 12rem;
   }
 
   .md\:my-8 {
@@ -2944,7 +2931,5 @@ section ul li.active {
     width: 70%;
   }
 }
-
-
 
 

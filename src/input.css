@@ -267,6 +267,8 @@ section ul li.active {
   grid-gap: 20px;
 }
 
-
+.content .contentBx.hide{
+  display:none;
+}
 
 

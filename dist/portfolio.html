@@ -207,7 +207,8 @@
             </ul>
     
             <div class="content mt-24 grid">
-                <div class="contentBx w-full camera">
+              <!----->
+                <div class="contentBx w-full" data-item="camera">
                   <div class="hovereffets rounded-lg w-full h-full overflow-hidden relative text-center cursor-default">
                     <img class="w-full block object-cover h-full rounded-lg relative" src="./img/portfolio/image 19.png" alt="">
                     <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
@@ -215,7 +216,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="contentBx w-full camera">
+                 <!----->
+                <div class="contentBx w-full" data-item="camera">
                   <div class="hovereffets rounded-lg w-full h-full overflow-hidden relative text-center cursor-default">
                     <img class="w-full block object-cover h-full rounded-lg relative" src="./img/portfolio/image 11.png" alt="">
                     <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
@@ -223,8 +225,8 @@
                     </div>
                   </div>
                 </div>
-                     
-                <div class="contentBx w-full mobile">
+                   <!----->   
+                <div class="contentBx w-full " data-item="mobile">
                   <div class="hovereffets rounded-lg w-full h-full overflow-hidden relative text-center cursor-default">
                     <img class="w-full block object-cover h-full rounded-lg relative" src="./img/portfolio/image-12.png" alt="">
                     <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
@@ -232,7 +234,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="contentBx w-full mobile">
+                 <!----->
+                <div class="contentBx w-full " data-item="mobile">
                   <div class="hovereffets rounded-lg w-full h-full overflow-hidden relative text-center cursor-default">
                     <img class="w-full block object-cover h-full rounded-lg relative" src="./img/portfolio/image-13.png" alt="">
                     <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
@@ -240,8 +243,8 @@
                     </div>
                   </div>
                 </div>
-                 
-                <div class="contentBx w-full watch">
+                  <!----->
+                <div class="contentBx w-full " data-item="watch">
                   <div class="hovereffets rounded-lg w-full h-full overflow-hidden relative text-center cursor-default">
                     <img class="w-full block object-cover h-full rounded-lg relative" src="./img/portfolio/image 14.png" alt="">
                     <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
@@ -249,7 +252,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="contentBx w-full watch">
+                 <!----->
+                <div class="contentBx w-full" data-item="watch">
                   <div class="hovereffets rounded-lg w-full h-full overflow-hidden relative text-center cursor-default">
                     <img class="w-full block object-cover h-full rounded-lg relative" src="./img/portfolio/image-21.png" alt="">
                     <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
@@ -257,8 +261,8 @@
                     </div>
                   </div>
                 </div>
-               
-                <div class="contentBx w-full shoe">
+                <!----->
+                <div class="contentBx w-full " data-item="shoe">
                   <div class="hovereffets rounded-lg w-full h-full overflow-hidden relative text-center cursor-default">
                     <img class="w-full block h-full rounded-lg relative" src="./img/portfolio/image 31.png" alt="">
                     <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
@@ -266,7 +270,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="contentBx shoe">
+                 <!----->
+                <div class="contentBx w-full" data-item="shoe">
                   <div class="hovereffets rounded-lg w-full h-full overflow-hidden relative text-center cursor-default">
                     <img class="w-full block h-full rounded-lg relative" src="./img/portfolio/image 31.png" alt="">
                     <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
@@ -397,50 +402,10 @@
  <!----------
         end-footer-section
         ------->
-
-        <script
-        src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-        crossorigin="anonymous"></script>
         
-         <script>
-            $(document).ready(function(){
-  $('.list').click(function(){
-      const value = $(this).attr('data-filter');
-      if (value == 'all'){
-          $('.contentBx').show('1000')
-      } else{
-          $('.contentBx').not('.'+value).hide('1000');
-          $('.contentBx').filter('.'+value).show('1000')
-      }
-  })
-  
-
-  //Adding Active Class On The Selected Item
-  $('.list').click(function(){
-      $(this).addClass('active').siblings().removeClass('active')
-  })
-})
-
-
-$(document).ready(function(){
-
-$(window).scroll(function(){
-  if($(this).scrollTop() > 40){
-    $('#topBtn').fadeIn();
-  } else{
-    $('#topBtn').fadeOut();
-  }
-});
-
-$("#topBtn").click(function(){
-  $('html ,body').animate({scrollTop : 0},800);
-});
-});
-        </script> 
     <!------
    JAVASCRIPT-LINK
     ----->
- <script src="../js/script.js"></script>
+ <script src="../js/portfolioScript.js"></script>
 </body>
 </html> 
