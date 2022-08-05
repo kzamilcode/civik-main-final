@@ -485,6 +485,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: sticky;
 }
 
+.inset-0 {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
 .top-1 {
   top: 0.25rem;
 }
@@ -605,6 +612,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 997;
 }
 
+.z-0 {
+  z-index: 0;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -696,6 +711,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 6rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mr-16 {
+  margin-right: 4rem;
+}
+
 .block {
   display: block;
 }
@@ -754,6 +777,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[180px\] {
   height: 180px;
+}
+
+.h-\[63px\] {
+  height: 63px;
+}
+
+.h-\[61px\] {
+  height: 61px;
+}
+
+.max-h-\[500px\] {
+  max-height: 500px;
 }
 
 .w-36 {
@@ -832,12 +867,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 65%;
 }
 
+.w-11\/12 {
+  width: 91.666667%;
+}
+
 .min-w-\[190px\] {
   min-width: 190px;
 }
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-\[545px\] {
+  max-width: 545px;
+}
+
+.max-w-\[600px\] {
+  max-width: 600px;
+}
+
+.max-w-\[430px\] {
+  max-width: 430px;
 }
 
 .-translate-x-1\/2 {
@@ -908,6 +959,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .list-none {
   list-style-type: none;
+}
+
+.appearance-none {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .grid-cols-1 {
@@ -1022,6 +1079,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 50%;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .rounded-l-xl {
   border-top-left-radius: 0.75rem;
   border-bottom-left-radius: 0.75rem;
@@ -1031,12 +1092,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 1px;
 }
 
+.border-0 {
+  border-width: 0px;
+}
+
 .border-b-2 {
   border-bottom-width: 2px;
 }
 
 .border-b {
   border-bottom-width: 1px;
+}
+
+.border-l {
+  border-left-width: 1px;
 }
 
 .border-solid {
@@ -1088,6 +1157,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(211 211 211 / var(--tw-border-opacity));
 }
 
+.border-gray-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.border-\[\#EEEEEE\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(238 238 238 / var(--tw-border-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1136,6 +1215,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#FB8857\] {
   --tw-bg-opacity: 1;
   background-color: rgb(251 136 87 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-contain {
@@ -1215,6 +1298,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-1 {
   padding: 0.25rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-\[18px\] {
+  padding: 18px;
 }
 
 .px-10 {
@@ -1455,6 +1546,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 35px;
 }
 
+.leading-4 {
+  line-height: 1rem;
+}
+
+.leading-\[30px\] {
+  line-height: 30px;
+}
+
 .tracking-wide {
   letter-spacing: 0.025em;
 }
@@ -1529,6 +1628,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(54 54 54 / var(--tw-text-opacity));
 }
 
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
 .placeholder-\[\#696969\]::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(105 105 105 / var(--tw-placeholder-opacity));
@@ -1565,10 +1669,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .drop-shadow-md {
   --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -2152,6 +2252,11 @@ section ul li.active {
   border-color: rgb(115 206 245 / var(--tw-border-opacity));
 }
 
+.dark .dark\:bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
 .dark .dark\:bg-image-two {
   background-image: url('https://i.ibb.co/nczdKPc/main-imagetwo.png');
 }
@@ -2161,7 +2266,16 @@ section ul li.active {
   color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
+.dark .dark\:text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:h-\[55vh\] {
     height: 55vh;
   }
@@ -2205,6 +2319,10 @@ section ul li.active {
 
   .md\:left-48 {
     left: 12rem;
+  }
+
+  .md\:left-\[15rem\] {
+    left: 15rem;
   }
 
   .md\:my-8 {
@@ -2408,6 +2526,11 @@ section ul li.active {
 }
 
 @media (min-width: 1024px) {
+  .lg\:my-40 {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
   .lg\:mt-16 {
     margin-top: 4rem;
   }
@@ -2454,6 +2577,27 @@ section ul li.active {
 
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:gap-x-10 {
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
+  }
+
+  .lg\:border-l {
+    border-left-width: 1px;
+  }
+
+  .lg\:p-10 {
+    padding: 2.5rem;
+  }
+
+  .lg\:p-5 {
+    padding: 1.25rem;
+  }
+
+  .lg\:p-4 {
+    padding: 1rem;
   }
 
   .lg\:px-36 {
@@ -2520,6 +2664,18 @@ section ul li.active {
     padding-bottom: 5rem;
   }
 
+  .lg\:pt-5 {
+    padding-top: 1.25rem;
+  }
+
+  .lg\:pt-0 {
+    padding-top: 0px;
+  }
+
+  .lg\:text-left {
+    text-align: left;
+  }
+
   .lg\:text-\[18px\] {
     font-size: 18px;
   }
@@ -2546,6 +2702,10 @@ section ul li.active {
 
   .lg\:text-\[40px\] {
     font-size: 40px;
+  }
+
+  .lg\:leading-\[60px\] {
+    line-height: 60px;
   }
 
   .lg\:before\:h-\[40\%\]::before {
@@ -2647,6 +2807,10 @@ section ul li.active {
 
   .xl\:p-8 {
     padding: 2rem;
+  }
+
+  .xl\:p-10 {
+    padding: 2.5rem;
   }
 
   .xl\:py-20 {
@@ -2773,6 +2937,18 @@ section ul li.active {
     margin-bottom: 0.5rem;
   }
 
+  .\32xl\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
+  .\32xl\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .\32xl\:h-\[63px\] {
+    height: 63px;
+  }
+
   .\32xl\:w-16 {
     width: 4rem;
   }
@@ -2793,14 +2969,31 @@ section ul li.active {
     width: 90%;
   }
 
+  .\32xl\:max-w-\[545px\] {
+    max-width: 545px;
+  }
+
   .\32xl\:grid-cols-\[auto_minmax\(580px\2c _auto\)\] {
     grid-template-columns: auto minmax(580px, auto);
+  }
+
+  .\32xl\:gap-x-0 {
+    -moz-column-gap: 0px;
+         column-gap: 0px;
   }
 
   .\32xl\:space-x-20 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(5rem * var(--tw-space-x-reverse));
     margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .\32xl\:p-10 {
+    padding: 2.5rem;
+  }
+
+  .\32xl\:p-5 {
+    padding: 1.25rem;
   }
 
   .\32xl\:px-60 {
@@ -2893,12 +3086,21 @@ section ul li.active {
     font-size: 1.4rem;
   }
 
+  .\32xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
   .\32xl\:leading-10 {
     line-height: 2.5rem;
   }
 
   .\32xl\:leading-\[50px\] {
     line-height: 50px;
+  }
+
+  .\32xl\:leading-8 {
+    line-height: 2rem;
   }
 
   .\32xl\:before\:top-\[450px\]::before {

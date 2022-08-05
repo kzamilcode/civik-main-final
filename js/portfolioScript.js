@@ -35,11 +35,13 @@ navbar underline hover
   function navV() {
     return {
        
-        active: "home",
+       
+        active: "portfolio",
         
     }
   }
 
-  /**---
-navbar underline hover
-  --**/
+ 
+
+
+
