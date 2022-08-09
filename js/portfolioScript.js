@@ -36,7 +36,7 @@ navbar underline hover
     return {
        
        
-        active: "portfolio",
+        active: "portfolio"
         
     }
   }
