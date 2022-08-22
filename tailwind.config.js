@@ -52,7 +52,8 @@ module.exports = {
         'light-gray' : '#C3C3C3',
         'nUnderLine' : '#A957FB',
         'nWhite'   : '#FCFCFC',
-        'basic-black': '#BABABA' 
+        'basic-black': '#BABABA',
+        'another-block':'#2d2d2d' 
      },
      animation :{
       bounce : "bounce 3s linear infinite" 

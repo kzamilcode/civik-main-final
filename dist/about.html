@@ -159,7 +159,7 @@
           </li>
            
           <li>
-            <a href="#" @click="active = 'contact'">
+            <a href="contact.html" @click="active = 'contact'">
               <h1 class="pb-5 font-medium transition duration-200"
                   :class="active == 'contact'?'border-b-2 border-[#7AF9AD]':''">Contact</h1>
           </a>
@@ -180,113 +180,69 @@
      </div>
        </div>
       </div>
-    </nav>
+</nav>
 
   </div>
-    <div class=" my-20 relative">
-      <img class="w-full" src="./img/portfolio/Mask group.png" alt="">
+  <!---top-header-->
+    <div class=" lg:my-20 my-10 2xl:mb-40 relative">
+      <img class="w-full" src="./img/about/image 1.png" alt="">
       <div class="absolute top-[10%] md:top-[30%] md:left-48 left-10">
-          <h2 class="xl:text-5xl sm:text-xl text-sm font-rubik text-wvNblack">Portfolio</h2>
-          <div class="md:text-xl text-base mt-2">Home <span class="p-1"> <img class="inline" src="./img/portfolio/Vector.png" alt="">
+          <h2 class="xl:text-5xl sm:text-xl text-sm font-rubik text-white">About me</h2>
+          <div class="md:text-xl text-base mt-2 text-white"><a href="index.html">Home</a>  <span class="p-1"> <img class="inline" src="./img/contact/Vector.png" alt="">
 
-          </span> <span class="text-[#5956F0]">Portfolio</span>
+          </span> <span class="text-[#4DDA64]"><a href="./contact.html">About</a> </span>
              </div>
       </div>
   </div>
-  <div class="lg:px-36 bg-no-repeat bg-[length:85%] bg-[center_top_5rem] 2xl:px-60 md:px-12 px-10 mx-auto" style="background-image:url('./img/portfolio/dots.png')">
-        <section class="text-center mt-10">
-            <ul class="inline-block border border-solid rounded-full m-auto border-[#d3d3d3]">
-                <li class="list list-none text-[#363636] cursor-pointer md:min-w-[229px] min-w-[190px] md:leading-[70px] leading-[35px] text-center inline-block active" data-filter="all">Web Design</li>
 
-                <li class="list list-none text-[#363636] cursor-pointer md:min-w-[229px] min-w-[190px] md:leading-[70px] leading-[35px] text-center inline-block" data-filter="mobile">Logo design</li>
+  <!--about-me-description-->
+  <div class="lg:px-36 2xl:px-60 md:px-12 px-10 mx-auto">
 
-                <li class="list list-none text-[#363636] cursor-pointer md:min-w-[229px] min-w-[190px] md:leading-[70px] leading-[35px] text-center inline-block" data-filter="camera">UI/UX Design</li>
+    <!--about-me-part-->
+<div class="flex gap-x-14 flex-col md:flex-row ">
+    <div class="md:flex-none md:w-1/3 relative">
+        <img class="object-cover" src="./img/about/omid-armin-OvgYOJausq8-unsplash 1.png" alt="">
 
-                <li class="list list-none text-[#363636] cursor-pointer md:min-w-[229px] min-w-[190px] md:leading-[70px] leading-[35px] text-center inline-block" data-filter="watch">Advertisement</li>
-                
-            </ul>
+<img class="absolute -top-10 -left-10" src="./img/about/Rectangle 72.png" alt="">
+<img class="absolute -bottom-6 -right-8" src="./img/about/Rectangle 73.png" alt="">
+    </div>
     
-            <div class="content mt-24 grid">
-              <!----->
-                <div class="contentBx w-full" data-item="camera">
-                  <div class="hovereffets rounded-lg w-full h-full overflow-hidden relative text-center cursor-default">
-                    <img class="w-full block object-cover h-full rounded-lg relative" src="./img/portfolio/image 19.png" alt="">
-                    <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
-                      <h2  class="relative text-4xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Landing Page</h2>
-                    </div>
-                  </div>
-                </div>
-                 <!----->
-                <div class="contentBx w-full" data-item="camera">
-                  <div class="hovereffets rounded-lg w-full h-full overflow-hidden relative text-center cursor-default">
-                    <img class="w-full block object-cover h-full rounded-lg relative" src="./img/portfolio/image 11.png" alt="">
-                    <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
-                      <h2  class="relative text-4xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Landing Page</h2>
-                    </div>
-                  </div>
-                </div>
-                   <!----->   
-                <div class="contentBx w-full " data-item="mobile">
-                  <div class="hovereffets rounded-lg w-full h-full overflow-hidden relative text-center cursor-default">
-                    <img class="w-full block object-cover h-full rounded-lg relative" src="./img/portfolio/image-12.png" alt="">
-                    <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
-                      <h2  class="relative text-4xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Landing Page</h2>
-                    </div>
-                  </div>
-                </div>
-                 <!----->
-                <div class="contentBx w-full " data-item="mobile">
-                  <div class="hovereffets rounded-lg w-full h-full overflow-hidden relative text-center cursor-default">
-                    <img class="w-full block object-cover h-full rounded-lg relative" src="./img/portfolio/image-13.png" alt="">
-                    <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
-                      <h2  class="relative text-4xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Landing Page</h2>
-                    </div>
-                  </div>
-                </div>
-                  <!----->
-                <div class="contentBx w-full " data-item="watch">
-                  <div class="hovereffets rounded-lg w-full h-full overflow-hidden relative text-center cursor-default">
-                    <img class="w-full block object-cover h-full rounded-lg relative" src="./img/portfolio/image 14.png" alt="">
-                    <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
-                      <h2  class="relative text-4xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Landing Page</h2>
-                    </div>
-                  </div>
-                </div>
-                 <!----->
-                <div class="contentBx w-full" data-item="watch">
-                  <div class="hovereffets rounded-lg w-full h-full overflow-hidden relative text-center cursor-default">
-                    <img class="w-full block object-cover h-full rounded-lg relative" src="./img/portfolio/image-21.png" alt="">
-                    <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
-                      <h2  class="relative text-4xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Landing Page</h2>
-                    </div>
-                  </div>
-                </div>
-                <!----->
-                <div class="contentBx w-full " data-item="shoe">
-                  <div class="hovereffets rounded-lg w-full h-full overflow-hidden relative text-center cursor-default">
-                    <img class="w-full block h-full rounded-lg relative" src="./img/portfolio/image 31.png" alt="">
-                    <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
-                      <h2  class="relative text-4xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Landing Page</h2>
-                    </div>
-                  </div>
-                </div>
-                 <!----->
-                <div class="contentBx w-full" data-item="shoe">
-                  <div class="hovereffets rounded-lg w-full h-full overflow-hidden relative text-center cursor-default">
-                    <img class="w-full block h-full rounded-lg relative" src="./img/portfolio/image 31.png" alt="">
-                    <div class="overlay absolute w-full h-full left-0 top-0 opacity-0 overflow-hidden">
-                      <h2  class="relative text-4xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Landing Page</h2>
-                    </div>
-                  </div>
-                </div>              
-        </section>   
-    
+    <div class="md:flex-auto">
+        <h1 class="font-work text-5xl font-semibold text-another-block">About me</h1>
+        <p class="text-nwSoftGray leading-7 text-lg py-10 w-full md:max-w-[535px]">Making this the first true generator on the internet It uses ato dictionary of over lorem words combined with me althoi handful Making this the first true generator on the internet It uses ato dictionary of over lorem words combined with me althoi handful 
+
+        </p>
+
+        <p class="text-nwSoftGray leading-7 text-lg pb-10 w-full md:max-w-[535px]"> Making this the first true generator on the internet It uses ato dictionary of over lorem words combined with me althoi handful Making this the first true generator on the internet It uses ato</p>
+
+        <div class="flex items-center">  <a class="inline-block text-xl font-normal font-rubik py-5 px-10 mr-14 rounded-full bg-wvNblack text-white" href="./img/homepage/kazi-Rahman (2).pdf" download><img class="inline xl:w-4 w-[10px] mr-1 xl:mr-3 2xl:mb-2 mb-1" src="./img/about/basicDownload.png" alt="">Download CV </a>
+
+        <a href="#" class="mr-8"><img src="././img/about/Vector.png" alt=""></a>
+        <a href="#" class="mr-8"><img src="././img/about/Group 126.png" alt=""></a>
+        <a href="#" class="mr-8"><img src="././img/about/vector (1).png" alt=""></a>
+        <a href="#"><img src="././img/about/Group 127.png" alt=""></a>
+        </div>
+
+        <img class="mt-10" src="./img/about/signature-40122 1.png" alt="">
+        
+    </div>
+</div>
+
+<!--develop-skill-part-->
+
+<div class="text-center 2xl:pt-40 pt-20">
+  <p class="text-3xl pb-8 text-nUnderLine">Design is Life</p>
+  <h1 class="text-5xl text-wvNblack font-semibold max-w-[600px] mx-auto">I Develop Skills Regularly to Keep Me Update</h1>
+  <p class="text-nwSoftGray">Most common methods for designing websites that work well on desktop is responsive.</p>
+</div>
   </div>
+
+
        <!----------
           footer-section
         ------->
 
-        <div class="xl:pb-20 mt-24 pb-10 bg-no-repeat relative bg-cover" style="background-image:url('./img/homepage/footerbg.png')">
+        <div class="xl:pb-20 mt-20 pb-10 bg-no-repeat relative bg-cover" style="background-image:url('./img/homepage/footerbg.png')">
           <div class="flex flex-col justify-center items-center text-center">
          <div class="lg:pt-16 pt-8">
            
@@ -351,14 +307,13 @@
                </a>
                </li>
                <li>
-                 <a href="#" @click="active = 'contact'">
+                 <a href="contact.html" @click="active = 'contact'">
                    <h1 class="py-4 hover:text-[#4DDA64]  font-medium text-nsoftgray transition duration-200"
                        :class="active == 'contact'?'border-b-2 border-[#4DDA64]':''">Contact</h1>
                </a>
                </li>
              </ul>
-         
-         
+                
          </nav>
            
          </div>
@@ -383,8 +338,7 @@
          
           </div>
          
-           <div class="text-white text-center relative 2xl:after:-ml-[100px] pt-16 2xl:pt-20 flex flex-wrap justify-center after:absolute 2xl:after:w-[70%] after:w-[75%] left-0 after:top-11 after:border-t after:border-solid after:border-[#383838] after:pt-28">
-           
+           <div class="text-white text-center relative 2xl:after:-ml-[100px] pt-16 2xl:pt-20 flex flex-wrap justify-center after:absolute 2xl:after:w-[70%] after:w-[75%] left-0 after:top-11 after:border-t after:border-solid after:border-[#383838] after:pt-28">     
          
          <div class="">
            <p class="md:text-xl text-sm text-nsoftgray 2xl:pb-0 pb-6 xl:pb-10 ">Copyright jompha 2022 all Rights Resarved</p>
@@ -392,11 +346,10 @@
            
            </div>
            
-           <div class="w-[65%] mx-auto text-right relative bottom-6">
+           <div class="lg:w-[65%] mx-auto text-center lg:mt-0 mt-4 lg:text-right relative lg:bottom-16 2xl:bottom-6">
             <a href="#" class="top sticky text-nsoftgray"><span class="mr-2">Back to Top</span>   <img class="w-6 inline-block" src="./img/homepage/top-bottom.png" alt=""></a>
            </div>
-      
-           
+         
       </div>
 
     
@@ -404,26 +357,10 @@
         end-footer-section
         ------->
         
-        <div class="sm:hidden relative w-11/12 mx-auto bg-white dark:bg-gray-800  rounded">
-          <div class="absolute inset-0 m-auto mr-4 z-0 w-6 h-6">
-              <img class="icon icon-tabler icon-tabler-selector" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/tabs-with-icons-svg1.svg" alt="selectors" />
-          </div>
-          <select aria-label="Selected tab" class="dark:text-white form-select block w-full p-3 border border-gray-300 rounded text-gray-600 appearance-none bg-transparent relative z-10">
-              <option class="text-sm text-gray-600">inactive</option>
-              <option class="text-sm text-gray-600">inactive</option>
-              <option selected class="text-sm text-gray-600">Active</option>
-              <option class="text-sm text-gray-600">inactive</option>
-              <option class="text-sm text-gray-600">inactive</option>
-          </select>
-      </div>
-      
-     
-  
-
     <!------
    JAVASCRIPT-LINK
     ----->
-  <script src="../js/script.js"></script>
- <script src="../js/portfolioScript.js"></script>
+    <script src="../js/script.js"></script>
+ <script src="../js/about.js"></script>
 </body>
 </html> 
