@@ -89,10 +89,7 @@ transform: scale(1.2);
  underline hover
   --**/
 
-/* .clip.active {
-transition-delay: .2s;
-  transform: scale(1);
-} */
+
 
 .play::after{
   animation: two 4s infinite;
@@ -227,6 +224,8 @@ img.full {
 }
 .imgContainer::-webkit-scrollbar{
   display: none;
+  width: 0;
+  height: 0;
 }
 .cards {
  
@@ -270,5 +269,34 @@ section ul li.active {
 .content .contentBx.hide{
   display:none;
 }
+
+
+/*****/
+
+
+@media only screen and (min-width: 768px){
+  .arrow {
+ 
+    margin: 0 -5.5rem;
+  } 
+  
+}
+
+
+
+
+section .thumbnail:hover {
+  transform: scale(1);
+}
+
+
+
+
+
+
+
+
+
+
 
 
