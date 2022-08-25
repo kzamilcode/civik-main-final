@@ -342,7 +342,7 @@ section .thumbnail:hover {
 section ul {
   display: flex;
   list-style: none;
-  width: 100%;
+  /* width: 100%; */
   justify-content: center;
 }
 section ul li{
