@@ -254,7 +254,8 @@ img.full {
 
 section ul li.active {
   display: inline-block;
-  background: #A957FB;
+  background:#5956F0;
+  ;
   border-radius: 50px;
   color:#fff;
 
@@ -265,6 +266,7 @@ section ul li.active {
   grid-template-columns: auto auto;
   grid-gap: 20px;
 }
+
 
 .content .contentBx.hide{
   display:none;
@@ -282,21 +284,71 @@ section ul li.active {
   
 }
 
-
-
-
 section .thumbnail:hover {
   transform: scale(1);
 }
 
+/**blog**/
 
 
+.card{
+
+  border-radius: 10px;
+  overflow: hidden;
+}
 
 
+.pagination li {
+  display: inline-block;
+  margin: 12px;
+}
+
+.pagination li a {
+  color: #B9B9B9;
+  ;
+  text-decoration: none;
+  line-height: 60px;
+  font-size: 22px;
+}
+
+.next-page{
+  background:#EEEEEE;
+  ;
+  color: #B9B9B9;
+  width: 70px;
+  
+  cursor: pointer;
+  transition: 0.3s ease;
+}
 
 
+.current-page, .dots {
+  background:#EEEEEE;
+  ;
+  width: 70px;
+  cursor: pointer;
+  height: 60px;
+  line-height: 60px;
+}
+
+.active{
+  background: #5956F0;
+  ;
+  color: #B9B9B9;
+
+}
 
 
+section ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+section ul li{
+  padding: 8px 20px ;
+  
+}
 
 
 
