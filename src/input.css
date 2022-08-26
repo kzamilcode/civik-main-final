@@ -3,28 +3,27 @@
 @tailwind utilities;
 
 /***/
-#preLoder{
+/* #preLoder{
   background: #000 url('../dist/img/homepage/circle-loader-gif-2.gif') no-repeat center center;
   z-index: 9999;
   background-size: 10%;
-}
+} */
 
 /**---
   Dark-btn
   --**/
 
   /* @layer utilities{ */
-    .text-gradient{
+    /* .text-gradient{
       background-clip:text;
       -webkit-text-fill-color: transparent;
-    }
+    } */
   /* } */
 #toggle:checked ~ label div.toggle-bot,
 #toggleTwo:checked ~ label div.toggle-bot{
  @apply translate-x-7
 
 }
-
 
 @keyframes one{
   0%{
@@ -53,12 +52,12 @@ transform: scale(1.2);
   Humburger-menu
   --**/
 
-.humburger-middle{
+/* .humburger-middle{
   transform: translateY(7px);
 }
 .humburger-bottom{
   transform: translateY(14px);
-}
+} */
 
 .open{
   transform: rotate(90deg);
@@ -92,8 +91,8 @@ transform: scale(1.2);
 
 
 .play::after{
-  animation: two 4s infinite;
-  transition: .4s;
+  /* animation: two 4s infinite; */
+  /* transition: .4s; */
 }
 
 /**---
@@ -104,15 +103,15 @@ transform: scale(1.2);
   .bg-header::before
    {
     
-    animation: two 4s infinite;
-    transition: .4s;
+    /* animation: two 4s infinite; */
+    /* transition: .4s; */
   }
 
 
     /*progress-bar*/
-    .leading-loose {
+    /* .leading-loose {
       line-height: 1.2 !important;
-    }
+    } */
     .bar::after
      {
       content: attr(data-text);
@@ -342,7 +341,7 @@ section .thumbnail:hover {
 section ul {
   display: flex;
   list-style: none;
-  /* width: 100%; */
+
   justify-content: center;
 }
 section ul li{

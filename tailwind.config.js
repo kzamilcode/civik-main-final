@@ -24,7 +24,10 @@ module.exports = {
 
       }),
  
- 
+      lineHeight: {
+        
+        '12': '1.2',
+      },
       boxShadow: {
         '3xl': '-4px 1px 10px rgba(0, 0, 0, 0.4)',
         '2xl' : '0px 0px 80px rgba(0, 0, 0, 0.1)'
