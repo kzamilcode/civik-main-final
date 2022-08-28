@@ -138,3 +138,25 @@ $('.list').click(function(){
     $(this).addClass('active').siblings().removeClass('active')
    
 })
+
+
+
+/****blog-details-page****/
+
+let slides = document.querySelectorAll('.nContainer');
+let index = 0;
+
+function next(){
+  slides[index].classList.remove('nActive');
+  index  = (index + 1) % slides.length;
+  slides[index].classList.add('nActive');
+
+};
+
+function prev(){
+  slides[index].classList.remove('nActive');
+  index  = (index - 1 + slides.length) % slides.length;
+  slides[index].classList.add('nActive');
+
+}
+
