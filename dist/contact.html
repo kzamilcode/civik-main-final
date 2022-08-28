@@ -85,10 +85,19 @@
               </li>
 
               <li>
-                <a href="blog.html" @click="active = 'blog '">
-                  <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
-                      :class="active == 'blog '?'border-b-2 border-nUnderLine':''">Blog</h1>
-              </a>
+                <a href="blog.html" @click="active = 'blog'">
+                  <div class="dropdown inline-block relative">
+                    <button class=" py-4  inline-flex items-center text-wvNblack" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
+                      <span class="mr-1 text-wvNblack">Blog</span>
+                      <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                    </button>
+                    <ul class="dropdown-menu absolute hidden text-wvNblack pt-1">
+                      <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
+                
+                    </ul>
+                  </div>
+                </a>
+              
               </li> 
 
               <li>
@@ -349,11 +358,20 @@
                </a>
                </li>
                <li>
-                 <a href="blog.html" @click="active = 'blog '">
-                   <h1 class="py-4 hover:text-[#4DDA64] font-medium text-nsoftgray transition duration-200"
-                       :class="active == 'blog '?'border-b-2 border[#4DDA64]':''">Blog</h1>
-               </a>
-               </li>
+                <a href="blog.html" @click="active = 'blog'">
+                  <div class="dropdown inline-block relative">
+                    <button class=" py-4  inline-flex items-center text-nsoftgray " :class="active == 'blog'?'border-b-2 border-[#4DDA64]':''">
+                      <span class="mr-1 text-nsoftgray ">Blog</span>
+                      <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                    </button>
+                    <ul class="dropdown-menu absolute hidden text-wvNblack pt-1">
+                      <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
+                
+                    </ul>
+                  </div>
+                </a>
+              
+              </li>
                <li>
                  <a href="contact.html" @click="active = 'contact'">
                    <h1 class="py-4 hover:text-[#4DDA64]  font-medium text-nsoftgray transition duration-200"

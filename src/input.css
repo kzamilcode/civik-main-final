@@ -351,3 +351,7 @@ section ul li{
 
 
 
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+

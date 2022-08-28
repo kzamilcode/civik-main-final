@@ -80,6 +80,7 @@ module.exports = {
   variants: {
     extend: {
       backgroundImage: ['dark'],
+      display: ['group-focus']
     },
   },
   plugins: [],

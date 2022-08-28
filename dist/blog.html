@@ -86,9 +86,18 @@
 
               <li>
                 <a href="blog.html" @click="active = 'blog'">
-                  <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
-                      :class="active == 'blog'?'border-b-2 border-nUnderLine':''">Blog</h1>
-              </a>
+                  <div class="dropdown inline-block relative">
+                    <button class=" py-4  inline-flex items-center text-wvNblack" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
+                      <span class="mr-1 text-wvNblack">Blog</span>
+                      <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                    </button>
+                    <ul class="dropdown-menu absolute hidden text-wvNblack pt-1">
+                      <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="./blogDetails.html">Details</a></li>
+                
+                    </ul>
+                  </div>
+                </a>
+              
               </li> 
 
               <li>
@@ -152,11 +161,19 @@
           </a>
           </li>
           <li>
-            <a href="#" @click="active = 'blog '">
-              <h1 class="pb-5 font-medium transition duration-200"
-                  :class="active == 'blog '?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Blog</h1>
-          </a>
-          </li>
+            <a href="blog.html" @click="active = 'blog'">
+              <div class="dropdown inline-block relative">
+                <button class=" font-semibold pt-4  inline-flex items-center" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
+                  <span class="mr-1">Blog</span>
+                  <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                </button>
+                <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                  <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
+            
+                </ul>
+              </div>
+            </a>
+          </li> 
            
           <li>
             <a href="#" @click="active = 'contact'">
@@ -195,22 +212,22 @@
   </div>
  <!----->
 
- <section class="lg:px-36  2xl:px-60 md:px-12 px-10 mx-auto">
+ <section class="lg:px-36 text-center  2xl:px-60 md:px-12 px-10 mx-auto">
 
-    <ul class="font-work md:flex-nowrap flex-wrap font-normal 2xl:mb-28 lg:mb-20 mb-10 max-w-[72%] 2xl:max-w-[64%] rounded-[50px] border-2 border-solid border-[#D3D3D3] m-auto">
-      <li class="list active 2xl:text-[20px] 2xl:mr-7 mr-0  py-5 px-10 cursor-pointer " data-filter="web">Web Design</li>
-      <li class="list 2xl:text-[20px] px-10 cursor-pointer 2xl:mr-7 mr-0  py-5 " data-filter="logo">Logo design</li>
-      <li class="list 2xl:text-[20px] px-10 cursor-pointer 2xl:mr-7 mr-0 py-5 " data-filter="design">UI/UX Design</li>
-      <li class="list 2xl:text-[20px] py-5 px-10" data-filter="advertisement">Advertisement</li>
+    <ul class="inline-block border mb-20  border-solid rounded-full m-auto border-[#d3d3d3]">
+      <li class="list list-none text-[#363636] cursor-pointer md:min-w-[229px] min-w-[190px] md:leading-[70px] leading-[35px] text-center inline-block active" data-filter="web">Web Design</li>
+      <li class="list list-none text-[#363636] cursor-pointer md:min-w-[229px] min-w-[190px] md:leading-[70px] leading-[35px] text-center inline-block" data-filter="logo">Logo design</li>
+      <li class="list list-none text-[#363636] cursor-pointer md:min-w-[229px] min-w-[190px] md:leading-[70px] leading-[35px] text-center inline-block" data-filter="design">UI/UX Design</li>
+      <li class="list list-none text-[#363636] cursor-pointer md:min-w-[229px] min-w-[190px] md:leading-[70px] leading-[35px] text-center inline-block " data-filter="advertisement">Advertisement</li>
     </ul>
   
   
-    <!-- <div class="product"> -->
-      <div class="card-content gap-x-4 grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 justify-center product" style="display: none">
+    
+      <div class="card-content text-left gap-x-4 grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 justify-center product" style="display: none">
         <div class="card mb-10 2xl:mb-20 web">
           <div class="card-image">
             <img class="w-full" src="./img/blog/original-e2f4577f52b6c91545793e19dee33ad1 1.png" alt="">
-            <div class="font-rubik font-medium 2xl:pt-12 pt-8">
+            <div class="font-rubik  font-medium 2xl:pt-12 pt-8">
               <h2 class="text-wvNblack text-3xl 2xl:text-4xl 2xl:leading-[50px] cursor-pointer hover:text-nUnderLine leading-10">UI/UX design is a most
                 Usefull design.</h2>
                 <p class="font-work text-light-gray  md:text-xs 2xl:text-[1.4rem]  text-xl 2xl:py-6 py-4">03 June 2022 . Posted by Admin</p>
@@ -704,7 +721,7 @@
       <div class="pagination inline xl:block  text-center lg:mt-20 mt-0 ">
         
       </div>
-    <!-- </div> -->
+    
   </section>
        <!----------
           footer-section
@@ -769,11 +786,20 @@
                </a>
                </li>
                <li>
-                 <a href="blog.html" @click="active = 'blog'">
-                   <h1 class="py-4 hover:text-[#4DDA64] font-medium text-nsoftgray transition duration-200"
-                       :class="active == 'blog'?'border-b-2 border-[#4DDA64]':''">Blog</h1>
-               </a>
-               </li>
+                <a href="blog.html" @click="active = 'blog'">
+                  <div class="dropdown inline-block relative">
+                    <button class=" py-4  inline-flex items-center text-nsoftgray " :class="active == 'blog'?'border-b-2 border-[#4DDA64]':''">
+                      <span class="mr-1 text-nsoftgray ">Blog</span>
+                      <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                    </button>
+                    <ul class="dropdown-menu absolute hidden text-wvNblack pt-1">
+                      <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
+                
+                    </ul>
+                  </div>
+                </a>
+              
+              </li> 
                <li>
                  <a href="#" @click="active = 'contact'">
                    <h1 class="py-4 hover:text-[#4DDA64]  font-medium text-nsoftgray transition duration-200"
