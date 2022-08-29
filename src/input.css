@@ -52,12 +52,12 @@ transform: scale(1.2);
   Humburger-menu
   --**/
 
-/* .humburger-middle{
+.humburger-middle{
   transform: translateY(7px);
 }
 .humburger-bottom{
   transform: translateY(14px);
-} */
+}
 
 .open{
   transform: rotate(90deg);
