@@ -829,6 +829,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0px;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .block {
   display: block;
 }
@@ -899,6 +903,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[38px\] {
   height: 38px;
+}
+
+.h-14 {
+  height: 3.5rem;
 }
 
 .w-36 {
@@ -987,6 +995,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[210px\] {
   width: 210px;
+}
+
+.w-14 {
+  width: 3.5rem;
 }
 
 .min-w-full {
@@ -1217,6 +1229,11 @@ Ensure the default browser behavior of the `hidden` attribute.
        column-gap: 0.5rem;
 }
 
+.gap-x-10 {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1368,6 +1385,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(238 238 238 / var(--tw-border-opacity));
 }
 
+.border-\[\#636363\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(99 99 99 / var(--tw-border-opacity));
+}
+
+.border-\[\#E4E4E4\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(228 228 228 / var(--tw-border-opacity));
+}
+
 .border-b-black {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -1441,6 +1468,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#A957FB\] {
   --tw-bg-opacity: 1;
   background-color: rgb(169 87 251 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FBB957\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 185 87 / var(--tw-bg-opacity));
 }
 
 .bg-contain {
@@ -1542,6 +1574,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 8px;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1605,6 +1641,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-11 {
   padding-left: 2.75rem;
   padding-right: 2.75rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .pt-8 {
@@ -1713,6 +1769,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-\[7px\] {
   padding-top: 7px;
+}
+
+.pl-36 {
+  padding-left: 9rem;
+}
+
+.pl-32 {
+  padding-left: 8rem;
+}
+
+.pl-\[7rem\] {
+  padding-left: 7rem;
+}
+
+.pl-\[6\.5rem\] {
+  padding-left: 6.5rem;
+}
+
+.pr-24 {
+  padding-right: 6rem;
 }
 
 .text-left {
@@ -1954,6 +2030,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#A957FB\] {
   --tw-text-opacity: 1;
   color: rgb(169 87 251 / var(--tw-text-opacity));
+}
+
+.text-\[\#E4E4E4\] {
+  --tw-text-opacity: 1;
+  color: rgb(228 228 228 / var(--tw-text-opacity));
+}
+
+.text-\[\#989898\] {
+  --tw-text-opacity: 1;
+  color: rgb(152 152 152 / var(--tw-text-opacity));
+}
+
+.text-\[\#FBB957\] {
+  --tw-text-opacity: 1;
+  color: rgb(251 185 87 / var(--tw-text-opacity));
+}
+
+.text-\[\#B5B5B5\] {
+  --tw-text-opacity: 1;
+  color: rgb(181 181 181 / var(--tw-text-opacity));
 }
 
 .placeholder-\[\#696969\]::-moz-placeholder {
@@ -2628,6 +2724,11 @@ section ul li{
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.hover\:border-\[\#636363\]:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(99 99 99 / var(--tw-border-opacity));
+}
+
 .hover\:bg-gray-400:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
@@ -2665,6 +2766,11 @@ section ul li{
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#636363\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(99 99 99 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
@@ -2749,6 +2855,14 @@ section ul li{
 
   .md\:left-\[15rem\] {
     left: 15rem;
+  }
+
+  .md\:-left-\[35px\] {
+    left: -35px;
+  }
+
+  .md\:-left-\[140px\] {
+    left: -140px;
   }
 
   .md\:my-8 {
@@ -3563,6 +3677,11 @@ section ul li{
     margin-bottom: 5rem;
   }
 
+  .\32xl\:my-10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
   .\32xl\:mb-40 {
     margin-bottom: 10rem;
   }
@@ -3760,6 +3879,11 @@ section ul li{
   .\32xl\:px-\[75px\] {
     padding-left: 75px;
     padding-right: 75px;
+  }
+
+  .\32xl\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .\32xl\:pt-28 {
