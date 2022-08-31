@@ -36,7 +36,7 @@
     Home-section
     ----->
     
-<nav class="relative mx-auto 2xl:pt-28 lg:pt-12 md:pt-10 pt-8 z-50">
+<nav class="relative mx-auto 2xl:pt-20 lg:pt-12 md:pt-10 pt-8 z-50">
       <!--flex container-->
       <div class="flex items-center justify-between">
         <!--logo-->
@@ -86,19 +86,19 @@
 
               <li>
                 <a href="blog.html" @click="active = 'blog'">
-                  <div class="dropdown inline-block relative">
-                    <button class=" py-4  inline-flex items-center text-wvNblack" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
+                  <div class="dropdown text-center inline-block relative">
+                    <button class=" py-4 pb-0  inline-flex items-center text-wvNblack" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
                       <span class="mr-1 text-wvNblack">Blog</span>
                       <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                     </button>
                     <ul class="dropdown-menu absolute hidden text-wvNblack pt-1">
-                      <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="./blogDetails.html">Details</a></li>
+                      <li class=""><a class="bg-gray-200 relative -left-8 hover:bg-gray-400 py-2 w-28 block whitespace-no-wrap" href="./blogDetails.html">List-1</a></li>
                 
                     </ul>
                   </div>
                 </a>
               
-              </li>  
+              </li>   
 
               <li>
                 <a href="contact.html" @click="active = 'contact'">
@@ -114,7 +114,7 @@
          <!--hire-me-button--->
     
          <div class="hidden xl:flex">
-        <a class="text-wvNblack font-medium text-sm md:text-base  lg:text-[18px] py-3 px-8 border border-solid border-nUnderLine rounded-full flex justify-center items-center" href="">Hire Me <svg class="ml-3" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a class="text-wvNblack bg-[#F9F2FF] font-medium text-sm md:text-base  lg:text-[18px] py-3 px-8 border border-solid border-nUnderLine rounded-full flex justify-center items-center" href="">Hire Me <svg class="ml-3" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1.16667 14C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333C14 14 12.8333 14 12.8333 14H1.16667ZM7 7C7.92826 7 8.8185 6.63125 9.47487 5.97487C10.1313 5.3185 10.5 4.42826 10.5 3.5C10.5 2.57174 10.1313 1.6815 9.47487 1.02513C8.8185 0.368749 7.92826 0 7 0C6.07174 0 5.1815 0.368749 4.52513 1.02513C3.86875 1.6815 3.5 2.57174 3.5 3.5C3.5 4.42826 3.86875 5.3185 4.52513 5.97487C5.1815 6.63125 6.07174 7 7 7Z" fill="#333333"/>
           </svg></a>
 
@@ -136,41 +136,49 @@
       
         <ul class="flex flex-col justify-center items-center font-medium text-sm md:text-base  lg:text-[18px]">
           <li class="">
-            <a href="" @click="active = 'home'">
-              <h1 class="pb-5 font-medium transition duration-200"
-                  :class="active == 'home'?'border-b-2 border-[#7AF9AD] ':''">Home</h1>
+            <a href="index.html" @click="active = 'home'">
+              <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                  :class="active == 'home'?'border-b-2 border-nUnderLine ':''">Home</h1>
           </a>
           </li>
           
           <li>
             <a href="services.html" @click="active = 'service'">
-              <h1 class="pb-5 font-medium transition duration-200"
-                  :class="active == 'service'?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Service</h1>
+              <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                  :class="active == 'service'?'border-b-2 border-nUnderLine':''">Service</h1>
           </a>
           </li>
             <li>
-              <a href="portfolio.html" @click="active = 'portfolio'">
-                <h1 class="pb-5 font-medium transition duration-200"
-                    :class="active == 'portfolio'?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Portfolio</h1>
+              <a href="portfolio.html" @click="active = 'portfolio">
+                <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                    :class="active == 'portfolio'?'border-b-2 border-nUnderLine  ':''">Portfolio</h1>
             </a>
             </li>
           <li>
-            <a href="#" @click="active = 'resume'">
-              <h1 class="pb-5 font-medium  transition duration-200"
-                  :class="active == 'resume'?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Resume</h1>
+            <a href="about.html" @click="active = 'about'">
+              <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                  :class="active == 'about'?'border-b-2 border-nUnderLine':''">About</h1>
           </a>
           </li>
           <li>
-            <a href="#" @click="active = 'blog '">
-              <h1 class="pb-5 font-medium transition duration-200"
-                  :class="active == 'blog '?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Blog</h1>
-          </a>
+            <a href="blog.html" @click="active = 'blog'">
+              <div class="dropdown text-center inline-block relative">
+                <button class=" py-4 pb-0  inline-flex items-center text-wvNblack" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
+                  <span class="mr-1 text-wvNblack">Blog</span>
+                  <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                </button>
+                <ul class="dropdown-menu absolute hidden text-wvNblack pt-1">
+                  <li class=""><a class="bg-gray-200 relative -left-8 hover:bg-gray-400 py-2 w-28 block whitespace-no-wrap" href="./blogDetails.html">List-1</a></li>
+            
+                </ul>
+              </div>
+            </a>
           </li>
            
           <li>
-            <a href="#" @click="active = 'contact'">
-              <h1 class="pb-5 font-medium transition duration-200"
-                  :class="active == 'contact'?'border-b-2 border-[#7AF9AD]':''">Contact</h1>
+            <a href="contact.html" @click="active = 'contact'">
+              <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                  :class="active == 'contact'?'border-b-2 border-nUnderLine':''">Contact</h1>
           </a>
           </li>
         </ul>
@@ -180,7 +188,7 @@
         <div class="flex">
                    
             <div class="">
-                <a class="text-[#333333] font-medium text-sm md:text-base  lg:text-[18px] py-3 px-8 border border-solid border-gold rounded-full flex justify-center items-center" href="">Hire Me <svg class="ml-3" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a class="text-[#333333] bg-[#F9F2FF] font-medium text-sm md:text-base  lg:text-[18px] py-3 px-8 border border-solid border-gold rounded-full flex justify-center items-center" href="">Hire Me <svg class="ml-3" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1.16667 14C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333C14 14 12.8333 14 12.8333 14H1.16667ZM7 7C7.92826 7 8.8185 6.63125 9.47487 5.97487C10.1313 5.3185 10.5 4.42826 10.5 3.5C10.5 2.57174 10.1313 1.6815 9.47487 1.02513C8.8185 0.368749 7.92826 0 7 0C6.07174 0 5.1815 0.368749 4.52513 1.02513C3.86875 1.6815 3.5 2.57174 3.5 3.5C3.5 4.42826 3.86875 5.3185 4.52513 5.97487C5.1815 6.63125 6.07174 7 7 7Z" fill="#333333"/>
                   </svg></a>
         
@@ -194,8 +202,8 @@
   </div>
     <div class=" my-20 relative">
       <img class="w-full" src="./img/portfolio/Mask group.png" alt="">
-      <div class="absolute top-[10%] md:top-[30%] md:left-48 left-10">
-          <h2 class="xl:text-5xl sm:text-xl text-sm font-rubik text-wvNblack">Portfolio</h2>
+      <div class="absolute top-[10%] md:top-[30%]  2xl:top-[35%] md:left-48 left-10">
+          <h2 class="xl:text-5xl sm:text-xl mb-5 text-sm font-rubik text-wvNblack">Portfolio</h2>
           <div class="md:text-xl text-base mt-2">Home <span class="p-1"> <img class="inline" src="./img/portfolio/Vector.png" alt="">
 
           </span> <span class="text-[#5956F0]">Portfolio</span>
@@ -204,7 +212,7 @@
   </div>
   <div class="lg:px-36 bg-no-repeat bg-[length:85%] bg-[center_top_5rem] 2xl:px-60 md:px-12 px-10 mx-auto" style="background-image:url('./img/portfolio/dots.png')">
         <section class="text-center mt-10">
-            <ul class="inline-block border border-solid rounded-full m-auto border-[#d3d3d3]">
+            <ul class="inline-block rounded-[25px] w-[195px] md:w-auto border border-solid md:rounded-full m-auto border-[#d3d3d3]">
                 <li class="list list-none text-[#363636] cursor-pointer md:min-w-[229px] min-w-[190px] md:leading-[70px] leading-[35px] text-center inline-block active" data-filter="all">Web Design</li>
 
                 <li class="list list-none text-[#363636] cursor-pointer md:min-w-[229px] min-w-[190px] md:leading-[70px] leading-[35px] text-center inline-block" data-filter="mobile">Logo design</li>
@@ -215,7 +223,7 @@
                 
             </ul>
     
-      <div class="content container mt-24 grid">
+      <div class="content gap-x-4 grid-cols-[auto_minmax(auto,_auto)] container mt-24 grid">
         <!----->
           <div class="contentBx w-full" data-item="camera">
             <div class="hovereffets rounded-lg w-full h-full overflow-hidden relative text-center cursor-default">
@@ -358,19 +366,19 @@
                </li>
                <li>
                 <a href="blog.html" @click="active = 'blog'">
-                  <div class="dropdown inline-block relative">
-                    <button class=" py-4  inline-flex items-center text-nsoftgray " :class="active == 'blog'?'border-b-2 border-[#4DDA64]':''">
-                      <span class="mr-1 text-nsoftgray ">Blog</span>
+                  <div class="dropdown text-center inline-block relative">
+                    <button class=" py-4 pb-0  inline-flex items-center text-nwSoftGray" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
+                      <span class="mr-1 text-nsoftgray">Blog</span>
                       <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                     </button>
                     <ul class="dropdown-menu absolute hidden text-wvNblack pt-1">
-                      <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
+                      <li class=""><a class="bg-gray-200 relative -left-8 hover:bg-gray-400 py-2 w-28 block whitespace-no-wrap" href="./blogDetails.html">List-1</a></li>
                 
                     </ul>
                   </div>
                 </a>
               
-              </li>
+              </li> 
                <li>
                  <a href="#" @click="active = 'contact'">
                    <h1 class="py-4 hover:text-[#4DDA64]  font-medium text-nsoftgray transition duration-200"
@@ -413,7 +421,7 @@
            
            </div>
            
-           <div class="w-[65%] mx-auto text-right relative bottom-6">
+           <div class="w-[65%] mx-auto mt-5 md:mt-0 text-center md:text-right relative bottom-6">
             <a href="#" class="top sticky text-nsoftgray"><span class="mr-2">Back to Top</span>   <img class="w-6 inline-block" src="./img/homepage/top-bottom.png" alt=""></a>
            </div>
       

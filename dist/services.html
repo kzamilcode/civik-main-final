@@ -34,7 +34,7 @@
     ----->
     <div class="lg:px-36  2xl:px-60 md:px-12 px-10 mx-auto">
 
-    <nav class="relative mx-auto 2xl:pt-28 lg:pt-12 md:pt-10 pt-8 z-50">
+    <nav class="relative mx-auto 2xl:pt-20 lg:pt-12 md:pt-10 pt-8 z-50">
       <!--flex container-->
       <div class="flex items-center justify-between">
         <!--logo-->
@@ -84,13 +84,13 @@
 
               <li>
                 <a href="blog.html" @click="active = 'blog'">
-                  <div class="dropdown inline-block relative">
-                    <button class=" py-4  inline-flex items-center text-wvNblack" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
+                  <div class="dropdown text-center inline-block relative">
+                    <button class=" py-4 pb-0  inline-flex items-center text-wvNblack" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
                       <span class="mr-1 text-wvNblack">Blog</span>
                       <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                     </button>
                     <ul class="dropdown-menu absolute hidden text-wvNblack pt-1">
-                      <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="./blogDetails.html">Details</a></li>
+                      <li class=""><a class="bg-gray-200 relative -left-8 hover:bg-gray-400 py-2 w-28 block whitespace-no-wrap" href="./blogDetails.html">List-1</a></li>
                 
                     </ul>
                   </div>
@@ -112,7 +112,7 @@
          <!--hire-me-button--->
     
          <div class="hidden xl:flex">
-        <a class="text-wvNblack font-medium text-sm md:text-base  lg:text-[18px] py-3 px-8 border border-solid border-nUnderLine rounded-full flex justify-center items-center" href="">Hire Me <svg class="ml-3" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a class="text-wvNblack bg-[#F9F2FF] font-medium text-sm md:text-base  lg:text-[18px] py-3 px-8 border border-solid border-nUnderLine rounded-full flex justify-center items-center" href="">Hire Me <svg class="ml-3" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1.16667 14C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333C14 14 12.8333 14 12.8333 14H1.16667ZM7 7C7.92826 7 8.8185 6.63125 9.47487 5.97487C10.1313 5.3185 10.5 4.42826 10.5 3.5C10.5 2.57174 10.1313 1.6815 9.47487 1.02513C8.8185 0.368749 7.92826 0 7 0C6.07174 0 5.1815 0.368749 4.52513 1.02513C3.86875 1.6815 3.5 2.57174 3.5 3.5C3.5 4.42826 3.86875 5.3185 4.52513 5.97487C5.1815 6.63125 6.07174 7 7 7Z" fill="#333333"/>
           </svg></a>
 
@@ -135,40 +135,48 @@
         <ul class="flex flex-col justify-center items-center font-medium text-sm md:text-base  lg:text-[18px]">
           <li class="">
             <a href="index.html" @click="active = 'home'">
-              <h1 class="pb-5 font-medium transition duration-200"
-                  :class="active == 'home'?'border-b-2 border-[#7AF9AD] ':''">Home</h1>
+              <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                  :class="active == 'home'?'border-b-2 border-nUnderLine ':''">Home</h1>
           </a>
           </li>
           
           <li>
             <a href="services.html" @click="active = 'service'">
-              <h1 class="pb-5 font-medium transition duration-200"
-                  :class="active == 'service'?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Service</h1>
+              <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                  :class="active == 'service'?'border-b-2 border-nUnderLine':''">Service</h1>
           </a>
           </li>
             <li>
-              <a href="#" @click="active = 'portfolio'">
-                <h1 class="pb-5 font-medium transition duration-200"
-                    :class="active == 'portfolio'?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Portfolio</h1>
+              <a href="portfolio.html" @click="active = 'portfolio">
+                <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                    :class="active == 'portfolio'?'border-b-2 border-nUnderLine  ':''">Portfolio</h1>
             </a>
             </li>
           <li>
-            <a href="#" @click="active = 'resume'">
-              <h1 class="pb-5 font-medium  transition duration-200"
-                  :class="active == 'resume'?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Resume</h1>
+            <a href="about.html" @click="active = 'about'">
+              <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                  :class="active == 'about'?'border-b-2 border-nUnderLine':''">About</h1>
           </a>
           </li>
           <li>
-            <a href="#" @click="active = 'blog '">
-              <h1 class="pb-5 font-medium transition duration-200"
-                  :class="active == 'blog '?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Blog</h1>
-          </a>
+            <a href="blog.html" @click="active = 'blog'">
+              <div class="dropdown text-center inline-block relative">
+                <button class=" py-4 pb-0  inline-flex items-center text-wvNblack" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
+                  <span class="mr-1 text-wvNblack">Blog</span>
+                  <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                </button>
+                <ul class="dropdown-menu absolute hidden text-wvNblack pt-1">
+                  <li class=""><a class="bg-gray-200 relative -left-8 hover:bg-gray-400 py-2 w-28 block whitespace-no-wrap" href="./blogDetails.html">List-1</a></li>
+            
+                </ul>
+              </div>
+            </a>
           </li>
            
           <li>
-            <a href="#" @click="active = 'contact'">
-              <h1 class="pb-5 font-medium transition duration-200"
-                  :class="active == 'contact'?'border-b-2 border-[#7AF9AD]':''">Contact</h1>
+            <a href="contact.html" @click="active = 'contact'">
+              <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                  :class="active == 'contact'?'border-b-2 border-nUnderLine':''">Contact</h1>
           </a>
           </li>
         </ul>
@@ -199,8 +207,8 @@
         ----->
         <div class="2xl:my-40 2xl:mt-20  lg:my-20 my-10 relative">
           <img class="w-full " src="./img/services/Rectangle 65.png" alt="">
-          <div class="absolute top-[10%] md:top-[30%] md:left-[15rem] left-10">
-              <h2 class="xl:text-5xl sm:text-xl text-sm font-rubik text-white">Services</h2>
+          <div class="absolute top-[10%] md:top-[30%]  2xl:top-[35%] md:left-[15rem] left-10">
+              <h2 class="xl:text-5xl mb-5 sm:text-xl text-sm font-rubik text-white">Services</h2>
               <div class="md:text-xl text-white text-base mt-2">Home <span class="p-1"> <img class="inline" src="./img/services/Vector.png" alt="">
     
               </span> <span class="text-[#4DDA64]">      Service</span>
@@ -447,41 +455,41 @@ end-comedown-section
         
         <div class="slide font-work font-medium pt-8">
           
-            <div class="rounded-full mx-auto flex justify-center">
-              <div class=" ring-two absolute w-[180px] h-[180px] rounded-[50%] top-[20px] shadow-[1px_2px_1px_rgba(89,86,240,1)] "></div>
-              <img class="rounded-full n_size" src="./img/homepage/client.png" alt="boy-img">
-            </div>
-                  
-          <div class="text-center md:w-[67%] w-full mx-auto">
-            <div>
-
-              <svg class="md:mb-8 mb-4 w-6 md:w-12 ml-5 2xl:ml-[75px]" width="39" height="29" viewBox="0 0 39 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.31602 28.8C7.51602 28.8 5.98268 28.3333 4.71602 27.4C3.44935 26.4667 2.48268 25.2 1.81602 23.6C1.14935 22 0.816016 20.2333 0.816016 18.3C0.816016 15.7667 1.28268 13.3667 2.21602 11.1C3.14935 8.83333 4.48268 6.76666 6.21602 4.9C8.01602 2.96667 10.1493 1.43333 12.616 0.299997L17.616 4.5C15.816 5.16666 14.216 6.03333 12.816 7.1C11.416 8.16666 10.216 9.36666 9.21602 10.7C8.28268 12.0333 7.61602 13.4 7.21602 14.8L7.61602 15.1C7.94935 14.8333 8.31602 14.6333 8.71602 14.5C9.18268 14.3667 9.81602 14.3 10.616 14.3C11.5493 14.3 12.4827 14.5667 13.416 15.1C14.416 15.5667 15.2493 16.3 15.916 17.3C16.5827 18.3 16.916 19.6 16.916 21.2C16.916 22.6667 16.5494 23.9667 15.816 25.1C15.1494 26.2333 14.2493 27.1333 13.116 27.8C11.9827 28.4667 10.716 28.8 9.31602 28.8ZM29.816 28.8C28.016 28.8 26.4827 28.3333 25.216 27.4C23.9494 26.4667 22.9827 25.2 22.316 23.6C21.6493 22 21.316 20.2333 21.316 18.3C21.316 15.7667 21.7827 13.3667 22.716 11.1C23.6493 8.83333 24.9827 6.76666 26.716 4.9C28.516 2.96667 30.6493 1.43333 33.116 0.299997L38.216 4.5C36.416 5.16666 34.7827 6.03333 33.316 7.1C31.916 8.16666 30.7494 9.36666 29.816 10.7C28.8827 12.0333 28.1827 13.4 27.716 14.8L28.116 15.1C28.4494 14.8333 28.816 14.6333 29.216 14.5C29.6827 14.3667 30.316 14.3 31.116 14.3C32.0494 14.3 32.9827 14.5667 33.916 15.1C34.916 15.5667 35.7494 16.3 36.416 17.3C37.0827 18.3 37.416 19.6 37.416 21.2C37.416 22.6667 37.0827 23.9667 36.416 25.1C35.7494 26.2333 34.816 27.1333 33.616 27.8C32.4827 28.4667 31.216 28.8 29.816 28.8Z" fill="#5956F0"/>
-                </svg>
-
-            </div>
-
-            <h3 class="2xl:text-3xl lg:text-2xl text-sm text-wvNblack  2xl:px-[75px] leading-loose">The very best. I would also like to say thank you to all your staff. We've seen amazing results already.Very easy to use..</h3>
+          <div class="rounded-full mx-auto flex justify-center">
+            <div class=" ring-two absolute w-[180px] h-[180px] rounded-[50%] top-[20px] shadow-[1px_2px_1px_rgba(89,86,240,1)] "></div>
+            <img class="rounded-full n_size" src="./img/homepage/client.png" alt="boy-img">
           </div>
-         <div class="mx-auto 2xl:my-14 lg:my-6 my-4 w-[30%] border-b border-solid border-gray-100 "></div>
-         <div class="text-center">
-          <div class="flex justify-center font-rubik items-center">
-            <div>
-              <h3 class="2xl:text-3xl lg:text-2xl text-sm font-medium text-wvNblack ">Jon Abraham</h3>
-            </div>
-            <div class="flex ml-5 space-x-3">
-              <span class=""><img class="w-10" src="./img/homepage/star.png" alt=""></span>
-              <span class=""><img class="w-20" src="./img/homepage/star.png" alt=""></span>
-              <span class=""><img class="w-20" src="./img/homepage/star.png" alt=""></span>
-              <span class=""><img class="w-20" src="./img/homepage/star.png" alt=""></span>
-              <span class=""><img class="w-20" src="./img/homepage/star.png" alt=""></span>
-            </div>
-           </div>
-           <div class="mt-5"><h4 class="font-rubik text-sm lg:text-2xl 2xl:text-3xl font-normal text-[#9B9B9B]">CEO of Millar Group</h4></div>
-         </div>
-         
-         
+                
+        <div class="text-center md:w-[67%] w-full mx-auto">
+          <div>
+  
+            <svg class="md:mb-8 mb-4 w-6 md:w-12 ml-5 2xl:ml-[75px]" width="39" height="29" viewBox="0 0 39 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.31602 28.8C7.51602 28.8 5.98268 28.3333 4.71602 27.4C3.44935 26.4667 2.48268 25.2 1.81602 23.6C1.14935 22 0.816016 20.2333 0.816016 18.3C0.816016 15.7667 1.28268 13.3667 2.21602 11.1C3.14935 8.83333 4.48268 6.76666 6.21602 4.9C8.01602 2.96667 10.1493 1.43333 12.616 0.299997L17.616 4.5C15.816 5.16666 14.216 6.03333 12.816 7.1C11.416 8.16666 10.216 9.36666 9.21602 10.7C8.28268 12.0333 7.61602 13.4 7.21602 14.8L7.61602 15.1C7.94935 14.8333 8.31602 14.6333 8.71602 14.5C9.18268 14.3667 9.81602 14.3 10.616 14.3C11.5493 14.3 12.4827 14.5667 13.416 15.1C14.416 15.5667 15.2493 16.3 15.916 17.3C16.5827 18.3 16.916 19.6 16.916 21.2C16.916 22.6667 16.5494 23.9667 15.816 25.1C15.1494 26.2333 14.2493 27.1333 13.116 27.8C11.9827 28.4667 10.716 28.8 9.31602 28.8ZM29.816 28.8C28.016 28.8 26.4827 28.3333 25.216 27.4C23.9494 26.4667 22.9827 25.2 22.316 23.6C21.6493 22 21.316 20.2333 21.316 18.3C21.316 15.7667 21.7827 13.3667 22.716 11.1C23.6493 8.83333 24.9827 6.76666 26.716 4.9C28.516 2.96667 30.6493 1.43333 33.116 0.299997L38.216 4.5C36.416 5.16666 34.7827 6.03333 33.316 7.1C31.916 8.16666 30.7494 9.36666 29.816 10.7C28.8827 12.0333 28.1827 13.4 27.716 14.8L28.116 15.1C28.4494 14.8333 28.816 14.6333 29.216 14.5C29.6827 14.3667 30.316 14.3 31.116 14.3C32.0494 14.3 32.9827 14.5667 33.916 15.1C34.916 15.5667 35.7494 16.3 36.416 17.3C37.0827 18.3 37.416 19.6 37.416 21.2C37.416 22.6667 37.0827 23.9667 36.416 25.1C35.7494 26.2333 34.816 27.1333 33.616 27.8C32.4827 28.4667 31.216 28.8 29.816 28.8Z" fill="#5956F0"/>
+              </svg>
+  
+          </div>
+  
+          <h3 class="2xl:text-3xl lg:text-2xl text-sm text-wvNblack  2xl:px-[75px] leading-loose">The very best. I would also like to say thank you to all your staff. We've seen amazing results already.Very easy to use..</h3>
         </div>
+       <div class="mx-auto 2xl:my-20 my-10  w-[30%] border-b border-solid border-gray-100 "></div>
+       <div class="text-center">
+        <div class="flex justify-center font-rubik items-center">
+          <div>
+            <h3 class="2xl:text-3xl lg:text-2xl text-sm font-medium text-wvNblack">Jon Abraham</h3>
+          </div>
+          <div class="flex ml-5 space-x-3">
+            <span class=""><img class="w-10" src="./img/homepage/star.png" alt=""></span>
+            <span class=""><img class="w-20" src="./img/homepage/star.png" alt=""></span>
+            <span class=""><img class="w-20" src="./img/homepage/star.png" alt=""></span>
+            <span class=""><img class="w-20" src="./img/homepage/star.png" alt=""></span>
+            <span class=""><img class="w-20" src="./img/homepage/star.png" alt=""></span>
+          </div>
+         </div>
+         <div class="mt-5"><h4 class="font-rubik text-sm lg:text-2xl 2xl:text-3xl font-normal text-[#9B9B9B]">CEO of Millar Group</h4></div>
+       </div>
+       
+       
+      </div>
         
         <div class="slide font-work font-medium pt-8">
           
@@ -492,16 +500,16 @@ end-comedown-section
                 
         <div class="text-center md:w-[67%] w-full mx-auto">
           <div>
-
+  
             <svg class="md:mb-8 mb-4 w-6 md:w-12 ml-5 2xl:ml-[75px]" width="39" height="29" viewBox="0 0 39 29" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.31602 28.8C7.51602 28.8 5.98268 28.3333 4.71602 27.4C3.44935 26.4667 2.48268 25.2 1.81602 23.6C1.14935 22 0.816016 20.2333 0.816016 18.3C0.816016 15.7667 1.28268 13.3667 2.21602 11.1C3.14935 8.83333 4.48268 6.76666 6.21602 4.9C8.01602 2.96667 10.1493 1.43333 12.616 0.299997L17.616 4.5C15.816 5.16666 14.216 6.03333 12.816 7.1C11.416 8.16666 10.216 9.36666 9.21602 10.7C8.28268 12.0333 7.61602 13.4 7.21602 14.8L7.61602 15.1C7.94935 14.8333 8.31602 14.6333 8.71602 14.5C9.18268 14.3667 9.81602 14.3 10.616 14.3C11.5493 14.3 12.4827 14.5667 13.416 15.1C14.416 15.5667 15.2493 16.3 15.916 17.3C16.5827 18.3 16.916 19.6 16.916 21.2C16.916 22.6667 16.5494 23.9667 15.816 25.1C15.1494 26.2333 14.2493 27.1333 13.116 27.8C11.9827 28.4667 10.716 28.8 9.31602 28.8ZM29.816 28.8C28.016 28.8 26.4827 28.3333 25.216 27.4C23.9494 26.4667 22.9827 25.2 22.316 23.6C21.6493 22 21.316 20.2333 21.316 18.3C21.316 15.7667 21.7827 13.3667 22.716 11.1C23.6493 8.83333 24.9827 6.76666 26.716 4.9C28.516 2.96667 30.6493 1.43333 33.116 0.299997L38.216 4.5C36.416 5.16666 34.7827 6.03333 33.316 7.1C31.916 8.16666 30.7494 9.36666 29.816 10.7C28.8827 12.0333 28.1827 13.4 27.716 14.8L28.116 15.1C28.4494 14.8333 28.816 14.6333 29.216 14.5C29.6827 14.3667 30.316 14.3 31.116 14.3C32.0494 14.3 32.9827 14.5667 33.916 15.1C34.916 15.5667 35.7494 16.3 36.416 17.3C37.0827 18.3 37.416 19.6 37.416 21.2C37.416 22.6667 37.0827 23.9667 36.416 25.1C35.7494 26.2333 34.816 27.1333 33.616 27.8C32.4827 28.4667 31.216 28.8 29.816 28.8Z" fill="#5956F0"/>
               </svg>
-
+  
           </div>
-
+  
           <h3 class="2xl:text-3xl lg:text-2xl text-sm text-wvNblack  2xl:px-[75px] leading-loose">The very best. I would also like to say thank you to all your staff. We've seen amazing results already.Very easy to use..</h3>
         </div>
-       <div class="mx-auto2xl:my-14 lg:my-6 my-4 w-[30%] border-b border-solid border-gray-100 "></div>
+       <div class="mx-auto 2xl:my-20 my-10 w-[30%] border-b border-solid border-gray-100 "></div>
        <div class="text-center">
         <div class="flex justify-center font-rubik items-center">
           <div>
@@ -539,7 +547,7 @@ end-comedown-section
 
         <h3 class="2xl:text-3xl lg:text-2xl text-sm text-wvNblack  2xl:px-[75px] leading-loose">The very best. I would also like to say thank you to all your staff. We've seen amazing results already.Very easy to use..</h3>
       </div>
-     <div class="mx-auto 2xl:my-14 lg:my-6 my-4 w-[30%] border-b border-solid border-gray-100 "></div>
+     <div class="mx-auto 2xl:my-20 my-10 w-[30%] border-b border-solid border-gray-100 "></div>
      <div class="text-center">
       <div class="flex justify-center font-rubik items-center">
         <div>
@@ -571,7 +579,7 @@ end-comedown-section
         <div class="2xl:my-20 2xl:mb-40 mb-10">
           <div class=" flex justify-between items-end">
             <div class="">
-              <div class="lg:pb-20 pb-10">
+              <div class="lg:pb-20 2xl:pb-36 pb-10">
                <h2 class="font-normal mb-4 text-3xl text-nUnderLine">Media partnar</h2>
                <h1 class="font-semibold 2xl:text-5xl lg:text-3xl text-wvNblack font-work ">Popular Partners</h1>
          
@@ -648,12 +656,13 @@ end-comedown-section
                </a>
                </li>
                
+              
                <li>
-                 <a href="services.html" @click="active = 'service'">
-                   <h1 class="py-4 hover:text-[#4DDA64] font-medium text-nsoftgray transition duration-200"
-                       :class="active == 'service'?'border-b-2 border-[#4DDA64] ':''">Service</h1>
-               </a>
-               </li>
+                <a href="services.html" @click="active = 'service'">
+                  <h1 class="py-4 font-medium text-nsoftgray  transition duration-200"
+                      :class="active == 'service'?'border-b-2 border-[#4DDA64]':''">Service</h1>
+              </a>
+              </li>
                  <li>
                    <a href="portfolio.html" @click="active = 'portfolio'">
                      <h1 class="py-4 hover:text-[#4DDA64]  font-medium text-nsoftgray transition duration-200"
@@ -668,19 +677,19 @@ end-comedown-section
                </li>
                <li>
                 <a href="blog.html" @click="active = 'blog'">
-                  <div class="dropdown inline-block relative">
-                    <button class=" py-4  inline-flex items-center text-nsoftgray " :class="active == 'blog'?'border-b-2 border-[#4DDA64]':''">
-                      <span class="mr-1 text-nsoftgray ">Blog</span>
+                  <div class="dropdown text-center inline-block relative">
+                    <button class=" py-4 pb-0  inline-flex items-center text-nwSoftGray" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
+                      <span class="mr-1 text-nsoftgray">Blog</span>
                       <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                     </button>
                     <ul class="dropdown-menu absolute hidden text-wvNblack pt-1">
-                      <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
+                      <li class=""><a class="bg-gray-200 relative -left-8 hover:bg-gray-400 py-2 w-28 block whitespace-no-wrap" href="./blogDetails.html">List-1</a></li>
                 
                     </ul>
                   </div>
                 </a>
               
-              </li>
+              </li> 
                <li>
                  <a href="#" @click="active = 'contact'">
                    <h1 class="py-4 hover:text-[#4DDA64]  font-medium text-nsoftgray transition duration-200"

@@ -37,7 +37,7 @@
     Home-section
     ----->
     
-    <nav class="relative mx-auto 2xl:pt-28 lg:pt-12 md:pt-10 pt-8 z-50">
+    <nav class="relative mx-auto 2xl:pt-20 lg:pt-12 md:pt-10 pt-8 z-50">
       <!--flex container-->
       <div class="flex items-center justify-between">
         <!--logo-->
@@ -86,13 +86,13 @@
               </li>
               <li>
                 <a href="blog.html" @click="active = 'blog'">
-                  <div class="dropdown inline-block relative">
-                    <button class=" py-4  inline-flex items-center text-wvNblack" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
+                  <div class="dropdown text-center inline-block relative">
+                    <button class=" py-4 pb-0  inline-flex items-center text-wvNblack" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
                       <span class="mr-1 text-wvNblack">Blog</span>
                       <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                     </button>
                     <ul class="dropdown-menu absolute hidden text-wvNblack pt-1">
-                      <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="./blogDetails.html">Details</a></li>
+                      <li class=""><a class="bg-gray-200 relative -left-8 hover:bg-gray-400 py-2 w-28 block whitespace-no-wrap" href="./blogDetails.html">List-1</a></li>
                 
                     </ul>
                   </div>
@@ -113,7 +113,7 @@
          <!--hire-me-button--->
     
          <div class="hidden xl:flex">
-        <a class="text-wvNblack font-medium text-sm md:text-base  lg:text-[18px] py-3 px-8 border border-solid border-nUnderLine rounded-full flex justify-center items-center" href="">Hire Me <svg class="ml-3" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a class="text-wvNblack bg-[#F9F2FF] font-medium text-sm md:text-base  lg:text-[18px] py-3 px-8 border border-solid border-nUnderLine rounded-full flex justify-center items-center" href="">Hire Me <svg class="ml-3" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1.16667 14C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333C14 14 12.8333 14 12.8333 14H1.16667ZM7 7C7.92826 7 8.8185 6.63125 9.47487 5.97487C10.1313 5.3185 10.5 4.42826 10.5 3.5C10.5 2.57174 10.1313 1.6815 9.47487 1.02513C8.8185 0.368749 7.92826 0 7 0C6.07174 0 5.1815 0.368749 4.52513 1.02513C3.86875 1.6815 3.5 2.57174 3.5 3.5C3.5 4.42826 3.86875 5.3185 4.52513 5.97487C5.1815 6.63125 6.07174 7 7 7Z" fill="#333333"/>
           </svg></a>
 
@@ -136,40 +136,48 @@
         <ul class="flex flex-col justify-center items-center font-medium text-sm md:text-base  lg:text-[18px]">
           <li class="">
             <a href="index.html" @click="active = 'home'">
-              <h1 class="pb-5 font-medium transition duration-200"
-                  :class="active == 'home'?'border-b-2 border-[#7AF9AD] ':''">Home</h1>
+              <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                  :class="active == 'home'?'border-b-2 border-nUnderLine ':''">Home</h1>
           </a>
           </li>
           
           <li>
             <a href="services.html" @click="active = 'service'">
-              <h1 class="pb-5 font-medium transition duration-200"
-                  :class="active == 'service'?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Service</h1>
+              <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                  :class="active == 'service'?'border-b-2 border-nUnderLine':''">Service</h1>
           </a>
           </li>
             <li>
-              <a href="portfolio.html" @click="active = 'portfolio'">
-                <h1 class="pb-5 font-medium transition duration-200"
-                    :class="active == 'portfolio'?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Portfolio</h1>
+              <a href="portfolio.html" @click="active = 'portfolio">
+                <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                    :class="active == 'portfolio'?'border-b-2 border-nUnderLine  ':''">Portfolio</h1>
             </a>
             </li>
           <li>
-            <a href="#" @click="active = 'resume'">
-              <h1 class="pb-5 font-medium  transition duration-200"
-                  :class="active == 'resume'?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Resume</h1>
+            <a href="about.html" @click="active = 'about'">
+              <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                  :class="active == 'about'?'border-b-2 border-nUnderLine':''">About</h1>
           </a>
           </li>
           <li>
-            <a href="#" @click="active = 'blog '">
-              <h1 class="pb-5 font-medium transition duration-200"
-                  :class="active == 'blog '?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Blog</h1>
-          </a>
+            <a href="blog.html" @click="active = 'blog'">
+              <div class="dropdown text-center inline-block relative">
+                <button class=" py-4 pb-0  inline-flex items-center text-wvNblack" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
+                  <span class="mr-1 text-wvNblack">Blog</span>
+                  <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                </button>
+                <ul class="dropdown-menu absolute hidden text-wvNblack pt-1">
+                  <li class=""><a class="bg-gray-200 relative -left-8 hover:bg-gray-400 py-2 w-28 block whitespace-no-wrap" href="./blogDetails.html">List-1</a></li>
+            
+                </ul>
+              </div>
+            </a>
           </li>
            
           <li>
-            <a href="#" @click="active = 'contact'">
-              <h1 class="pb-5 font-medium transition duration-200"
-                  :class="active == 'contact'?'border-b-2 border-[#7AF9AD]':''">Contact</h1>
+            <a href="contact.html" @click="active = 'contact'">
+              <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                  :class="active == 'contact'?'border-b-2 border-nUnderLine':''">Contact</h1>
           </a>
           </li>
         </ul>
@@ -226,20 +234,20 @@
      
    <div class="relative -top-[70px] md:-top-[200px] xl:-top-[50px]">
 <!---video-play-btn-->
-<div class="vpop cursor-pointer w-[60px] mx-auto after:rounded-full play after:animate-[two_4s_ease-in-out_infinite] after:delay-[1000ms] flex justify-center items-center after:absolute lg:after:w-10 xl:after:w-12 xl:after:h-12 after:w-6 after:h-6 md:after:w-8 md:after:h-8 lg:after:h-10 after:border after:border-solid  after:border-nUnderLine" data-type="youtube" data-id="6xcG6ttMDVY" data-autoplay='true'>
+<div class="vpop cursor-pointer w-[60px] mx-auto after:rounded-full play after:animate-[two_4s_ease-in-out_infinite] after:delay-[1000ms] flex justify-center items-center after:absolute 2xl:after:w-12 2xl:after:h-12 after:w-6 after:h-6 md:after:w-8 md:after:h-8 after:border after:border-solid  after:border-nUnderLine" data-type="youtube" data-id="6xcG6ttMDVY" data-autoplay='true'>
   
-  <svg class="ml-[3px]  w-2 md:w-5" width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg class="ml-[3px] w-2 2xl:w-5" width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M14.0738 10.33L2.36064 17.3774C1.3666 17.9748 0.09091 17.2514 0.09091 16.0469V1.95217C0.09091 0.749615 1.36476 0.0242615 2.36064 0.623632L14.0738 7.67101C14.2999 7.80486 14.4879 7.99834 14.6186 8.23183C14.7493 8.46532 14.8182 8.73051 14.8182 9.0005C14.8182 9.27049 14.7493 9.53568 14.6186 9.76917C14.4879 10.0027 14.2999 10.1961 14.0738 10.33Z" fill="#A957FB"/>
     </svg>
 </div>
 
-<p class="text-white dark:text-wvNblack lg:text-xl 2xl:text-3xl text-xs font-normal font-rubik cursor-pointer md:mt-16 mt-8 rounded-full flex items-center justify-center" >Learn About Me</p>
+<p class="text-wvNblack dark:text-wvNblack lg:text-xl 2xl:text-3xl text-xs font-normal font-rubik cursor-pointer 2xl:mt-16 2xl:mb-0 mb-10 mt-8 rounded-full flex items-center justify-center" >Learn About Me</p>
 <!--bownload -button-->
 <div class="text-center 2xl:mt-20 ">
 
-  <div class="links cursor-pointer inline text-center py-3 px-3 md:text-lg md:py-4 md:px-4 2xl:px-12 2xl:py-7 xl:text-2xl lg:px-10 lg:py-6 rounded-full only:text-black font-rubik font-normal text-xs bg-wvNblack">
+  <div class="links cursor-pointer inline text-center py-3 px-3 md:text-lg md:py-4 md:px-4 2xl:px-12 2xl:py-7 2xl:text-2xl rounded-full only:text-black font-rubik font-normal text-xs bg-wvNblack">
 
-  <a class="inline-block text-white" href="./img/homepage/kazi-Rahman (2).pdf" download><img class="inline xl:w-4 w-[10px] mr-1 xl:mr-3 2xl:mb-2 mb-1" src="./img/homepage/basicDownload.png" alt="">Download CV </a>
+  <a class="inline-block text-white" href="./img/homepage/kazi-Rahman (2).pdf" download><img class="inline 2xl:w-4 w-[10px] mr-1 2xl:mr-3 2xl:mb-2 mb-1" src="./img/homepage/basicDownload.png" alt="">Download CV </a>
     </div>
 
 <!---end-video-play-btn-->
@@ -435,7 +443,7 @@ end-comedown-section
           <h1 class="font-work font-semibold lg:text-5xl md:text-3xl text-xl text-wvNblack ">My Portfolio</h1>
         </div>
         <div class="flex items-center">
-          <span class="text-nsoftgray cursor-pointer dark:text-wvNblack lg:text-xl md:text-lg text-xs mr-4">View All</span>
+          <span class=" cursor-pointer text-wvNblack lg:text-xl md:text-lg text-xs mr-4">View All</span>
           <a href="" class="inline-block"><img class=" lg:w-4 w-2" src="./img/homepage/right-arrow.png" alt="right-arrow"></a>
         </div>
       </div>
@@ -494,7 +502,7 @@ end-comedown-section
       <h1 class="font-work font-semibold lg:text-5xl md:text-3xl text-xl text-wvNblack ">Recent Works</h1>
     </div>
     <div class="flex items-center">
-      <span class="text-nsoftgray dark:text-wvNblack lg:text-xl md:text-xs text-lg cursor-pointer mr-4">View All</span>
+      <span class="text-wvNblack lg:text-xl md:text-xs text-lg cursor-pointer mr-4">View All</span>
       <a href="" class="inline-block"><img class="lg:w-4 w-2" src="./img/homepage/right-arrow.png" alt="right-arrow"></a>
     </div>
   </div>
@@ -675,7 +683,7 @@ end-comedown-section
 
             <h3 class="lg:text-3xl md:text-2xl text-sm text-wvNblack  xl:px-[75px] leading-loose">The very best. I would also like to say thank you to all your staff. We've seen amazing results already.Very easy to use..</h3>
           </div>
-         <div class="mx-auto mt-8 mb-8  2xl:mt-10 md:mb-10 w-[30%] border-b border-solid border-gray-100 "></div>
+         <div class="mx-auto my-10 2xl:my-20  w-[30%] border-b border-solid border-gray-100 "></div>
          <div class="text-center">
           <div class="flex justify-center font-rubik items-center">
             <div>
@@ -713,7 +721,7 @@ end-comedown-section
 
           <h3 class="lg:text-3xl md:text-2xl text-sm text-wvNblack  xl:px-[75px] leading-loose">The very best. I would also like to say thank you to all your staff. We've seen amazing results already.Very easy to use..</h3>
         </div>
-       <div class="mx-auto  mt-8 mb-8  2xl:mt-10 md:mb-10 w-[30%] border-b border-solid border-gray-100 "></div>
+       <div class="mx-auto my-10 2xl:my-20 w-[30%] border-b border-solid border-gray-100 "></div>
        <div class="text-center">
         <div class="flex justify-center font-rubik items-center">
           <div>
@@ -751,7 +759,7 @@ end-comedown-section
 
         <h3 class="lg:text-3xl md:text-2xl text-sm text-wvNblack  xl:px-[75px] leading-loose">The very best. I would also like to say thank you to all your staff. We've seen amazing results already.Very easy to use..</h3>
       </div>
-     <div class="mx-auto  mt-8 mb-8  2xl:mt-10 md:mb-10 w-[30%] border-b border-solid border-gray-100 "></div>
+     <div class="mx-auto my-10 2xl:my-20 w-[30%] border-b border-solid border-gray-100 "></div>
      <div class="text-center">
       <div class="flex justify-center font-rubik items-center">
         <div>
@@ -780,7 +788,7 @@ end-comedown-section
                 <!----------
           Blog-section
         ------->
-        <div class="2xl:pb-32 pb-20 ">
+        <div class="2xl:pb-44 2xl:pt-20 lg:pt-10 pb-20 ">
           <div class=" flex justify-between items-end 2xl:pb-20 pb-10 ">
             <div class="">
               <h2 class="text-nUnderLine mb-4 lg:text-3xl  font-normal">From Blog</h2>
@@ -797,8 +805,9 @@ end-comedown-section
               <div>
                 <img class="w-full" src="./img/homepage/blog-2.png" alt="">
                <div class="font-rubik font-medium 2xl:pt-12 pt-8">
-                <h2 class="text-wvNblack text-3xl 2xl:text-4xl 2xl:leading-[50px] cursor-pointer hover:text-nUnderLine leading-10">UI/UX design is a most
-                  Usefull design.</h2>
+                <h2 class="text-wvNblack text-3xl 2xl:text-4xl 2xl:leading-[50px] cursor-pointer hover:text-nUnderLine leading-10"> <a href="./blogDetails.html">UI/UX design is a most
+                  Usefull design.</a>
+                   </h2>
                   <p class="font-work text-light-gray  md:text-xs 2xl:text-[1.4rem]  text-xl 2xl:py-6 py-4">03 June 2022 . Posted by Admin</p>
                   <p class="font-work leading-7 w-[90%] xl:leading-[35px] text-nwSoftGray text-lg   md:text-xs xl:text-[1.4rem]">making this the first true ispat is generator on the internet</p>
                   
@@ -815,8 +824,12 @@ end-comedown-section
               <div>
                 <img class="w-full" src="./img/homepage/blog-1.png" alt="">
                <div class="font-rubik font-medium 2xl:pt-12 pt-8">
-                <h2 class="text-wvNblack hover:text-nUnderLine text-3xl 2xl:text-4xl 2xl:leading-[50px] leading-10 cursor-pointer">Most common things
-                  are done!</h2>
+                <h2 class="text-wvNblack hover:text-nUnderLine text-3xl 2xl:text-4xl 2xl:leading-[50px] leading-10 cursor-pointer"> 
+
+                  <a href="./blogDetails.html">  Most common things
+                    are done!</a>
+
+                 </h2>
                   <p class="font-work text-light-gray md:text-xs 2xl:text-[1.4rem] text-xl 2xl:py-6 py-4">03 June 2022 . Posted by Admin</p>
                   <p class="font-work leading-7 xl:leading-[35px] text-nwSoftGray xl:w-[90%]  text-lg md:text-xs xl:text-[1.4rem]">making this the first true ispat is generator on the internet</p>
                   
@@ -834,8 +847,8 @@ end-comedown-section
               <div>
                 <img class="w-full" src="./img/homepage/blog.png" alt="">
                <div class="font-rubik font-medium 2xl:pt-12 pt-8">
-                <h2 class="text-wvNblack hover:text-nUnderLine text-3xl 2xl:text-4xl cursor-pointer 2xl:leading-[50px] leading-10">Application design is 
-                  trending now.</h2>
+                <h2 class="text-wvNblack hover:text-nUnderLine text-3xl 2xl:text-4xl cursor-pointer 2xl:leading-[50px] leading-10"><a href="./blogDetails.html">Application design is 
+                  trending now.</a> </h2>
                   <p class="font-work text-light-gray  md:text-xs 2xl:text-[1.4rem] text-xl 2xl:py-6 py-4">03 June 2022 . Posted by Admin</p>
                   <p class="font-work xl:w-[90%] leading-7 xl:leading-[35px] text-nwSoftGray  text-lg md:text-xs xl:text-[1.4rem]">making this the first true ispat is generator on the internet</p>
                   
@@ -863,7 +876,7 @@ end-comedown-section
           footer-section
         ------->
 
-    <div class="2xl:pb-10 bg-no-repeat relative bg-cover" style="background-image:url('./img/homepage/footerbg.png')">
+        <div class="xl:pb-20 mt-20 pb-10 bg-no-repeat relative bg-cover" style="background-image:url('./img/homepage/footerbg.png')">
           <div class="flex flex-col justify-center items-center text-center">
          <div class="lg:pt-16 pt-8">
            
@@ -901,7 +914,8 @@ end-comedown-section
                    <h1 class="py-4 font-medium hover:text-[#4DDA64]  text-nsoftgray transition duration-200"
                        :class="active == 'home'?'border-b-2 border-[#4DDA64]':''">Home</h1>
                </a>
-               </li>     
+               </li>
+               
                <li>
                  <a href="services.html" @click="active = 'service'">
                    <h1 class="py-4 hover:text-[#4DDA64] font-medium text-nsoftgray transition duration-200"
@@ -922,19 +936,19 @@ end-comedown-section
                </li>
                <li>
                 <a href="blog.html" @click="active = 'blog'">
-                  <div class="dropdown inline-block relative">
-                    <button class=" py-4  inline-flex items-center text-nsoftgray " :class="active == 'blog'?'border-b-2 border-[#4DDA64]':''">
-                      <span class="mr-1 text-nsoftgray ">Blog</span>
+                  <div class="dropdown text-center inline-block relative">
+                    <button class=" py-4 pb-0  inline-flex items-center text-nwSoftGray" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
+                      <span class="mr-1 text-nsoftgray">Blog</span>
                       <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                     </button>
                     <ul class="dropdown-menu absolute hidden text-wvNblack pt-1">
-                      <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
+                      <li class=""><a class="bg-gray-200 relative -left-8 hover:bg-gray-400 py-2 w-28 block whitespace-no-wrap" href="./blogDetails.html">List-1</a></li>
                 
                     </ul>
                   </div>
                 </a>
               
-              </li>
+              </li>  
                <li>
                  <a href="contact.html" @click="active = 'contact'">
                    <h1 class="py-4 hover:text-[#4DDA64]  font-medium text-nsoftgray transition duration-200"
@@ -942,8 +956,7 @@ end-comedown-section
                </a>
                </li>
              </ul>
-         
-         
+                
          </nav>
            
          </div>
@@ -968,18 +981,18 @@ end-comedown-section
          
           </div>
          
-           <div class="text-white text-center relative 2xl:after:-ml-[100px] pt-16 2xl:pt-20 flex flex-wrap justify-center after:absolute 2xl:after:w-[70%] after:w-[75%] left-0 after:top-11 after:border-t after:border-solid after:border-[#383838] after:pt-28">
-           
+           <div class="text-white text-center relative 2xl:after:-ml-[100px] pt-16 2xl:pt-20 flex flex-wrap justify-center after:absolute 2xl:after:w-[70%] after:w-[75%] left-0 after:top-11 after:border-t after:border-solid after:border-[#383838] after:pt-28">     
          
-         <div>
+         <div class="">
            <p class="md:text-xl text-sm text-nsoftgray 2xl:pb-0 pb-6 xl:pb-10 ">Copyright jompha 2022 all Rights Resarved</p>
          </div>
            
            </div>
-           <div class="w-[65%] mx-auto text-right relative 2xl:bottom-6 bottom-16">
-            <a href="#" class="top text-nsoftgray"><span class="mr-2">Back to Top</span><img class="w-6 inline-block" src="./img/homepage/top-bottom.png" alt=""></a>
-           </div>
            
+           <div class="lg:w-[65%] mx-auto md:text-right text-center relative lg:bottom-16 2xl:bottom-6">
+            <a href="#" class="top sticky text-nsoftgray"><span class="mr-2">Back to Top</span>   <img class="w-6 inline-block" src="./img/homepage/top-bottom.png" alt=""></a>
+           </div>
+         
       </div>
     
  <!----------

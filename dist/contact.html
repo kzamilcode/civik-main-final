@@ -36,7 +36,7 @@
     Home-section
     ----->
     
-<nav class="relative mx-auto 2xl:pt-28 lg:pt-12 md:pt-10 pt-8 z-50">
+<nav class="relative mx-auto 2xl:pt-20 lg:pt-12 md:pt-10 pt-8 z-50">
       <!--flex container-->
       <div class="flex items-center justify-between">
         <!--logo-->
@@ -86,19 +86,19 @@
 
               <li>
                 <a href="blog.html" @click="active = 'blog'">
-                  <div class="dropdown inline-block relative">
-                    <button class=" py-4  inline-flex items-center text-wvNblack" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
+                  <div class="dropdown text-center inline-block relative">
+                    <button class=" py-4 pb-0  inline-flex items-center text-wvNblack" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
                       <span class="mr-1 text-wvNblack">Blog</span>
                       <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                     </button>
                     <ul class="dropdown-menu absolute hidden text-wvNblack pt-1">
-                      <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="./blogDetails.html">Details</a></li>
+                      <li class=""><a class="bg-gray-200 relative -left-8 hover:bg-gray-400 py-2 w-28 block whitespace-no-wrap" href="./blogDetails.html">List-1</a></li>
                 
                     </ul>
                   </div>
                 </a>
               
-              </li> 
+              </li>  
 
               <li>
                 <a href="contact.html" @click="active = 'contact'">
@@ -114,7 +114,7 @@
          <!--hire-me-button--->
     
          <div class="hidden xl:flex">
-        <a class="text-wvNblack font-medium text-sm md:text-base  lg:text-[18px] py-3 px-8 border border-solid border-nUnderLine rounded-full flex justify-center items-center" href="">Hire Me <svg class="ml-3" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a class="text-wvNblack bg-[#F9F2FF] font-medium text-sm md:text-base  lg:text-[18px] py-3 px-8 border border-solid border-nUnderLine rounded-full flex justify-center items-center" href="">Hire Me <svg class="ml-3" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1.16667 14C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333C14 14 12.8333 14 12.8333 14H1.16667ZM7 7C7.92826 7 8.8185 6.63125 9.47487 5.97487C10.1313 5.3185 10.5 4.42826 10.5 3.5C10.5 2.57174 10.1313 1.6815 9.47487 1.02513C8.8185 0.368749 7.92826 0 7 0C6.07174 0 5.1815 0.368749 4.52513 1.02513C3.86875 1.6815 3.5 2.57174 3.5 3.5C3.5 4.42826 3.86875 5.3185 4.52513 5.97487C5.1815 6.63125 6.07174 7 7 7Z" fill="#333333"/>
           </svg></a>
 
@@ -136,41 +136,49 @@
       
         <ul class="flex flex-col justify-center items-center font-medium text-sm md:text-base  lg:text-[18px]">
           <li class="">
-            <a href="" @click="active = 'home'">
-              <h1 class="pb-5 font-medium transition duration-200"
-                  :class="active == 'home'?'border-b-2 border-[#7AF9AD] ':''">Home</h1>
+            <a href="index.html" @click="active = 'home'">
+              <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                  :class="active == 'home'?'border-b-2 border-nUnderLine ':''">Home</h1>
           </a>
           </li>
           
           <li>
             <a href="services.html" @click="active = 'service'">
-              <h1 class="pb-5 font-medium transition duration-200"
-                  :class="active == 'service'?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Service</h1>
+              <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                  :class="active == 'service'?'border-b-2 border-nUnderLine':''">Service</h1>
           </a>
           </li>
             <li>
-              <a href="portfolio.html" @click="active = 'portfolio'">
-                <h1 class="pb-5 font-medium transition duration-200"
-                    :class="active == 'portfolio'?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Portfolio</h1>
+              <a href="portfolio.html" @click="active = 'portfolio">
+                <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                    :class="active == 'portfolio'?'border-b-2 border-nUnderLine  ':''">Portfolio</h1>
             </a>
             </li>
           <li>
-            <a href="#" @click="active = 'resume'">
-              <h1 class="pb-5 font-medium  transition duration-200"
-                  :class="active == 'resume'?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Resume</h1>
+            <a href="about.html" @click="active = 'about'">
+              <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                  :class="active == 'about'?'border-b-2 border-nUnderLine':''">About</h1>
           </a>
           </li>
           <li>
-            <a href="#" @click="active = 'blog '">
-              <h1 class="pb-5 font-medium transition duration-200"
-                  :class="active == 'blog '?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Blog</h1>
-          </a>
+            <a href="blog.html" @click="active = 'blog'">
+              <div class="dropdown text-center inline-block relative">
+                <button class=" py-4 pb-0  inline-flex items-center text-wvNblack" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
+                  <span class="mr-1 text-wvNblack">Blog</span>
+                  <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                </button>
+                <ul class="dropdown-menu absolute hidden text-wvNblack pt-1">
+                  <li class=""><a class="bg-gray-200 relative -left-8 hover:bg-gray-400 py-2 w-28 block whitespace-no-wrap" href="./blogDetails.html">List-1</a></li>
+            
+                </ul>
+              </div>
+            </a>
           </li>
            
           <li>
             <a href="contact.html" @click="active = 'contact'">
-              <h1 class="pb-5 font-medium transition duration-200"
-                  :class="active == 'contact'?'border-b-2 border-[#7AF9AD]':''">Contact</h1>
+              <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                  :class="active == 'contact'?'border-b-2 border-nUnderLine':''">Contact</h1>
           </a>
           </li>
         </ul>
@@ -180,7 +188,7 @@
         <div class="flex">
                    
             <div class="">
-                <a class="text-[#333333] font-medium text-sm md:text-base  lg:text-[18px] py-3 px-8 border border-solid border-gold rounded-full flex justify-center items-center" href="">Hire Me <svg class="ml-3" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a class="text-[#333333] bg-[#F9F2FF] font-medium text-sm md:text-base  lg:text-[18px] py-3 px-8 border border-solid border-gold rounded-full flex justify-center items-center" href="">Hire Me <svg class="ml-3" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1.16667 14C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333C14 14 12.8333 14 12.8333 14H1.16667ZM7 7C7.92826 7 8.8185 6.63125 9.47487 5.97487C10.1313 5.3185 10.5 4.42826 10.5 3.5C10.5 2.57174 10.1313 1.6815 9.47487 1.02513C8.8185 0.368749 7.92826 0 7 0C6.07174 0 5.1815 0.368749 4.52513 1.02513C3.86875 1.6815 3.5 2.57174 3.5 3.5C3.5 4.42826 3.86875 5.3185 4.52513 5.97487C5.1815 6.63125 6.07174 7 7 7Z" fill="#333333"/>
                   </svg></a>
         
@@ -194,8 +202,8 @@
   </div>
     <div class=" lg:my-20 my-10 2xl:mb-40 relative">
       <img class="w-full" src="./img/contact/image.png" alt="">
-      <div class="absolute top-[10%] md:top-[30%] md:left-48 left-10">
-          <h2 class="xl:text-5xl sm:text-xl text-sm font-rubik text-white">Contact</h2>
+      <div class="absolute top-[10%] md:top-[30%] 2xl:top-[35%] md:left-48 left-10">
+          <h2 class="xl:text-5xl mb-5 sm:text-xl text-sm font-rubik text-white">Contact</h2>
           <div class="md:text-xl text-base mt-2 text-white"><a href="index.html">Home</a>  <span class="p-1"> <img class="inline" src="./img/contact/Vector.png" alt="">
 
           </span> <span class="text-[#4DDA64]"><a href="./contact.html">Contact</a> </span>
@@ -247,32 +255,44 @@
           <p class="lg:text-3xl text-2xl text-[#33333] font-semibold max-w-[640px] lg:my-20 my-8 lg:leading-[40px] leading-[30px]">I am always looking for great collaborators. Let’s message me and make <span class="text-nUnderLine">something together!</span></p>
 <!--from-->
 <div class="lg:flex items-center gap-10 lg:mb-12">
-    <div class="relative w-full">
-    <input type="text" class="border-b lg:mb-0 mb-8 lg:py-4 py-2 w-full border-b-black focus:outline-none">
-    <label class="absolute left-0 text-lg" for="" >Name *</label>
+    <div class=" w-full">
+    
+
+    <input class="appearance-none placeholder-black border-b border-black w-full text-black mr-3 pb-6 text-xl leading-tight focus:outline-none " type="text" placeholder="Name *" aria-label="Full name">
+   
     </div>
 
-    <div class="relative w-full">
-        <input type="number" class="border-b lg:py-4 py-2 w-full  border-b-black focus:outline-none">
-        <label class="absolute left-0 text-lg" for="" >Phone</label>
+    <div class="w-full">
+       
+        
+        
+    <input class="appearance-none placeholder-black border-b border-black w-full text-black mr-3 pb-6 text-xl leading-tight focus:outline-none " type="number"  placeholder="Phone *" aria-label="Number">
         </div>
   </div>
           
     <div class="lg:flex mt-8 items-center gap-10 lg:mb-12 mb-8">
             <div class="relative w-full">
-            <input type="email" class="border-b lg:mb-0 mb-8 lg:py-4 py-2 w-full border-b-black focus:outline-none">
-            <label class="absolute left-0 text-lg" for="" >E-mail *</label>
+           
+
+            <input class="appearance-none placeholder-black border-b border-black w-full text-black mr-3 pb-6 text-xl leading-tight focus:outline-none " type="email"  placeholder="E-mail *" aria-label="Number">
+            
             </div>
 
-            <div class="relative w-full">
-                <input type="number" class="border-b lg:py-4 py-2 w-full  border-b-black focus:outline-none">
-                <label class="absolute left-0 text-lg" for="" >Budget</label>
+            <div class=" w-full">
+                
+
+                <input class="appearance-none placeholder-black border-b border-black w-full text-black mr-3 pb-6 text-xl leading-tight focus:outline-none " type="email"  placeholder="Website *" aria-label="wevsite">
+
+                
                 </div>
     </div>
     <div class=" lg:mt-20 items-center gap-10 ">
-            <div class="relative w-full">
-            <input type="text" class="border-b py-4 w-full border-b-black focus:outline-none">
-            <label class="absolute left-0 text-lg" for="" >Message</label>
+            <div class=" w-full">
+            
+
+
+            <input class="appearance-none placeholder-black border-b border-black w-full text-black mr-3 pb-6 text-xl leading-tight focus:outline-none " type="email"  placeholder="Message *" aria-label="Message">
+            
             </div>
 
             <div class="mt-10 mx-auto lg:max-w-[170px] leading-[55px]">
@@ -359,19 +379,19 @@
                </li>
                <li>
                 <a href="blog.html" @click="active = 'blog'">
-                  <div class="dropdown inline-block relative">
-                    <button class=" py-4  inline-flex items-center text-wvNblack" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
-                      <span class="mr-1 text-wvNblack">Blog</span>
+                  <div class="dropdown text-center inline-block relative">
+                    <button class=" py-4 pb-0  inline-flex items-center text-nwSoftGray" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
+                      <span class="mr-1 text-nsoftgray">Blog</span>
                       <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                     </button>
                     <ul class="dropdown-menu absolute hidden text-wvNblack pt-1">
-                      <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="./blogDetails.html">Details</a></li>
+                      <li class=""><a class="bg-gray-200 relative -left-8 hover:bg-gray-400 py-2 w-28 block whitespace-no-wrap" href="./blogDetails.html">List-1</a></li>
                 
                     </ul>
                   </div>
                 </a>
               
-              </li> 
+              </li>  
                <li>
                  <a href="contact.html" @click="active = 'contact'">
                    <h1 class="py-4 hover:text-[#4DDA64]  font-medium text-nsoftgray transition duration-200"
@@ -412,7 +432,7 @@
            
            </div>
            
-           <div class="lg:w-[65%] mx-auto text-center lg:mt-0 mt-4 lg:text-right relative lg:bottom-16 2xl:bottom-6">
+           <div class="lg:w-[65%] mx-auto md:text-right text-center relative lg:bottom-16 2xl:bottom-6">
             <a href="#" class="top sticky text-nsoftgray"><span class="mr-2">Back to Top</span>   <img class="w-6 inline-block" src="./img/homepage/top-bottom.png" alt=""></a>
            </div>
          

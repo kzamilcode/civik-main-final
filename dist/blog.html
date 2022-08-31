@@ -36,7 +36,7 @@
     Home-section
     ----->
     
-<nav class="relative mx-auto 2xl:pt-28 lg:pt-12 md:pt-10 pt-8 z-50">
+<nav class="relative mx-auto 2xl:pt-20 lg:pt-12 md:pt-10 pt-8 z-50">
       <!--flex container-->
       <div class="flex items-center justify-between">
         <!--logo-->
@@ -86,19 +86,19 @@
 
               <li>
                 <a href="blog.html" @click="active = 'blog'">
-                  <div class="dropdown inline-block relative">
-                    <button class=" py-4  inline-flex items-center text-wvNblack" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
+                  <div class="dropdown text-center inline-block relative">
+                    <button class=" py-4 pb-0  inline-flex items-center text-wvNblack" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
                       <span class="mr-1 text-wvNblack">Blog</span>
                       <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                     </button>
                     <ul class="dropdown-menu absolute hidden text-wvNblack pt-1">
-                      <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="./blogDetails.html">Details</a></li>
+                      <li class=""><a class="bg-gray-200 relative -left-8 hover:bg-gray-400 py-2 w-28 block whitespace-no-wrap" href="./blogDetails.html">List-1</a></li>
                 
                     </ul>
                   </div>
                 </a>
               
-              </li> 
+              </li>  
 
               <li>
                 <a href="contact.html" @click="active = 'contact'">
@@ -114,7 +114,7 @@
          <!--hire-me-button--->
     
          <div class="hidden xl:flex">
-        <a class="text-wvNblack font-medium text-sm md:text-base  lg:text-[18px] py-3 px-8 border border-solid border-nUnderLine rounded-full flex justify-center items-center" href="">Hire Me <svg class="ml-3" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a class="text-wvNblack bg-[#F9F2FF] font-medium text-sm md:text-base  lg:text-[18px] py-3 px-8 border border-solid border-nUnderLine rounded-full flex justify-center items-center" href="">Hire Me <svg class="ml-3" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1.16667 14C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333C14 14 12.8333 14 12.8333 14H1.16667ZM7 7C7.92826 7 8.8185 6.63125 9.47487 5.97487C10.1313 5.3185 10.5 4.42826 10.5 3.5C10.5 2.57174 10.1313 1.6815 9.47487 1.02513C8.8185 0.368749 7.92826 0 7 0C6.07174 0 5.1815 0.368749 4.52513 1.02513C3.86875 1.6815 3.5 2.57174 3.5 3.5C3.5 4.42826 3.86875 5.3185 4.52513 5.97487C5.1815 6.63125 6.07174 7 7 7Z" fill="#333333"/>
           </svg></a>
 
@@ -136,49 +136,49 @@
       
         <ul class="flex flex-col justify-center items-center font-medium text-sm md:text-base  lg:text-[18px]">
           <li class="">
-            <a href="" @click="active = 'home'">
-              <h1 class="pb-5 font-medium transition duration-200"
-                  :class="active == 'home'?'border-b-2 border-[#7AF9AD] ':''">Home</h1>
+            <a href="index.html" @click="active = 'home'">
+              <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                  :class="active == 'home'?'border-b-2 border-nUnderLine ':''">Home</h1>
           </a>
           </li>
           
           <li>
             <a href="services.html" @click="active = 'service'">
-              <h1 class="pb-5 font-medium transition duration-200"
-                  :class="active == 'service'?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Service</h1>
+              <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                  :class="active == 'service'?'border-b-2 border-nUnderLine':''">Service</h1>
           </a>
           </li>
             <li>
-              <a href="portfolio.html" @click="active = 'portfolio'">
-                <h1 class="pb-5 font-medium transition duration-200"
-                    :class="active == 'portfolio'?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Portfolio</h1>
+              <a href="portfolio.html" @click="active = 'portfolio">
+                <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                    :class="active == 'portfolio'?'border-b-2 border-nUnderLine  ':''">Portfolio</h1>
             </a>
             </li>
           <li>
-            <a href="#" @click="active = 'resume'">
-              <h1 class="pb-5 font-medium  transition duration-200"
-                  :class="active == 'resume'?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Resume</h1>
+            <a href="about.html" @click="active = 'about'">
+              <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                  :class="active == 'about'?'border-b-2 border-nUnderLine':''">About</h1>
           </a>
           </li>
           <li>
             <a href="blog.html" @click="active = 'blog'">
-              <div class="dropdown inline-block relative">
-                <button class=" font-semibold pt-4  inline-flex items-center" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
-                  <span class="mr-1">Blog</span>
+              <div class="dropdown text-center inline-block relative">
+                <button class=" py-4 pb-0  inline-flex items-center text-wvNblack" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
+                  <span class="mr-1 text-wvNblack">Blog</span>
                   <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                 </button>
-                <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
-                  <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
+                <ul class="dropdown-menu absolute hidden text-wvNblack pt-1">
+                  <li class=""><a class="bg-gray-200 relative -left-8 hover:bg-gray-400 py-2 w-28 block whitespace-no-wrap" href="./blogDetails.html">List-1</a></li>
             
                 </ul>
               </div>
             </a>
-          </li> 
+          </li>
            
           <li>
-            <a href="./contact.html" @click="active = 'contact'">
-              <h1 class="pb-5 font-medium transition duration-200"
-                  :class="active == 'contact'?'border-b-2 border-[#7AF9AD]':''">Contact</h1>
+            <a href="contact.html" @click="active = 'contact'">
+              <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                  :class="active == 'contact'?'border-b-2 border-nUnderLine':''">Contact</h1>
           </a>
           </li>
         </ul>
@@ -188,7 +188,7 @@
         <div class="flex">
                    
             <div class="">
-                <a class="text-[#333333] font-medium text-sm md:text-base  lg:text-[18px] py-3 px-8 border border-solid border-gold rounded-full flex justify-center items-center" href="">Hire Me <svg class="ml-3" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a class="text-[#333333] bg-[#F9F2FF] font-medium text-sm md:text-base  lg:text-[18px] py-3 px-8 border border-solid border-gold rounded-full flex justify-center items-center" href="">Hire Me <svg class="ml-3" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1.16667 14C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333C14 14 12.8333 14 12.8333 14H1.16667ZM7 7C7.92826 7 8.8185 6.63125 9.47487 5.97487C10.1313 5.3185 10.5 4.42826 10.5 3.5C10.5 2.57174 10.1313 1.6815 9.47487 1.02513C8.8185 0.368749 7.92826 0 7 0C6.07174 0 5.1815 0.368749 4.52513 1.02513C3.86875 1.6815 3.5 2.57174 3.5 3.5C3.5 4.42826 3.86875 5.3185 4.52513 5.97487C5.1815 6.63125 6.07174 7 7 7Z" fill="#333333"/>
                   </svg></a>
         
@@ -202,8 +202,8 @@
   </div>
     <div class=" my-10 lg:my-20 2xlmb-28 relative">
       <img class="w-full" src="./img/blog/image.png" alt="">
-      <div class="absolute top-[10%] md:top-[30%] md:left-48 left-10">
-          <h2 class="xl:text-5xl sm:text-xl text-sm font-rubik text-white">From Blog</h2>
+      <div class="absolute top-[10%] md:top-[30%] 2xl:top-[35%] md:left-48 left-10">
+          <h2 class="xl:text-5xl mb-5 sm:text-xl text-sm font-rubik text-white">From Blog</h2>
           <div class="md:text-xl text-base text-white mt-2">Home <span class="p-1"> <img class="inline" src="./img/blog/n-right.png" alt="">
 
           </span> <span class="text-[#4DDA64]"> Blog</span>
@@ -214,8 +214,8 @@
 
  <section class="lg:px-36 text-center  2xl:px-60 md:px-12 px-10 mx-auto">
 
-    <ul class="inline-block border mb-20  border-solid rounded-full m-auto border-[#d3d3d3]">
-      <li class="list list-none text-[#363636] cursor-pointer md:min-w-[229px] min-w-[190px] md:leading-[70px] leading-[35px] text-center inline-block active" data-filter="web">Web Design</li>
+    <ul class="inline-block mb-20 rounded-[25px] w-[195px] md:w-auto border border-solid md:rounded-full m-auto border-[#d3d3d3]">
+      <li class="list list-none px-3 2xl:py-2 2xl:px-5 text-[#363636] cursor-pointer md:min-w-[229px] min-w-[190px] md:leading-[70px] leading-[35px] text-center inline-block active" data-filter="web">Web Design</li>
       <li class="list list-none text-[#363636] cursor-pointer md:min-w-[229px] min-w-[190px] md:leading-[70px] leading-[35px] text-center inline-block" data-filter="logo">Logo design</li>
       <li class="list list-none text-[#363636] cursor-pointer md:min-w-[229px] min-w-[190px] md:leading-[70px] leading-[35px] text-center inline-block" data-filter="design">UI/UX Design</li>
       <li class="list list-none text-[#363636] cursor-pointer md:min-w-[229px] min-w-[190px] md:leading-[70px] leading-[35px] text-center inline-block " data-filter="advertisement">Advertisement</li>
@@ -225,7 +225,7 @@
     
       <div class="card-content text-left gap-x-4 grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 justify-center product" style="display: none">
 
-        <div class="card mb-10 2xl:mb-20 web">
+        <div class="card overflow-hidden rounded-xl mb-10 2xl:mb-20 web">
           <div class="card-image">
             <img class="w-full" src="./img/blog/original-e2f4577f52b6c91545793e19dee33ad1 1.png" alt="">
             <div class="font-rubik  font-medium 2xl:pt-12 pt-8">
@@ -246,7 +246,7 @@
           
         </div>
         <!----->
-        <div class="card mb-10 2xl:mb-20 logo">
+        <div class="card overflow-hidden rounded-xl mb-10 2xl:mb-20 logo">
           <div class="card-image">
             <img class="w-full" src="./img/blog/image 20.png" alt="">
             <div class="font-rubik font-medium 2xl:pt-12 pt-8">
@@ -267,7 +267,7 @@
           
         </div>
         <!----->
-        <div class="card mb-10 2xl:mb-20 design">
+        <div class="card overflow-hidden rounded-xl mb-10 2xl:mb-20 design">
           <div class="card-image">
             <img class="w-full" src="./img/blog/image 15.png" alt="">
             <div class="font-rubik font-medium 2xl:pt-12 pt-8">
@@ -289,7 +289,7 @@
         
         </div>
         <!----->
-        <div class="card mb-10 2xl:mb-20 advertisement">
+        <div class="card overflow-hidden rounded-xl mb-10 2xl:mb-20 advertisement">
           <div class="card-image">
             <img class="w-full" src="./img/blog/img-21.png" alt="">
             <div class="font-rubik font-medium 2xl:pt-12 pt-8">
@@ -310,7 +310,7 @@
           
         </div>
         <!----->
-        <div class="card web mb-10 2xl:mb-20">
+        <div class="card overflow-hidden rounded-xl web mb-10 2xl:mb-20">
           <div class="card-image">
             <img class="w-full" src="./img/blog/img-22.png" alt="">
             <div class="font-rubik font-medium 2xl:pt-12 pt-8">
@@ -331,7 +331,7 @@
           
         </div>
          <!----->
-        <div class="card logo mb-10 2xl:mb-20">
+        <div class="card overflow-hidden rounded-xl logo mb-10 2xl:mb-20">
           <div class="card-image">
             <img class="w-full" src="./img/blog/img-23.png" alt="">
             <div class="font-rubik font-medium 2xl:pt-12 pt-8">
@@ -352,7 +352,7 @@
         
         </div>
         <!----->
-        <div class="card design mb-10 2xl:mb-20">
+        <div class="card overflow-hidden rounded-xl design mb-10 2xl:mb-20">
           <div class="card-image">
             <img class="w-full" src="./img/blog/img25.png" alt="">
             <div class="font-rubik font-medium 2xl:pt-12 pt-8">
@@ -373,7 +373,7 @@
           
         </div>
         <!----->
-        <div class="card mb-10 2xl:mb-20 advertisement">
+        <div class="card overflow-hidden rounded-xl mb-10 2xl:mb-20 advertisement">
           <div class="card-image">
             <img class="w-full" src="./img/blog/img-24.png" alt="">
             <div class="font-rubik font-medium 2xl:pt-12 pt-8">
@@ -394,7 +394,7 @@
        
         </div>
           <!----->
-        <div class="card web mb-10 2xl:mb-20">
+        <div class="card overflow-hidden rounded-xl web mb-10 2xl:mb-20">
           <div class="w-full" class="card-image">
             <img class="w-full" src="./img/blog/img-25.png" alt="">
             <div class="font-rubik font-medium 2xl:pt-12 pt-8">
@@ -415,7 +415,7 @@
           
         </div>
         <!----->
-        <div class="card logo mb-10 2xl:mb-20">
+        <div class="card overflow-hidden rounded-xl logo mb-10 2xl:mb-20">
           <div class="card-image">
             <img class="w-full" src="./img/blog/image 15.png" alt="">
             <div class="font-rubik font-medium 2xl:pt-12 pt-8">
@@ -435,7 +435,7 @@
             </div>
           
         </div>
-        <div class="card design mb-10 2xl:mb-20">
+        <div class="card overflow-hidden rounded-xl design mb-10 2xl:mb-20">
           <div class="card-image">
             <img class="w-full" src="./img/blog/image 15.png" alt="">
             <div class="font-rubik font-medium 2xl:pt-12 pt-8">
@@ -455,7 +455,7 @@
             </div>
         
         </div>
-        <div class="card advertisement mb-10 2xl:mb-20">
+        <div class="card overflow-hidden rounded-xl advertisement mb-10 2xl:mb-20">
           <div class="card-image">
             <img class="w-full" src="./img/blog/image 20.png" alt="">
             <div class="font-rubik font-medium 2xl:pt-12 pt-8">
@@ -476,7 +476,7 @@
         </div>
           
         </div>
-        <div class="card web mb-10 2xl:mb-20">
+        <div class="card overflow-hidden rounded-xl web mb-10 2xl:mb-20">
           <div class="card-image">
             <img class="w-full" src="./img/blog/img-24.png" alt="">
             <div class="font-rubik font-medium 2xl:pt-12 pt-8">
@@ -496,7 +496,7 @@
             </div>
          
         </div>
-        <div class="card logo mb-10 2xl:mb-20">
+        <div class="card overflow-hidden rounded-xl logo mb-10 2xl:mb-20">
           <div class="card-image">
             <img class="w-full" src="./img/blog/image 15.png" alt="">
             <div class="font-rubik font-medium 2xl:pt-12 pt-8">
@@ -516,7 +516,7 @@
         </div>
           
         </div>
-        <div class="card design mb-10 2xl:mb-20">
+        <div class="card overflow-hidden rounded-xl design mb-10 2xl:mb-20">
           <div class="card-image">
             <img class="w-full" src="./img/blog/image 20.png" alt="">
             <div class="font-rubik font-medium 2xl:pt-12 pt-8">
@@ -536,7 +536,7 @@
         </div>
           
         </div>
-        <div class="card advertisement mb-10 2xl:mb-20">
+        <div class="card overflow-hidden rounded-xl advertisement mb-10 2xl:mb-20">
           <div class="card-image">
             <img class="w-full" src="./img/blog/img-22.png" alt="">
             <div class="font-rubik font-medium 2xl:pt-12 pt-8">
@@ -556,7 +556,7 @@
         </div>
          
         </div>
-        <div class="card web mb-10 2xl:mb-20">
+        <div class="card overflow-hidden rounded-xl web mb-10 2xl:mb-20">
           <div class="card-image">
             <img class="w-full" src="./img/blog/img-24.png" alt="">
             <div class="font-rubik font-medium 2xl:pt-12 pt-8">
@@ -576,7 +576,7 @@
         </div>
          
         </div>
-        <div class="card logo mb-10 2xl:mb-20">
+        <div class="card overflow-hidden rounded-xl logo mb-10 2xl:mb-20">
           <div class="card-image">
             <img class="w-full" src="./img/blog/img25.png" alt="">
             <div class="font-rubik font-medium 2xl:pt-12 pt-8">
@@ -596,7 +596,7 @@
             </div>
           
         </div>
-        <div class="card design mb-10 2xl:mb-20">
+        <div class="card overflow-hidden rounded-xl design mb-10 2xl:mb-20">
           <div class="card-image">
             <img class="w-full" src="./img/blog/image 15.png" alt="">
             <div class="font-rubik font-medium 2xl:pt-12 pt-8">
@@ -616,7 +616,7 @@
         </div>
           
         </div>
-        <div class="card advertisement mb-10 2xl:mb-20">
+        <div class="card overflow-hidden rounded-xl advertisement mb-10 2xl:mb-20">
           <div class="card-image">
             <img class="w-full" src="./img/blog/image 20.png" alt="">
             <div class="font-rubik font-medium 2xl:pt-12 pt-8">
@@ -636,7 +636,7 @@
         </div>
          
         </div>
-        <div class="card web mb-10 2xl:mb-20">
+        <div class="card overflow-hidden rounded-xl web mb-10 2xl:mb-20">
           <div class="card-image">
             <img class="w-full" src="./img/blog/img-22.png" alt="">
             <div class="font-rubik font-medium 2xl:pt-12 pt-8">
@@ -656,7 +656,7 @@
         </div>
         
         </div>
-        <div class="card logo mb-10 2xl:mb-20">
+        <div class="card overflow-hidden rounded-xl logo mb-10 2xl:mb-20">
           <div class="card-image">
             <img class="w-full" src="./img/blog/img-25.png" alt="">
             <div class="font-rubik font-medium 2xl:pt-12 pt-8">
@@ -676,7 +676,7 @@
         </div>
          
         </div>
-        <div class="card design mb-10 2xl:mb-20">
+        <div class="card overflow-hidden rounded-xl design mb-10 2xl:mb-20">
           <div class="card-image">
             <img class="w-full" src="./img/blog/img-24.png" alt="">
             <div class="font-rubik font-medium 2xl:pt-12 pt-8">
@@ -697,7 +697,7 @@
          
         </div>
        
-        <div class="card advertisement">
+        <div class="card overflow-hidden rounded-xl advertisement">
           <div class="card-image">
             <img class="w-full" src="./img/blog/img-21.png" alt="">
             <div class="font-rubik font-medium 2xl:pt-12 pt-8">
@@ -788,19 +788,19 @@
                </li>
                <li>
                 <a href="blog.html" @click="active = 'blog'">
-                  <div class="dropdown inline-block relative">
-                    <button class=" py-4  inline-flex items-center text-nsoftgray " :class="active == 'blog'?'border-b-2 border-[#4DDA64]':''">
-                      <span class="mr-1 text-nsoftgray ">Blog</span>
+                  <div class="dropdown text-center inline-block relative">
+                    <button class=" py-4 pb-0  inline-flex items-center text-nwSoftGray" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
+                      <span class="mr-1 text-nsoftgray">Blog</span>
                       <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                     </button>
                     <ul class="dropdown-menu absolute hidden text-wvNblack pt-1">
-                      <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
+                      <li class=""><a class="bg-gray-200 relative -left-8 hover:bg-gray-400 py-2 w-28 block whitespace-no-wrap" href="./blogDetails.html">List-1</a></li>
                 
                     </ul>
                   </div>
                 </a>
               
-              </li> 
+              </li>  
                <li>
                  <a href="#" @click="active = 'contact'">
                    <h1 class="py-4 hover:text-[#4DDA64]  font-medium text-nsoftgray transition duration-200"
@@ -843,7 +843,7 @@
            
            </div>
            
-           <div class="w-[65%] mx-auto text-right relative bottom-6">
+           <div class="w-[65%] mx-auto md:text-right text-center mt-2 md:mt-0 relative bottom-6">
             <a href="#" class="top sticky text-nsoftgray"><span class="mr-2">Back to Top</span>   <img class="w-6 inline-block" src="./img/homepage/top-bottom.png" alt=""></a>
            </div>
       

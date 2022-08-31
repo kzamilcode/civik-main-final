@@ -36,7 +36,7 @@
     Home-section
     ----->
     
-<nav class="relative mx-auto 2xl:pt-28 lg:pt-12 md:pt-10 pt-8 z-50">
+    <nav class="relative mx-auto 2xl:pt-20 lg:pt-12 md:pt-10 pt-8 z-50">
       <!--flex container-->
       <div class="flex items-center justify-between">
         <!--logo-->
@@ -86,19 +86,19 @@
 
               <li>
                 <a href="blog.html" @click="active = 'blog'">
-                  <div class="dropdown inline-block relative">
-                    <button class=" py-4  inline-flex items-center text-wvNblack" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
+                  <div class="dropdown text-center inline-block relative">
+                    <button class=" py-4 pb-0  inline-flex items-center text-wvNblack" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
                       <span class="mr-1 text-wvNblack">Blog</span>
                       <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                     </button>
                     <ul class="dropdown-menu absolute hidden text-wvNblack pt-1">
-                      <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="./blogDetails.html">Details</a></li>
+                      <li class=""><a class="bg-gray-200 relative -left-8 hover:bg-gray-400 py-2 w-28 block whitespace-no-wrap" href="./blogDetails.html">List-1</a></li>
                 
                     </ul>
                   </div>
                 </a>
               
-              </li> 
+              </li>  
 
               <li>
                 <a href="contact.html" @click="active = 'contact'">
@@ -114,7 +114,7 @@
          <!--hire-me-button--->
     
          <div class="hidden xl:flex">
-        <a class="text-wvNblack font-medium text-sm md:text-base  lg:text-[18px] py-3 px-8 border border-solid border-nUnderLine rounded-full flex justify-center items-center" href="">Hire Me <svg class="ml-3" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a class="text-wvNblack bg-[#F9F2FF] font-medium text-sm md:text-base  lg:text-[18px] py-3 px-8 border border-solid border-nUnderLine rounded-full flex justify-center items-center" href="">Hire Me <svg class="ml-3" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1.16667 14C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333C14 14 12.8333 14 12.8333 14H1.16667ZM7 7C7.92826 7 8.8185 6.63125 9.47487 5.97487C10.1313 5.3185 10.5 4.42826 10.5 3.5C10.5 2.57174 10.1313 1.6815 9.47487 1.02513C8.8185 0.368749 7.92826 0 7 0C6.07174 0 5.1815 0.368749 4.52513 1.02513C3.86875 1.6815 3.5 2.57174 3.5 3.5C3.5 4.42826 3.86875 5.3185 4.52513 5.97487C5.1815 6.63125 6.07174 7 7 7Z" fill="#333333"/>
           </svg></a>
 
@@ -136,49 +136,49 @@
       
         <ul class="flex flex-col justify-center items-center font-medium text-sm md:text-base  lg:text-[18px]">
           <li class="">
-            <a href="" @click="active = 'home'">
-              <h1 class="pb-5 font-medium transition duration-200"
-                  :class="active == 'home'?'border-b-2 border-[#7AF9AD] ':''">Home</h1>
+            <a href="index.html" @click="active = 'home'">
+              <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                  :class="active == 'home'?'border-b-2 border-nUnderLine ':''">Home</h1>
           </a>
           </li>
           
           <li>
             <a href="services.html" @click="active = 'service'">
-              <h1 class="pb-5 font-medium transition duration-200"
-                  :class="active == 'service'?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Service</h1>
+              <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                  :class="active == 'service'?'border-b-2 border-nUnderLine':''">Service</h1>
           </a>
           </li>
             <li>
-              <a href="portfolio.html" @click="active = 'portfolio'">
-                <h1 class="pb-5 font-medium transition duration-200"
-                    :class="active == 'portfolio'?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Portfolio</h1>
+              <a href="portfolio.html" @click="active = 'portfolio">
+                <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                    :class="active == 'portfolio'?'border-b-2 border-nUnderLine  ':''">Portfolio</h1>
             </a>
             </li>
           <li>
-            <a href="#" @click="active = 'resume'">
-              <h1 class="pb-5 font-medium  transition duration-200"
-                  :class="active == 'resume'?'border-b-2 border-[#7AF9AD] dark:border-nwRoyelBlue':''">Resume</h1>
+            <a href="about.html" @click="active = 'about'">
+              <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                  :class="active == 'about'?'border-b-2 border-nUnderLine':''">About</h1>
           </a>
           </li>
           <li>
             <a href="blog.html" @click="active = 'blog'">
-              <div class="dropdown inline-block relative">
-                <button class=" font-semibold pt-4  inline-flex items-center" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
-                  <span class="mr-1">Blog</span>
+              <div class="dropdown text-center inline-block relative">
+                <button class=" py-4 pb-0  inline-flex items-center text-wvNblack" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
+                  <span class="mr-1 text-wvNblack">Blog</span>
                   <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                 </button>
-                <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
-                  <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
+                <ul class="dropdown-menu absolute hidden text-wvNblack pt-1">
+                  <li class=""><a class="bg-gray-200 relative -left-8 hover:bg-gray-400 py-2 w-28 block whitespace-no-wrap" href="./blogDetails.html">List-1</a></li>
             
                 </ul>
               </div>
             </a>
-          </li> 
+          </li>
            
           <li>
-            <a href="#" @click="active = 'contact'">
-              <h1 class="pb-5 font-medium transition duration-200"
-                  :class="active == 'contact'?'border-b-2 border-[#7AF9AD]':''">Contact</h1>
+            <a href="contact.html" @click="active = 'contact'">
+              <h1 class="py-4 font-medium text-wvNblack  transition duration-200"
+                  :class="active == 'contact'?'border-b-2 border-nUnderLine':''">Contact</h1>
           </a>
           </li>
         </ul>
@@ -188,7 +188,7 @@
         <div class="flex">
                    
             <div class="">
-                <a class="text-[#333333] font-medium text-sm md:text-base  lg:text-[18px] py-3 px-8 border border-solid border-gold rounded-full flex justify-center items-center" href="">Hire Me <svg class="ml-3" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a class="text-[#333333] bg-[#F9F2FF] font-medium text-sm md:text-base  lg:text-[18px] py-3 px-8 border border-solid border-gold rounded-full flex justify-center items-center" href="">Hire Me <svg class="ml-3" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1.16667 14C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333C14 14 12.8333 14 12.8333 14H1.16667ZM7 7C7.92826 7 8.8185 6.63125 9.47487 5.97487C10.1313 5.3185 10.5 4.42826 10.5 3.5C10.5 2.57174 10.1313 1.6815 9.47487 1.02513C8.8185 0.368749 7.92826 0 7 0C6.07174 0 5.1815 0.368749 4.52513 1.02513C3.86875 1.6815 3.5 2.57174 3.5 3.5C3.5 4.42826 3.86875 5.3185 4.52513 5.97487C5.1815 6.63125 6.07174 7 7 7Z" fill="#333333"/>
                   </svg></a>
         
@@ -202,8 +202,8 @@
   </div>
     <div class=" my-10 lg:my-20 2xlmb-28 relative">
       <img class="w-full" src="./img/blog/image.png" alt="">
-      <div class="absolute top-[10%] md:top-[30%] md:left-48 left-10">
-          <h2 class="xl:text-5xl sm:text-xl text-sm font-rubik text-white">From Blog</h2>
+      <div class="absolute top-[10%] md:top-[30%] 2xl:top-[35%] md:left-48 left-10">
+          <h2 class="xl:text-5xl mb-5 sm:text-xl text-sm font-rubik text-white">From Blog</h2>
           <div class="md:text-xl text-base text-white mt-2">Home <span class="p-1"> <img class="inline" src="./img/blog/n-right.png" alt="">
 
           </span> <span class="text-[#4DDA64]"> Blog</span>
@@ -222,28 +222,28 @@
 <div class="pt-10">
     <img class="inline mr-4 " src="./img/blogDetails/Ellipse 45.png" alt=""><span>Vidit mentitum vis in.</span> <br>
     <img class="inline mr-4 " src="./img/blogDetails/Ellipse 45.png" alt=""><span>Probo omnes fuisset ius an.</span> <br>
-    <img class="inline mr-4 " src="./img/blogDetails/Ellipse 45.png" alt=""><span> Mix ea viderer sanctus indoctum.</span> <br>
-    <img class="inline mr-4 " src="./img/blogDetails/Ellipse 45.png" alt=""><span> Possit theo phrastus.</span> <br>
-    <img class="inline mr-4 " src="./img/blogDetails/Ellipse 45.png" alt=""><span> Id eripuit veritus ius, et sit veri.</span>
+    <img class="inline mr-4 " src="./img/blogDetails/Ellipse 45.png" alt=""><span>Mix ea viderer sanctus indoctum.</span> <br>
+    <img class="inline mr-4 " src="./img/blogDetails/Ellipse 45.png" alt=""><span>Possit theo phrastus.</span> <br>
+    <img class="inline mr-4 " src="./img/blogDetails/Ellipse 45.png" alt=""><span>Id eripuit veritus ius, et sit veri.</span>
 </div>
 <h1 class="text-left font-rubik py-10 2xl:py-20 text-wvNblack text-3xl 2xl:text-5xl">Aliquam vel sem vel vellesuada</h1>
       
 
 <div class="grid md:grid-cols-2 grid-cols-1 gap-3">
     <!----->
-    <div class="hovereffets rounded-lg w-full h-full overflow-hidden  text-center cursor-default">
-      <img class="w-full h-full block rounded-lg " src="./img/blogDetails/img-1.png" alt="">
+    <div class="  w-full h-full overflow-hidden  text-center cursor-default">
+      <img class="w-full cursor-pointer h-full block  " src="./img/blogDetails/img-1.png" alt="">
      
     </div>
     <!----->
-    <div class="hovereffets rounded-lg w-full h-full overflow-hidden  text-center first-line:cursor-pointer">
-      <img class="w-full block h-full rounded-lg cursor-pointer" src="./img/blogDetails/img-2.png" alt="">
+    <div class="  w-full h-full overflow-hidden  text-center first-line:cursor-pointer">
+      <img class="w-full block h-full  cursor-pointer" src="./img/blogDetails/img-2.png" alt="">
       
     </div>
    
   </div>
-  <div class="w-full mt-2 rounded-lg hovereffets h-full bg-no-repeat bg-cover object-fill overflow-hidden text-center cursor-default">
-    <img class="w-full block rounded-lg  cursor-pointer" src="./img/blogDetails/image 30.png" alt="">
+  <div class="w-full mt-2 r h-full bg-no-repeat bg-cover object-fill overflow-hidden text-center cursor-default">
+    <img class="w-full block   cursor-pointer" src="./img/blogDetails/image 30.png" alt="">
    
   </div>
   <div>
@@ -276,108 +276,31 @@
 
     <!--testimonial-->
     <div>
-        <div class="nContainer advertisement card nActive hidden 2xl:mt-16 font-medium font-work leading-8 text-lg text-white text-left py-10  ">
-          <div class="bg-nUnderLine py-12 pl-16 2xl:pl-[6.5rem]">
-            <div class="new relative w-[150px] h-0 rotate-90 lg:top-20 2xl:top-16 top-20  md:-left-[105px] 2xl:-left-[130px] -left-[95px] border border-solid border-white"></div>
-            <p class="2xl:text-xl text-lg leading-[35px]">Photography is the story I fail to put into words get ligula vel, <br> commodo luctus felis. Ut dignissim sapien.</p>
+        <div class="nContainer advertisement  2xl:mt-16 font-medium font-work leading-8 text-lg text-white text-left py-10  ">
+          <div class="bg-nUnderLine py-10 2xl:py-12 pl-5 md:pl-12 2xl:pl-[6.5rem]">
+            <div class="new md:block hidden  relative w-[150px] h-0 rotate-90 lg:top-16 2xl:top-16 top-20  md:-left-[105px] 2xl:-left-[130px] -left-[95px] border border-solid border-white"></div>
+            <p class="2xl:text-xl 2xl:leading-[35px]">Photography is the story I fail to put into words get ligula vel, <br> commodo luctus felis. Ut dignissim sapien.</p>
             <div class="flex justify-between">
             <p class="2xl:mt-10 mt-5">- Devid Guitta</p>
-            <img class="inline   mt-6 pr-24" src="./img/blogDetails/quets.png" alt="">
+            <img class="inline mt-4 2xl:w-auto w-16  2xl:mt-6 2xl:pr-24 mr-10" src="./img/blogDetails/quets.png" alt="">
             </div>
          
           </div>
           <div class="flex justify-between 2xl:mt-20 mt-10">
-            <div onclick="prev()"><img class="rotate-180 cursor-pointer" src="./img/blogDetails/rightVector.png" alt="" ></div>
+            <div><img class="rotate-180 cursor-pointer" src="./img/blogDetails/rightVector.png" alt="" ></div>
             
-            <div onclick="next()">
+            <div>
                 <img class="cursor-pointer" src="./img/blogDetails/rightVector.png" alt=""></div>
-            
-           
-         
+              
         </div>
-        <div class="flex justify-between mt-5 font-rubik 2xl:text-3xl text-xl font-medium">
-            <p class="text-black">What is a business <span class="block text-right">definition?</span> </p>
-            <p class="text-black">Track Indented Results <span class="block text-right">in STAT (New)</span> </p>
-        </div>
-        </div>
-        <!---->
-        <div class="nContainer logo card hidden 2xl:mt-16  font-medium font-work leading-8 text-lg text-white text-left py-10  ">
-          <div class="bg-nUnderLine py-12 pl-16 2xl:pl-[6.5rem]">
-            <div class="new relative w-[150px] h-0 rotate-90 lg:top-20 2xl:top-16 top-20 md:-left-[130px] -left-[95px] border border-solid border-white"></div>
-            <p class="text-xl leading-[35px]">Photography is the story I fail to put into words get ligula vel, <br> commodo luctus felis. Ut dignissim sapien.</p>
-            <div class="flex justify-between">
-            <p class="2xl:mt-10 mt-5">- Devid Guitta</p>
-            <img class="inline   mt-6 pr-24" src="./img/blogDetails/quets.png" alt="">
-            </div>
-         
-          </div>
-          <div class="flex justify-between 2xl:mt-20 mt-10">
-            <div onclick="prev()"><img class="rotate-180 cursor-pointer" src="./img/blogDetails/rightVector.png" alt="" ></div>
-            
-            <div onclick="next()">
-                <img class="cursor-pointer" src="./img/blogDetails/rightVector.png" alt=""></div>
-            
-           
-         
-        </div>
-        <div class="flex justify-between mt-5 font-rubik 2xl:text-3xl text-xl font-medium">
-            <p class="text-black">What is a business <span class="block text-right">definition?</span> </p>
-            <p class="text-black">Track Indented Results <span class="block text-right">in STAT (New)</span> </p>
-        </div>
-        </div>
-        <!----->
-        <div class="nContainer design card hidden 2xl:mt-16  font-medium font-work leading-8 text-lg text-white text-left py-10  ">
-          <div class="bg-nUnderLine py-12 pl-16 2xl:pl-[6.5rem]">
-            <div class="new relative w-[150px] h-0 rotate-90 lg:top-20 2xl:top-16 top-20 md:-left-[130px] -left-[95px] border border-solid border-white"></div>
-            <p class="text-xl leading-[35px]">Photography is the story I fail to put into words get ligula vel, <br> commodo luctus felis. Ut dignissim sapien.</p>
-            <div class="flex justify-between">
-            <p class="2xl:mt-10 mt-5">- Devid Guitta</p>
-            <img class="inline   mt-6 pr-24" src="./img/blogDetails/quets.png" alt="">
-            </div>
-         
-          </div>
-          <div class="flex justify-between 2xl:mt-20 mt-10">
-            <div onclick="prev()"><img class="rotate-180 cursor-pointer" src="./img/blogDetails/rightVector.png" alt="" ></div>
-            
-            <div onclick="next()">
-                <img class="cursor-pointer" src="./img/blogDetails/rightVector.png" alt=""></div>
-            
-           
-         
-        </div>
-        <div class="flex justify-between mt-5 font-rubik 2xl:text-3xl text-xl font-medium">
-            <p class="text-black">What is a business <span class="block text-right">definition?</span> </p>
-            <p class="text-black">Track Indented Results <span class="block text-right">in STAT (New)</span> </p>
-        </div>
-        </div>
-       
-        <!----->
-        <div class="nContainer web card hidden 2xl:mt-16 font-medium font-work leading-8 text-lg text-white text-left py-10  ">
-          <div class="bg-nUnderLine py-12 pl-16 2xl:pl-[6.5rem]">
-            <div class="new relative w-[150px] h-0 rotate-90 lg:top-20 2xl:top-16 top-20 md:-left-[130px] -left-[95px] border border-solid border-white"></div>
-            <p class="text-xl leading-[35px]">Photography is the story I fail to put into words get ligula vel, <br> commodo luctus felis. Ut dignissim sapien.</p>
-            <div class="flex justify-between">
-            <p class="2xl:mt-10 mt-5">- Devid Guitta </p>
-            <img class="inline   mt-6 pr-24" src="./img/blogDetails/quets.png" alt="">
-            </div>
-         
-          </div>
-          <div class="flex justify-between 2xl:mt-20 mt-10">
-            <div onclick="prev()"><img class="rotate-180 cursor-pointer" src="./img/blogDetails/rightVector.png" alt="" ></div>
-            
-            <div onclick="next()">
-                <img class="cursor-pointer" src="./img/blogDetails/rightVector.png" alt=""></div>
-            
-           
-         
-        </div>
-        <div class="flex justify-between mt-5 font-rubik 2xl:text-3xl text-xl font-medium">
-            <p class="text-black">What is a business <span class="block text-right">definition?</span> </p>
-            <p class="text-black">Track Indented Results <span class="block text-right">in STAT (New)</span> </p>
+        <div class="flex justify-between mt-5 font-rubik 2xl:text-3xl text-lg font-medium">
+            <p class="text-black md:text-left text-center">What is a business <span class="block md:text-right text-center">definition?</span> </p>
+            <p class="text-black md:text-left text-center">Track Indented Results <span class="block md:text-right text-center">in STAT (New)</span> </p>
         </div>
         </div>
         
-        <ul class="inline-block 2xl:mt-16 text-xl text-left w-full  mb-20 ">
+        
+        <ul class="inline-block 2xl:mt-16 2xl:text-xl text-left w-full  2xl:mb-20 mb-10">
           <span>Tags:</span>
           <li class=" list md:mb-0 mb-3 hover:border-[#636363] text-[#989898]  hover:text-[#636363]  border border-solid py-1 pb-2 px-3 border-[#E4E4E4] list-none mr-5  cursor-pointer inline-block " data-filter="web">Business </li>
 
@@ -389,7 +312,7 @@
         </ul>
     </div>
    <!--comments-->
-   <div class="w-full text-left">
+   <div class="w-full text-left mb-10 lg:mb-20 2xl:mb-36">
     <h1 class="w-full text-left font-medium text-3xl">1 Comment</h1>
 
     <div class="flex flex-wrap md:flex-nowrap  2xl:mt-16 mt-10 gap-x-10">
@@ -408,40 +331,60 @@
   
 
    <!--from-->
-<div class="lg:flex items-center gap-10 mt-20 lg:mb-12">
-  <div class="relative w-full">
-  <input type="text" class="border-b lg:mb-0 mb-8 lg:py-4 py-2 w-full border-b-black focus:outline-none">
-  <label class="absolute left-0 text-lg" for="" >Name *</label>
-  </div>
+   <div class="lg:flex items-center gap-10 lg:mb-12">
+    <div class=" w-full">
+    
 
-  <div class="relative w-full">
-      <input type="number" class="border-b lg:py-4 py-2 w-full  border-b-black focus:outline-none">
-      <label class="absolute left-0 text-lg" for="" >Phone</label>
+    <input class="appearance-none placeholder-black border-b border-black w-full text-black mr-3 pb-6 text-xl leading-tight focus:outline-none " type="text" placeholder="Name *" aria-label="Full name">
+   
+    </div>
+
+    <div class="w-full">
+       
+        
+        
+    <input class="appearance-none placeholder-black border-b border-black w-full text-black mr-3 pb-6 text-xl leading-tight focus:outline-none " type="number"  placeholder="Phone *" aria-label="Number">
+        </div>
+  </div>
+          
+    <div class="lg:flex mt-8 items-center gap-10 lg:mb-12 mb-8">
+            <div class="relative w-full">
+           
+
+            <input class="appearance-none placeholder-black border-b border-black w-full text-black mr-3 pb-6 text-xl leading-tight focus:outline-none " type="email"  placeholder="E-mail *" aria-label="Number">
+            
+            </div>
+
+            <div class=" w-full">
+                
+
+                <input class="appearance-none placeholder-black border-b border-black w-full text-black mr-3 pb-6 text-xl leading-tight focus:outline-none " type="email"  placeholder="Website *" aria-label="wevsite">
+
+                
+                </div>
+    </div>
+    <div class=" lg:mt-20 items-center gap-10 ">
+            <div class=" w-full">
+            
+
+
+            <input class="appearance-none placeholder-black border-b border-black w-full text-black mr-3 pb-6 text-xl leading-tight focus:outline-none " type="email"  placeholder="Message *" aria-label="Message">
+            
+            </div>
+
+            <div class="mt-10 mx-auto lg:max-w-[170px] leading-[55px]">
+              <a class="text-black font-work font-normal lg:text-[18px] bg-[#FBB957] rounded-full flex justify-center items-center" href="">Sent <img src="./img/blogDetails/TopVector.png" class="ml-3" alt=""></a>
+        
+               </div>
+
+    </div>
+
+    
       </div>
-</div>
-<div class="lg:flex mt-8 items-center gap-10 lg:mb-12 mb-8">
-  <div class="relative w-full">
-  <input type="email" class="border-b lg:mb-0 mb-8 lg:py-4 py-2 w-full border-b-black focus:outline-none">
-  <label class="absolute left-0 text-lg" for="" >E-mail *</label>
-  </div>
 
-  <div class="relative w-full">
-      <input type="number" class="border-b lg:py-4 py-2 w-full  border-b-black focus:outline-none">
-      <label class="absolute left-0 text-lg" for="" >Budget</label>
-      </div>
-</div>
-<div class=" lg:mt-20 items-center gap-10 ">
-  <div class="relative w-full">
-  <input type="text" class="border-b py-4 w-full border-b-black focus:outline-none">
-  <label class="absolute left-0 text-lg" for="" >Message</label>
-  </div>
 
-  <div class="mt-10 mx-auto lg:max-w-[170px] leading-[55px]">
-      <a class="text-black font-work font-normal lg:text-[18px] bg-[#FBB957] rounded-full flex justify-center items-center" href="">Sent <img src="./img/blogDetails/TopVector.png" class="ml-3" alt=""></a>
 
-       </div>
 
-</div>
 </div>
 
        <!----------
@@ -508,19 +451,19 @@
                </li>
                <li>
                 <a href="blog.html" @click="active = 'blog'">
-                  <div class="dropdown inline-block relative">
-                    <button class=" py-4  inline-flex items-center text-nsoftgray " :class="active == 'blog'?'border-b-2 border-[#4DDA64]':''">
-                      <span class="mr-1 text-nsoftgray ">Blog</span>
+                  <div class="dropdown text-center inline-block relative">
+                    <button class=" py-4 pb-0  inline-flex items-center text-nwSoftGray" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
+                      <span class="mr-1 text-nsoftgray">Blog</span>
                       <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                     </button>
                     <ul class="dropdown-menu absolute hidden text-wvNblack pt-1">
-                      <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
+                      <li class=""><a class="bg-gray-200 relative -left-8 hover:bg-gray-400 py-2 w-28 block whitespace-no-wrap" href="./blogDetails.html">List-1</a></li>
                 
                     </ul>
                   </div>
                 </a>
               
-              </li> 
+              </li>   
                <li>
                  <a href="#" @click="active = 'contact'">
                    <h1 class="py-4 hover:text-[#4DDA64]  font-medium text-nsoftgray transition duration-200"
@@ -563,7 +506,7 @@
            
            </div>
            
-           <div class="w-[65%] mx-auto text-right relative bottom-6">
+           <div class="w-[65%] mx-auto md:text-right text-center mt-2 md:mt-0 relative bottom-6">
             <a href="#" class="top sticky text-nsoftgray"><span class="mr-2">Back to Top</span>   <img class="w-6 inline-block" src="./img/homepage/top-bottom.png" alt=""></a>
            </div>
       
