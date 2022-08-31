@@ -616,9 +616,9 @@ end-comedown-section
           footer-section
         ------->
 
-    <div class=" bg-no-repeat lg:pb-0 pb-5 relative bg-cover" style="background-image:url('./img/homepage/footerbg.png')">
+        <div class=" mt-24 pb-10 bg-no-repeat relative bg-cover" style="background-image:url('./img/homepage/footerbg.png')">
           <div class="flex flex-col justify-center items-center text-center">
-         <div class="lg:pt-16 pt-4">
+         <div class="lg:pt-16 pt-8">
            
            <svg width="159" height="50" viewBox="0 0 159 50" fill="none" xmlns="http://www.w3.org/2000/svg">
              <path d="M53.2741 46C52.9474 46 52.6697 45.8857 52.4411 45.657C52.2124 45.4283 52.0981 45.1507 52.0981 44.824V12.876C52.0981 12.5493 52.2124 12.2717 52.4411 12.043C52.6697 11.8143 52.9474 11.7 53.2741 11.7H57.8801C58.2394 11.7 58.5171 11.8143 58.7131 12.043C58.9417 12.2717 59.0561 12.5493 59.0561 12.876V44.824C59.0561 45.1507 58.9417 45.4283 58.7131 45.657C58.5171 45.8857 58.2394 46 57.8801 46H53.2741ZM76.7366 46C76.214 46 75.8056 45.8693 75.5116 45.608C75.2176 45.3467 75.0053 45.02 74.8746 44.628L64.3886 13.17C64.3233 13.0067 64.2906 12.8597 64.2906 12.729C64.2906 12.435 64.3886 12.19 64.5846 11.994C64.7806 11.798 65.0256 11.7 65.3196 11.7H69.6316C70.089 11.7 70.432 11.8307 70.6606 12.092C70.922 12.3207 71.0853 12.5493 71.1506 12.778L79.4316 38.013L87.6636 12.778C87.7616 12.5493 87.925 12.3207 88.1536 12.092C88.415 11.8307 88.7743 11.7 89.2316 11.7H93.5436C93.805 11.7 94.0336 11.798 94.2296 11.994C94.4583 12.19 94.5726 12.435 94.5726 12.729C94.5726 12.8597 94.54 13.0067 94.4746 13.17L83.9886 44.628C83.858 45.02 83.6456 45.3467 83.3516 45.608C83.0576 45.8693 82.6493 46 82.1266 46H76.7366ZM100.934 46C100.608 46 100.33 45.8857 100.101 45.657C99.8726 45.4283 99.7582 45.1507 99.7582 44.824V12.876C99.7582 12.5493 99.8726 12.2717 100.101 12.043C100.33 11.8143 100.608 11.7 100.934 11.7H105.54C105.9 11.7 106.177 11.8143 106.373 12.043C106.602 12.2717 106.716 12.5493 106.716 12.876V44.824C106.716 45.1507 106.602 45.4283 106.373 45.657C106.177 45.8857 105.9 46 105.54 46H100.934ZM115.577 46C115.25 46 114.972 45.8857 114.744 45.657C114.515 45.4283 114.401 45.1507 114.401 44.824V12.925C114.401 12.5657 114.515 12.2717 114.744 12.043C114.972 11.8143 115.25 11.7 115.577 11.7H119.889C120.248 11.7 120.542 11.8143 120.771 12.043C120.999 12.2717 121.114 12.5657 121.114 12.925V24.391L132.188 12.582C132.318 12.4187 132.531 12.239 132.825 12.043C133.151 11.8143 133.576 11.7 134.099 11.7H138.95C139.211 11.7 139.44 11.798 139.636 11.994C139.864 12.19 139.979 12.435 139.979 12.729C139.979 12.9577 139.913 13.1537 139.783 13.317L126.308 28.115L140.714 44.334C140.877 44.53 140.959 44.7423 140.959 44.971C140.959 45.265 140.844 45.51 140.616 45.706C140.42 45.902 140.191 46 139.93 46H134.883C134.327 46 133.886 45.8857 133.56 45.657C133.266 45.3957 133.07 45.216 132.972 45.118L121.114 32.133V44.824C121.114 45.1507 120.999 45.4283 120.771 45.657C120.542 45.8857 120.248 46 119.889 46H115.577Z" fill="white"/>
@@ -656,13 +656,12 @@ end-comedown-section
                </a>
                </li>
                
-              
                <li>
-                <a href="services.html" @click="active = 'service'">
-                  <h1 class="py-4 font-medium text-nsoftgray  transition duration-200"
-                      :class="active == 'service'?'border-b-2 border-[#4DDA64]':''">Service</h1>
-              </a>
-              </li>
+                 <a href="services.html" @click="active = 'service'">
+                   <h1 class="py-4 hover:text-[#4DDA64] font-medium text-nsoftgray transition duration-200"
+                       :class="active == 'service'?'border-b-2 border-[#4DDA64] ':''">Service</h1>
+               </a>
+               </li>
                  <li>
                    <a href="portfolio.html" @click="active = 'portfolio'">
                      <h1 class="py-4 hover:text-[#4DDA64]  font-medium text-nsoftgray transition duration-200"
@@ -670,9 +669,9 @@ end-comedown-section
                  </a>
                  </li>
                <li>
-                 <a href="#" @click="active = 'resume'">
+                 <a href="about.html" @click="active = 'about'">
                    <h1 class="py-4 hover:text-[#4DDA64]  font-medium text-nsoftgray transition duration-200"
-                       :class="active == 'resume'?'border-b-2 border-[#4DDA64] ':''">Resume</h1>
+                       :class="active == 'about'?'border-b-2 border-[#4DDA64] ':''">About</h1>
                </a>
                </li>
                <li>
@@ -697,7 +696,8 @@ end-comedown-section
                </a>
                </li>
              </ul>
-               
+         
+         
          </nav>
            
          </div>
@@ -725,14 +725,16 @@ end-comedown-section
            <div class="text-white text-center relative 2xl:after:-ml-[100px] pt-16 2xl:pt-20 flex flex-wrap justify-center after:absolute 2xl:after:w-[70%] after:w-[75%] left-0 after:top-11 after:border-t after:border-solid after:border-[#383838] after:pt-28">
            
          
-         <div>
+         <div class="">
            <p class="md:text-xl text-sm text-nsoftgray 2xl:pb-0 pb-6 xl:pb-10 ">Copyright jompha 2022 all Rights Resarved</p>
          </div>
            
            </div>
-           <div class="w-[65%] mx-auto text-center xl:text-right relative lg:bottom-16 2xl:bottom-6">
-            <a href="#" class="top text-nsoftgray"><span class="mr-2">Back to Top</span><img class="w-6 inline-block" src="./img/homepage/top-bottom.png" alt=""></a>
+           
+           <div class="w-[65%] mx-auto mt-5 md:mt-0 text-center md:text-right relative bottom-6">
+            <a href="#" class="top sticky text-nsoftgray"><span class="mr-2">Back to Top</span>   <img class="w-6 inline-block" src="./img/homepage/top-bottom.png" alt=""></a>
            </div>
+      
            
       </div>
     
