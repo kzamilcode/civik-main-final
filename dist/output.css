@@ -651,6 +651,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 20px;
 }
 
+.-top-5 {
+  top: -1.25rem;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -3364,9 +3368,24 @@ section ul li.active {
     width: 60%;
   }
 
+  .lg\:before\:w-\[40\%\]::before {
+    content: var(--tw-content);
+    width: 40%;
+  }
+
   .lg\:after\:top-\[190px\]::after {
     content: var(--tw-content);
     top: 190px;
+  }
+
+  .lg\:after\:top-\[200px\]::after {
+    content: var(--tw-content);
+    top: 200px;
+  }
+
+  .lg\:after\:h-\[65\%\]::after {
+    content: var(--tw-content);
+    height: 65%;
   }
 
   .lg\:after\:w-\[65\%\]::after {
@@ -3535,6 +3554,11 @@ section ul li.active {
   .xl\:after\:h-\[61\%\]::after {
     content: var(--tw-content);
     height: 61%;
+  }
+
+  .xl\:after\:h-\[65\%\]::after {
+    content: var(--tw-content);
+    height: 65%;
   }
 }
 
@@ -3997,6 +4021,16 @@ section ul li.active {
     height: 50%;
   }
 
+  .\32xl\:before\:w-\[60\%\]::before {
+    content: var(--tw-content);
+    width: 60%;
+  }
+
+  .\32xl\:before\:w-\[65\%\]::before {
+    content: var(--tw-content);
+    width: 65%;
+  }
+
   .\32xl\:after\:top-\[305px\]::after {
     content: var(--tw-content);
     top: 305px;
@@ -4030,6 +4064,11 @@ section ul li.active {
   .\32xl\:after\:w-12::after {
     content: var(--tw-content);
     width: 3rem;
+  }
+
+  .\32xl\:after\:w-\[85\%\]::after {
+    content: var(--tw-content);
+    width: 85%;
   }
 }
 

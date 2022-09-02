@@ -87,12 +87,12 @@
               <li>
                 <a href="blog.html" @click="active = 'blog'">
                   <div class="dropdown text-center inline-block relative">
-                    <button class=" py-4 pb-0  inline-flex items-center text-wvNblack" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
+                    <button class=" py-4 inline-flex items-center text-wvNblack" :class="active == 'blog'?'border-b-2 border-nUnderLine':''">
                       <span class="mr-1 text-wvNblack">Blog</span>
                       <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                     </button>
                     <ul class="dropdown-menu absolute hidden text-wvNblack pt-1">
-                      <li class=""><a class="bg-gray-200 relative -left-8 hover:bg-gray-400 py-2 w-28 block whitespace-no-wrap" href="./blogDetails.html">List-1</a></li>
+                      <li class="" :class="active == 'blog'?'border-b-2 border-nUnderLine':''"><a class="bg-gray-200 relative -top-5  -left-8 hover:bg-gray-400 py-2 w-28 block whitespace-no-wrap" href="./blogDetails.html" >List-1</a></li>
                 
                     </ul>
                   </div>
@@ -433,7 +433,7 @@
 <!--grid-layout--->
 <div class="box-container 2xl:mb-36 lg:px-36 2xl:px-60 md:px-12 px-10 mx-auto grid xl:grid-cols-2 grid-cols-1 gap-4 w-full" >
   <!----->
-       <div class="box py-10 md:pl-10 pl-6 flex flex-wrap  md:flex-nowrap space-x-4 xl:space-x-8 rounded-xl transition-all bg-[#FCFCFC]  cursor-pointer">
+       <div class="box py-10 md:pl-10 pl-6 flex flex-wrap  md:flex-nowrap space-x-4 xl:space-x-8 rounded-xl transition-all ">
          <div>
            <img class="mb-2 md:mb-0" src="./img/about/Group 118.png" alt="">
          </div>
@@ -444,7 +444,7 @@
          </div>
        </div>
        <!------>
-       <div class="box py-10 md:pl-10 pl-6 flex flex-wrap  md:flex-nowrap space-x-4 xl:space-x-8 rounded-xl transition-all bg-[#FCFCFC]  cursor-pointer">
+       <div class="box py-10 md:pl-10 pl-6 flex flex-wrap  md:flex-nowrap space-x-4 xl:space-x-8 rounded-xl transition-all ">
        
         <div class="pl-16">
           <h3 class="text-[#808080] md:text-lg text-sm font-medium ">2019 - Present</h3>
@@ -453,7 +453,7 @@
         </div>
       </div>
        <!------>
-       <div class="box py-10 md:pl-10 pl-6 flex flex-wrap  md:flex-nowrap space-x-4 xl:space-x-8 rounded-xl transition-all bg-[#FCFCFC]  cursor-pointer">
+       <div class="box py-10 md:pl-10 pl-6 flex flex-wrap  md:flex-nowrap space-x-4 xl:space-x-8 rounded-xl transition-all ">
         <div>
           <img class="mb-2 md:mb-0" src="./img/about/Group 119.png" alt="">
         </div>
@@ -464,7 +464,7 @@
         </div>
       </div>
        <!------->
-       <div class="box py-10 md:pl-10 pl-6 flex flex-wrap  md:flex-nowrap space-x-4 xl:space-x-8 rounded-xl transition-all bg-[#FCFCFC]  cursor-pointer">
+       <div class="box py-10 md:pl-10 pl-6 flex flex-wrap  md:flex-nowrap space-x-4 xl:space-x-8 rounded-xl transition-all ">
         
         <div class="pl-16">
           <h3 class="text-[#808080] md:text-lg text-sm font-medium ">2019 - Present</h3>
@@ -473,7 +473,7 @@
         </div>
       </div>
        <!----->
-       <div class="box py-10 md:pl-10 pl-6 flex flex-wrap  md:flex-nowrap space-x-4 xl:space-x-8 rounded-xl transition-all bg-[#FCFCFC]  cursor-pointer">
+       <div class="box py-10 md:pl-10 pl-6 flex flex-wrap  md:flex-nowrap space-x-4 xl:space-x-8 rounded-xl transition-all ">
         <div>
           <img class="mb-2 md:mb-0" src="./img/about/Group 120.png" alt="">
         </div>
@@ -484,7 +484,7 @@
         </div>
       </div>
       <!----->
-      <div class="box py-10 md:pl-10 pl-6 flex flex-wrap  md:flex-nowrap space-x-4 xl:space-x-8 rounded-xl transition-all bg-[#FCFCFC]  cursor-pointer">
+      <div class="box py-10 md:pl-10 pl-6 flex flex-wrap  md:flex-nowrap space-x-4 xl:space-x-8 rounded-xl transition-all ">
        
         <div class="pl-16">
           <h3 class="text-[#808080] md:text-lg text-sm font-medium ">2019 - Present</h3>
