@@ -3354,6 +3354,16 @@ section ul li.active {
     width: 45%;
   }
 
+  .lg\:before\:w-\[55\%\]::before {
+    content: var(--tw-content);
+    width: 55%;
+  }
+
+  .lg\:before\:w-\[60\%\]::before {
+    content: var(--tw-content);
+    width: 60%;
+  }
+
   .lg\:after\:top-\[190px\]::after {
     content: var(--tw-content);
     top: 190px;
