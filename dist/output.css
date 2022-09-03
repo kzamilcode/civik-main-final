@@ -519,6 +519,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: sticky;
 }
 
+.-top-5 {
+  top: -1.25rem;
+}
+
 .-left-8 {
   left: -2rem;
 }
@@ -649,10 +653,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .top-\[20px\] {
   top: 20px;
-}
-
-.-top-5 {
-  top: -1.25rem;
 }
 
 .z-50 {
@@ -928,6 +928,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[38px\] {
   height: 38px;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .w-36 {
@@ -1457,11 +1461,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(169 87 251 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#FCFCFC\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 252 252 / var(--tw-bg-opacity));
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -1475,6 +1474,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#262626\] {
   --tw-bg-opacity: 1;
   background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FCFCFC\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 252 252 / var(--tw-bg-opacity));
 }
 
 .bg-nWhite {
@@ -1665,10 +1669,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 2rem;
 }
 
-.pb-0 {
-  padding-bottom: 0px;
-}
-
 .pt-1 {
   padding-top: 0.25rem;
 }
@@ -1707,6 +1707,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pl-16 {
   padding-left: 4rem;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
 }
 
 .pt-4 {
@@ -2022,6 +2026,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#A957FB\] {
   --tw-text-opacity: 1;
   color: rgb(169 87 251 / var(--tw-text-opacity));
+}
+
+.text-slate-400 {
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .placeholder-\[\#696969\]::-moz-placeholder {
@@ -2690,6 +2714,10 @@ section ul li.active {
   fill: #FBB957;
 }
 
+.hover\:fill-nUnderLine:hover {
+  fill: #A957FB;
+}
+
 .hover\:text-\[\#4DDA64\]:hover {
   --tw-text-opacity: 1;
   color: rgb(77 218 100 / var(--tw-text-opacity));
@@ -2708,6 +2736,11 @@ section ul li.active {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-gray-50:hover {
+  --tw-text-opacity: 1;
+  color: rgb(249 250 251 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
@@ -3358,26 +3391,6 @@ section ul li.active {
     width: 45%;
   }
 
-  .lg\:before\:w-\[55\%\]::before {
-    content: var(--tw-content);
-    width: 55%;
-  }
-
-  .lg\:before\:w-\[60\%\]::before {
-    content: var(--tw-content);
-    width: 60%;
-  }
-
-  .lg\:before\:w-\[40\%\]::before {
-    content: var(--tw-content);
-    width: 40%;
-  }
-
-  .lg\:after\:top-\[190px\]::after {
-    content: var(--tw-content);
-    top: 190px;
-  }
-
   .lg\:after\:top-\[200px\]::after {
     content: var(--tw-content);
     top: 200px;
@@ -3549,16 +3562,6 @@ section ul li.active {
   .xl\:before\:top-\[314px\]::before {
     content: var(--tw-content);
     top: 314px;
-  }
-
-  .xl\:after\:h-\[61\%\]::after {
-    content: var(--tw-content);
-    height: 61%;
-  }
-
-  .xl\:after\:h-\[65\%\]::after {
-    content: var(--tw-content);
-    height: 65%;
   }
 }
 
@@ -3760,8 +3763,16 @@ section ul li.active {
     max-width: 520px;
   }
 
+  .\32xl\:max-w-full {
+    max-width: 100%;
+  }
+
   .\32xl\:grid-cols-\[auto_minmax\(580px\2c _auto\)\] {
     grid-template-columns: auto minmax(580px, auto);
+  }
+
+  .\32xl\:grid-cols-\[auto_minmax\(auto\2c _890px\)\] {
+    grid-template-columns: auto minmax(auto, 890px);
   }
 
   .\32xl\:gap-x-10 {
@@ -3987,6 +3998,19 @@ section ul li.active {
     font-size: 40px;
   }
 
+  .\32xl\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .\32xl\:text-\[3\.1rem\] {
+    font-size: 3.1rem;
+  }
+
+  .\32xl\:text-\[3\.4rem\] {
+    font-size: 3.4rem;
+  }
+
   .\32xl\:leading-7 {
     line-height: 1.75rem;
   }
@@ -4011,6 +4035,18 @@ section ul li.active {
     line-height: 60px;
   }
 
+  .\32xl\:leading-\[65px\] {
+    line-height: 65px;
+  }
+
+  .\32xl\:leading-\[68px\] {
+    line-height: 68px;
+  }
+
+  .\32xl\:leading-\[70px\] {
+    line-height: 70px;
+  }
+
   .\32xl\:before\:top-\[450px\]::before {
     content: var(--tw-content);
     top: 450px;
@@ -4019,11 +4055,6 @@ section ul li.active {
   .\32xl\:before\:h-\[50\%\]::before {
     content: var(--tw-content);
     height: 50%;
-  }
-
-  .\32xl\:before\:w-\[60\%\]::before {
-    content: var(--tw-content);
-    width: 60%;
   }
 
   .\32xl\:before\:w-\[65\%\]::before {
@@ -4056,19 +4087,14 @@ section ul li.active {
     width: 70%;
   }
 
-  .\32xl\:after\:w-\[80\%\]::after {
+  .\32xl\:after\:w-\[85\%\]::after {
     content: var(--tw-content);
-    width: 80%;
+    width: 85%;
   }
 
   .\32xl\:after\:w-12::after {
     content: var(--tw-content);
     width: 3rem;
-  }
-
-  .\32xl\:after\:w-\[85\%\]::after {
-    content: var(--tw-content);
-    width: 85%;
   }
 }
 
