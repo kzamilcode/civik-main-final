@@ -934,6 +934,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2.5rem;
 }
 
+.h-\[95\%\] {
+  height: 95%;
+}
+
+.h-\[92\%\] {
+  height: 92%;
+}
+
+.h-\[91\%\] {
+  height: 91%;
+}
+
 .w-36 {
   width: 9rem;
 }
@@ -2868,6 +2880,10 @@ section ul li.active {
     height: 320px;
   }
 
+  .md\:h-\[91\%\] {
+    height: 91%;
+  }
+
   .md\:w-1\/3 {
     width: 33.333333%;
   }
@@ -3713,6 +3729,10 @@ section ul li.active {
 
   .\32xl\:h-\[63px\] {
     height: 63px;
+  }
+
+  .\32xl\:h-\[91\%\] {
+    height: 91%;
   }
 
   .\32xl\:w-\[12px\] {
