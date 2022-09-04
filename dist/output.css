@@ -3380,6 +3380,11 @@ section ul li.active {
     content: var(--tw-content);
     width: 65%;
   }
+
+  .lg\:after\:w-\[85\%\]::after {
+    content: var(--tw-content);
+    width: 85%;
+  }
 }
 
 @media (min-width: 1280px) {
