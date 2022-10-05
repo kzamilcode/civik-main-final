@@ -2975,6 +2975,10 @@ section ul li.active {
     width: 3rem;
   }
 
+  .md\:w-\[235px\] {
+    width: 235px;
+  }
+
   .md\:min-w-\[229px\] {
     min-width: 229px;
   }
@@ -3312,6 +3316,10 @@ section ul li.active {
     width: 455px;
   }
 
+  .lg\:w-auto {
+    width: auto;
+  }
+
   .lg\:max-w-\[170px\] {
     max-width: 170px;
   }
@@ -3372,6 +3380,10 @@ section ul li.active {
   .lg\:gap-x-10 {
     -moz-column-gap: 2.5rem;
          column-gap: 2.5rem;
+  }
+
+  .lg\:rounded-full {
+    border-radius: 9999px;
   }
 
   .lg\:border-b {
