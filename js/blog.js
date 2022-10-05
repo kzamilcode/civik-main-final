@@ -90,13 +90,13 @@ navbar underline hover
         .attr({href: "javascript:void(0)"}).text(item || "...")).insertBefore(".next-page");
       });
   
-      $(".previous-page").toggleClass("disable", currentPage === 1);
+      // $(".previous-page").toggleClass("disable", currentPage === 1);
       $(".next-page").toggleClass("disable", currentPage === totalPages);
       return true;
     }
   
     $(".pagination").append(
-      $("<li>").addClass("page-item").addClass("previous-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("")),
+      $("<li>").addClass().addClass().append($().addClass("page-link").attr({href: "javascript:void(0)"}).text("")),
       $("<li>").addClass("page-item").addClass("next-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("➜"))
     );
   

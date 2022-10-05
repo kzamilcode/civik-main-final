@@ -272,6 +272,13 @@ section ul li.active {
   margin: 12px;
 }
 
+@media only screen and (max-width: 600px) {
+  .pagination li {
+   
+    margin: 3px;
+  }
+}
+
 .pagination li a {
   color: #B9B9B9;
   ;
