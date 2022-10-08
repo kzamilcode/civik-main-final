@@ -615,8 +615,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 26rem;
 }
 
-.-top-\[70px\] {
-  top: -70px;
+.-top-\[110px\] {
+  top: -110px;
 }
 
 .top-0 {
@@ -653,10 +653,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .top-\[20px\] {
   top: 20px;
-}
-
-.-top-\[110px\] {
-  top: -110px;
 }
 
 .z-50 {
@@ -946,6 +942,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 38px;
 }
 
+.h-\[40vh\] {
+  height: 40vh;
+}
+
 .w-36 {
   width: 9rem;
 }
@@ -982,16 +982,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 80%;
 }
 
+.w-\[65\%\] {
+  width: 65%;
+}
+
 .w-\[195px\] {
   width: 195px;
 }
 
 .w-\[90\%\] {
   width: 90%;
-}
-
-.w-\[65\%\] {
-  width: 65%;
 }
 
 .w-\[150px\] {
@@ -1046,10 +1046,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 30%;
 }
 
-.w-\[210px\] {
-  width: 210px;
-}
-
 .min-w-\[190px\] {
   min-width: 190px;
 }
@@ -1076,14 +1072,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-full {
   max-width: 100%;
-}
-
-.max-w-\[430px\] {
-  max-width: 430px;
-}
-
-.max-w-\[625px\] {
-  max-width: 625px;
 }
 
 .translate-y-\[7px\] {
@@ -1771,10 +1759,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-6 {
   padding-top: 1.5rem;
-}
-
-.pb-20 {
-  padding-bottom: 5rem;
 }
 
 .pt-5 {
@@ -2822,8 +2806,8 @@ section ul li.active {
     top: 30%;
   }
 
-  .md\:left-48 {
-    left: 12rem;
+  .md\:left-\[3rem\] {
+    left: 3rem;
   }
 
   .md\:top-\[45\%\] {
@@ -2842,29 +2826,12 @@ section ul li.active {
     left: -105px;
   }
 
-  .md\:-top-\[200px\] {
-    top: -200px;
-  }
-
   .md\:-left-\[5rem\] {
     left: -5rem;
   }
 
   .md\:top-\[82px\] {
     top: 82px;
-  }
-
-  .md\:left-\[15rem\] {
-    left: 15rem;
-  }
-
-  .md\:left-\[3rem\] {
-    left: 3rem;
-  }
-
-  .md\:my-8 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
   }
 
   .md\:mb-5 {
@@ -2883,6 +2850,10 @@ section ul li.active {
     margin-top: 5rem;
   }
 
+  .md\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
   .md\:mb-4 {
     margin-bottom: 1rem;
   }
@@ -2899,10 +2870,6 @@ section ul li.active {
     margin-bottom: 2rem;
   }
 
-  .md\:mb-6 {
-    margin-bottom: 1.5rem;
-  }
-
   .md\:block {
     display: block;
   }
@@ -2917,6 +2884,10 @@ section ul li.active {
 
   .md\:h-\[320px\] {
     height: 320px;
+  }
+
+  .md\:h-\[40vh\] {
+    height: 40vh;
   }
 
   .md\:w-1\/3 {
@@ -2941,6 +2912,10 @@ section ul li.active {
 
   .md\:w-\[32\%\] {
     width: 32%;
+  }
+
+  .md\:w-\[235px\] {
+    width: 235px;
   }
 
   .md\:w-\[70\%\] {
@@ -2973,10 +2948,6 @@ section ul li.active {
 
   .md\:w-12 {
     width: 3rem;
-  }
-
-  .md\:w-\[235px\] {
-    width: 235px;
   }
 
   .md\:min-w-\[229px\] {
@@ -3092,10 +3063,6 @@ section ul li.active {
     padding-left: 3rem;
   }
 
-  .md\:pb-20 {
-    padding-bottom: 5rem;
-  }
-
   .md\:pb-16 {
     padding-bottom: 4rem;
   }
@@ -3176,16 +3143,16 @@ section ul li.active {
 }
 
 @media (min-width: 1024px) {
+  .lg\:left-36 {
+    left: 9rem;
+  }
+
   .lg\:-left-\[90px\] {
     left: -90px;
   }
 
   .lg\:-right-\[90px\] {
     right: -90px;
-  }
-
-  .lg\:bottom-16 {
-    bottom: 4rem;
   }
 
   .lg\:top-16 {
@@ -3196,27 +3163,11 @@ section ul li.active {
     top: -200px;
   }
 
-  .lg\:left-\[3rem\] {
-    left: 3rem;
-  }
-
-  .lg\:left-\[4rem\] {
-    left: 4rem;
-  }
-
-  .lg\:left-\[5rem\] {
-    left: 5rem;
+  .lg\:bottom-16 {
+    bottom: 4rem;
   }
 
   .lg\:left-\[9rem\] {
-    left: 9rem;
-  }
-
-  .lg\:left-48 {
-    left: 12rem;
-  }
-
-  .lg\:left-36 {
     left: 9rem;
   }
 
@@ -3234,14 +3185,14 @@ section ul li.active {
     margin-bottom: 3.5rem;
   }
 
-  .lg\:mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
   .lg\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .lg\:mt-0 {
@@ -3250,6 +3201,10 @@ section ul li.active {
 
   .lg\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .lg\:mb-5 {
+    margin-bottom: 1.25rem;
   }
 
   .lg\:mb-20 {
@@ -3262,10 +3217,6 @@ section ul li.active {
 
   .lg\:mb-12 {
     margin-bottom: 3rem;
-  }
-
-  .lg\:mb-5 {
-    margin-bottom: 1.25rem;
   }
 
   .lg\:flex {
@@ -3288,8 +3239,12 @@ section ul li.active {
     height: 61px;
   }
 
-  .lg\:w-\[65\%\] {
-    width: 65%;
+  .lg\:h-\[91\%\] {
+    height: 91%;
+  }
+
+  .lg\:w-auto {
+    width: auto;
   }
 
   .lg\:w-full {
@@ -3312,12 +3267,16 @@ section ul li.active {
     width: 1rem;
   }
 
+  .lg\:w-\[65\%\] {
+    width: 65%;
+  }
+
   .lg\:w-\[455px\] {
     width: 455px;
   }
 
-  .lg\:w-auto {
-    width: auto;
+  .lg\:w-\[32\%\] {
+    width: 32%;
   }
 
   .lg\:max-w-\[170px\] {
@@ -3330,6 +3289,10 @@ section ul li.active {
 
   .lg\:max-w-\[625px\] {
     max-width: 625px;
+  }
+
+  .lg\:max-w-\[25rem\] {
+    max-width: 25rem;
   }
 
   .lg\:grid-cols-3 {
@@ -3362,6 +3325,10 @@ section ul li.active {
 
   .lg\:justify-end {
     justify-content: flex-end;
+  }
+
+  .lg\:justify-center {
+    justify-content: center;
   }
 
   .lg\:justify-between {
@@ -3432,6 +3399,10 @@ section ul li.active {
     padding-bottom: 4rem;
   }
 
+  .lg\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
   .lg\:pt-\[3\.5rem\] {
     padding-top: 3.5rem;
   }
@@ -3454,10 +3425,6 @@ section ul li.active {
 
   .lg\:pt-10 {
     padding-top: 2.5rem;
-  }
-
-  .lg\:pb-20 {
-    padding-bottom: 5rem;
   }
 
   .lg\:pt-4 {
@@ -3553,10 +3520,6 @@ section ul li.active {
 
   .xl\:left-8 {
     left: 2rem;
-  }
-
-  .xl\:left-60 {
-    left: 15rem;
   }
 
   .xl\:m-0 {
@@ -3723,6 +3686,10 @@ section ul li.active {
     top: 35%;
   }
 
+  .\32xl\:left-60 {
+    left: 15rem;
+  }
+
   .\32xl\:-bottom-6 {
     bottom: -1.5rem;
   }
@@ -3733,10 +3700,6 @@ section ul li.active {
 
   .\32xl\:-right-\[135px\] {
     right: -135px;
-  }
-
-  .\32xl\:bottom-6 {
-    bottom: 1.5rem;
   }
 
   .\32xl\:top-16 {
@@ -3763,15 +3726,11 @@ section ul li.active {
     top: 70px;
   }
 
+  .\32xl\:bottom-6 {
+    bottom: 1.5rem;
+  }
+
   .\32xl\:left-\[15rem\] {
-    left: 15rem;
-  }
-
-  .\32xl\:left-48 {
-    left: 12rem;
-  }
-
-  .\32xl\:left-60 {
     left: 15rem;
   }
 
@@ -4109,6 +4068,10 @@ section ul li.active {
 
   .\32xl\:pb-36 {
     padding-bottom: 9rem;
+  }
+
+  .\32xl\:pb-10 {
+    padding-bottom: 2.5rem;
   }
 
   .\32xl\:text-5xl {
